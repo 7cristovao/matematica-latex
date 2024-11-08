@@ -1,0 +1,101 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{float}
+\usepackage{extsizes}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{tcolorbox}
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA97 - Matemática} 
+	
+	\begin{center}Equações equivalentes às equações $ax + b = 0$ (I) (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	~ \\ ~
+	\begin{multicols}{2}
+		\noindent Existem algumas equações que podem ser reduzidas à forma $ax + b = 0$. Vejamos alguns exemplos:
+		\begin{itemize}
+			\item $3x + 4 = 11 - x$ \\
+		\end{itemize}
+		Inicialmente, escolhemos o membro em que vamos deixar a variável e trocamos de membro alguns termos, usando a operação inversa, para que todos os termos com variável fiquem em um membro e os demais termos fiquem no outro membro. \vspace{-10pt}
+		\begin{equation*}
+			3x + 4 = 11 - x \Leftrightarrow 3x + x = 11 - 4
+		\end{equation*}
+		Em seguida, fazemos as operações necessárias para obter uma equação da forma $ax = b$.
+		\begin{equation*}
+			3x + x = 11 - 4 \Leftrightarrow 4x = 7
+		\end{equation*}
+		Finalmente, resolvemos essa equação e apresentamos o conjunto verdade.
+		\begin{equation*}
+			4x = 7 \Leftrightarrow x = \frac{7}{4}
+		\end{equation*}
+		Logo $V = \left\{\frac{7}{4}\right\}$.
+		\begin{itemize}
+			\item $3 + 2(1 - 5x) = 2x - 4(3x - 7)$
+		\end{itemize}
+		Primeiramente, aplicamos a propriedade distributiva da multiplicação em relação à adição. \\
+		$3 + 2(1 - 5x) = 2x - 4(3x - 7) \Leftrightarrow 3 + 2 - 10x = 2x - 12x + 28$ \\
+		Procedemos, então, como no item $a$. \\
+		$3 + 2 - 10x = 2x - 12x + 28 \Leftrightarrow \\ -10x - 2x + 12x = 28 - 3 - 2 \Leftrightarrow \\ 0x = 23$ \\
+		Logo $V = \varnothing$.
+	\end{multicols}
+\noindent\textsubscript{~-----------------------------------------------------------------------------------------------------------------------------------------------------}
+	\begin{multicols}{2}
+    	\begin{enumerate}
+    		\item Resolva as equações a seguir, sendo $U = \mathbb{Q}$.
+    		\begin{enumerate}[a)]
+    			\item $3x - 2 = 7x + 6$ \\\\\\\\\\\\\\
+    			\item $x - 4 = x$ \\\\\\\\\\\\\\\\\\\\
+    			\item $1 = -2x + 9$ \\\\\\\\\\\\\\\\\\\\
+    			\item $-2x - 2 = -9x - 15$ \\\\\\\\\\\\\\\\\\\\
+    			\item $4y - 2(-3y + 1) = -6y + 7$ \\\\\\\\\\\\\\\\\\\\
+    			\item $-5t + 12 = -(-16 + 5t) - 4$ \\\\\\\\\\\\ 
+    			\item $-3(x - 1) -2(-2x + 6) = 2x + 13$ \\\\\\\\\\\\\\\\\\\\
+    			\item $3(x + 2) - 4(x - 3) = 6(x - 1) + 7$ \\\\\\\\\\\\\\\\\\\\
+    		\end{enumerate}
+    		\item Resolva as equações a seguir, sendo $U = \mathbb{Q}$.
+    		\begin{enumerate}[a)]
+    			\item $3x + 1 = 5x - 3$ \\\\\\\\\\\\\\\\\\\\\\\\
+    			\item $2 - x = -x$ \\\\\\\\\\\\\\\\\\\\
+    			\item $x = 7 = 7 - x$ \\\\\\\\\\\\\\\\\\\\
+    			\item $9x + 2 = 12 - 5x$ \\\\\\\\\\\\\\\\\\\\
+    			\item $5(x + 1) - 3x + 1 = 0$ \\\\\\\\\\\\\\
+    			\item $-3(x - 1) + 3x - 3 = 0$ \\\\\\\\\\\\\\\\\\\\
+    			\item $2(7x - 8) = 3(8x + 7)$ \\\\\\\\\\\\\\\\\\\\
+    			\item $4(-x + 3) - 2 = 2(3x - 6)$ \\\\\\\\\\\\\\\\\\\\
+    		\end{enumerate}
+    	\end{enumerate}
+    $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$
+	\end{multicols}
+\end{document}

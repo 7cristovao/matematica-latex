@@ -1,0 +1,147 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{float}
+\usepackage{extsizes}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA95 - Matemática} 
+	
+	\begin{center}Resolvendo equações do tipo $ax+b = 0~(a \neq 0)$~(Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	~ \\ ~
+	\begin{multicols}{2}
+	\noindent Equações da forma $x = k$ são chamadas equações de solução imediata. Por exemplo, o conjunto verdade da equação $x = 9$ é $V = \{9\}$. \\
+	Além disso, é possível resolver mentalmente outras equações. Para resolvermos a equação $x - 1 = 2$, basta pensarmos em um número que, diminuindo de 1, resulta em 2. Dessa forma, $x = 3$ e $V = \{3\}$. \\
+	Para resolver uma equação do tipo $ax + b = 0 (a \neq 0)$, devemos escrever outras equações equivalentes a ela, até chegarmos a uma equação de solução imediata, lembrando que: \\
+	\begin{itemize}
+		\item uma igualdade não se altera quando somamos (ou subtraímos de) a ambos os membros um mesmo número.
+		\item uma igualdade não se altera quando multiplicamos (ou dividimos) ambos os membros por um mesmo número diferente de zero.
+		\item Vejamos alguns exemplos, sendo $U = \mathbb{Q}$.
+		\begin{enumerate}[a)]
+			\item \noindent$2x + 5 = 0 \\ \Leftrightarrow 2x + 5 - 5 = 0 - 5 \Leftrightarrow \\ 2x = -5 \Leftrightarrow \frac{2x}{2} = \frac{-5}{2} \Leftrightarrow \\ x = -\frac{5}{2}$ \\
+			Logo $V = \left\{-\frac{5}{2}\right\}$
+			\item \noindent$-4x + 3 = 0 \Leftrightarrow \\ -4x + 3 - 3 = 0 - 3 \Leftrightarrow \\ -4x = -3 \Leftrightarrow \frac{-4x}{4} = \frac{-3}{-4} \Leftrightarrow x = \frac{3}{4}$ \\
+			Logo $V = \left\{\frac{3}{4}\right\}$
+			\item \noindent$3x - 7 = 0 \Leftrightarrow \\ 3x -7 + 7 = 0 + 7 \Leftrightarrow \\ 3x = 7 \Leftrightarrow \frac{3x}{3} = \frac{7}{3} \Leftrightarrow x = \frac{7}{3}$ \\
+			Logo $V	= \left\{\frac{7}{3}\right\}$		
+		\end{enumerate}
+	\end{itemize}
+	\end{multicols}
+\noindent\textsubscript{~-----------------------------------------------------------------------------------------------------------------------------------------------------}
+	\begin{multicols}{2}
+    	\begin{enumerate}
+    		\item Resolva as equações de solução imediata a seguir, sendo $U = \mathbb{Q}$.
+    		\begin{enumerate}[a)]
+    			\item $x = 9$ \\\\
+    			\item $x = - 5$ \\\\\\
+    			\item $y = 0$ \\
+    			\item $a = \frac{1}{5}$ \\\\\\
+    		\end{enumerate}
+    		\item Resolva mentalmente as seguintes equações ($U = \mathbb{Q}$).
+    		\begin{enumerate}[a)]
+    			\item $x + 2 = 8$ \\\\\\
+    			\item $x - 3 = 9$ \\\\\\
+    			\item $t + 8 = 6$ \\\\\\
+    			\item $-k = -7$ \\\\\\
+    			\item $4x = 60$ \\\\\\
+    			\item $-5x = 20$ \\\\\\
+    		\end{enumerate}
+    		\item Em cada item a seguir, é dada uma equação do tipo $ax + b = 0$. Apresente $a$ e $b$.
+    		\begin{enumerate}[a)]
+    			\item $2x + 9 = 0$ \\\\\\
+    			\item $3x - 7 = 0$ \\\\\\
+    			\item $x - 5 = 0$ \\\\\\
+    			\item $4x = 0$ \\\\\\
+    			\item $0x + 6 = 0$ \\\\\\
+    			\item $0x = 0$ \\\\\\ 
+    			\item $-\frac{x}{4}-\frac{1}{5} = 0$ \\\\\\
+    		\end{enumerate}
+    		\item \begin{enumerate}[label=\Roman*.] % Define a numeração em algarismos romanos
+    			\item Resolva as equações ($U = \mathbb{Q})$. Deixe indicadas todas as equivalências. \\
+    			\begin{enumerate}[a)]
+    				\item $2x + 6 = 0$ \\\\\\\\
+    				\item $3x - 12 = 0$ \\\\\\\\
+    				\item $4x - 1 = 0$ \\\\\\\\
+    				\item $5x + 9 = 0$ \\\\\\\\
+    				\item $-6x + 5 = 0$ \\\\\\\\
+    				\item $-3x - 18 = 0$ \\\\\\\\
+    			\end{enumerate}
+    			\item Agora apresente quatro equações da forma $Ax + B = 0$, com $A$ e $B \in \mathbb{Z}$, e, em seguida, resolva-as indicando todas as equivalências.
+    		\end{enumerate}
+    		\item Resolva as equações de solução imediata a seguir, sendo $U = \mathbb{Q}$.
+    		\begin{enumerate}[a)]
+    			\item $x = 3$ \\\\\\
+    			\item $x = 16$ \\\\\\
+    			\item $y = 7$ \\\\\\
+    			\item $y = -\frac{3}{7}$ \\\\\\
+    			\item $a = \frac{8}{5}$ \\\\\\
+    			\item $m = 2075$ \\\\\\ 
+    		\end{enumerate}
+    		\item Resolva mentalmente as seguintes equações $(U = \mathbb{Q})$.
+    		\begin{enumerate}[a)]
+    			\item $x + 2 = 8$ \\\\\\
+    			\item $x - 4 = 10$ \\\\\\
+    			\item $t - 20 = -15$ \\\\\\
+    			\item $-k = -7$ \\\\\\
+    			\item $4y = -24$ \\\\\\
+    			\item $-5y = 10$ \\\\\\ 
+    		\end{enumerate}
+    		\item Em cada item a seguir, é dada uma equação do tipo $ax + b = 0$. Apresente $a$ e $b$.
+    		\begin{enumerate}[a)]
+    			\item $3x + 9 = 0$ \\\\\\
+    			\item $8y - 1 = 0$ \\\\\\
+    			\item $-5t + 7 = 0$ \\\\\\
+    			\item $2x + 25 = 0$ \\\\\\
+    			\item $x - 15 = 0$ \\\\\\
+    			\item $-x - 2 = 0$ \\\\\\
+    			\item $-8x = 0$ \\\\\\
+    			\item $0x - 4 = 0$ \\\\\\
+    			\item $0x = 0$ \\\\\\
+    			\item $\frac{3}{5}x - \frac{7}{2} = 0$ \\\\\\
+    		\end{enumerate}
+    		\item Resolva as equações $(U = \mathbb{Q})$. Deixe indicadas todas as equivalências.
+    		\begin{enumerate}[a)]
+    			\item $3x - 12 = 0$ \\\\\\
+    			\item $-2x + 14 = 0$ \\\\\\
+    			\item $8x + 1 = 0$ \\\\\\
+    			\item $2x - 3 = 0$ \\\\\\
+    			\item $-4x -20 = 0$ \\\\\\
+    			\item $-12x - 15 = 0$
+    		\end{enumerate}
+    	\end{enumerate}
+    $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ 
+	\end{multicols}
+\end{document}

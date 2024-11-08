@@ -1,0 +1,133 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{float}
+\usepackage{extsizes}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{tcolorbox}
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA98 - Matemática} 
+	
+	\begin{center}Equações equivalentes às equações $ax + b = 0$ (II) (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	~ \\ ~
+	\begin{multicols}{2}
+		\noindent Vejamos mais um exemplo de equações que podem ser reduzidas à forma $ax + b = 0, U = \mathbb{Q}$ \\
+		\vspace{-10pt}
+		\begin{equation*}
+			\frac{x + 2}{3} - \frac{2x + 3}{2} = \frac{x}{5} + 1
+		\end{equation*}
+		Inicialmente, reduzimos as frações a um mesmo denominador \\\\
+		$\frac{x + 2}{3} - \frac{2x + 3}{2} = \frac{x}{5} + 1 \Leftrightarrow \\ \frac{10(x + 2)}{30} - \frac{15(2x + 3)}{30} = \frac{6x}{30} + \frac{30}{30}$ \\\\
+		Podemos, assim, subtrair os numeradores do primeiro membro e somar os numeradores do segundo membro. \\\\
+		$\frac{10(x + 2)}{30} - \frac{15(2x + 3)}{30} = \frac{6x}{30} + \frac{30}{30} \Leftrightarrow \\\\ \frac{10(x + 2) - 15(2x + 3)}{30} = \frac{6x + 30}{30}$ \\\\
+		Multiplicamos, então, ambos os membros da igualdade por 30 para que o denominador fique unitário (nesse caso, dizemos que "cortamos" os denominadores). \\\\
+		$\frac{10(x + 2) - 15(2x + 3)}{30} = \frac{6x + 30}{30} \Leftrightarrow \\ 10(x + 2) - 15(2x + 3) = 6x + 30$ \\\\
+		Agora, procedemos como na aula anterior. \\\\ 
+		$10(x + 2) - 15(2x + 3) = 6x + 30 \Leftrightarrow 10x + 20 - 30x - 45 = 6x + 30 \Leftrightarrow 10x - 30x - 6x = 30 - 20 + 45 \Leftrightarrow \\\\ - 26x = 55 \Leftrightarrow x = \frac{55}{-26} = - \frac{55}{26}$ \\\\
+		Logo $V = \left\{- \frac{55}{26}\right\}$.
+	\end{multicols}
+\noindent\textsubscript{~-----------------------------------------------------------------------------------------------------------------------------------------------------}
+	\begin{multicols}{2}
+    	\begin{enumerate}
+    		\item Resolva as equações $(U = \mathbb{Q})$.
+    		\begin{enumerate}[a)]
+    			\item $2x + \frac{x}{7} - 4 = \frac{2}{3} - 3x$ \\\\\\\\\\\\
+    			\item $- \frac{x}{2} + 2x - \frac{5x}{9} + \frac{7x}{18} = -1$ \\\\\\\\\\\\\\\\
+    			\item $\frac{2}{3}x - 5 = \frac{1}{4}$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    			\item $\frac{8x - 1}{4} - \frac{4x + 5}{2} = \frac{1}{6}$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    			\item $\frac{2x - 5}{3} - \frac{x + 1}{2} = - \frac{13 - x}{6}$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    			\item $\frac{x - 1}{2} - \frac{3x + 4}{5} = - \frac{2x + 7}{15}$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    		\end{enumerate}
+    		\textbf{Desafio olímpico} \\\\
+    		Antônio e Bruno se preparavam para o torneio de basquete. Enquanto um deles treinava os arremessos, o outro contava o número de acertos do colega. Se Antônio tivesse acertado quatro vezes o número de cestas que ele de fato acartou, ele teria feito 27 cestas a mais que Bruno contou. Quantas cestas Antônio acertou? \\\\
+    		a)6 ~~ b)7 ~~ c)8 ~~ d)9 ~~ e)10 \columnbreak
+    		\item Resolva as equações ($U = \mathbb{Q}$).
+    		\begin{enumerate}[a)]
+    			\item $\frac{3}{7} - \frac{x}{2} = 1$ \\\\\\\\\\\\\\\\\\\\\\\\
+    			\item $\frac{2}{5}x - \frac{5}{2} = 0$ \\\\\\\\\\\\\\\\\\\\\\\\
+    			\item $\frac{x + 2}{3} - \frac{3x - 1}{5} = \frac{x}{2}$ \\\\\\\\\\\\\\\\\\\\\\\\
+    			\item $\frac{x}{3} - 5 - \frac{2 - x}{4} = \frac{3x}{2}$  \\\\\\\\\\\\\\\\\\\\\\\\
+    		\end{enumerate}
+    		\item Na equação $\frac{1}{3} - 1 + x = \frac{5}{6} - \frac{4}{7} (U = \mathbb{Q})$, o valor de x é:
+    		\begin{enumerate}[a)]
+    			\item $\frac{23}{42}$
+    			\item $\frac{13}{14}$
+    			\item $0$
+    			\item $\frac{1}{6}$
+    			\item $\frac{7}{18}$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    		\end{enumerate}	
+    		\item Ao resolver a equação \\ $\frac{19}{3} - \frac{8 - x}{3} = \frac{7x}{6}~(U = \mathbb{Q})$, \\ o valor de $x$ encontrado é: 
+    		\begin{enumerate}[a)]
+    			\item $4$
+    			\item $\frac{19}{6}$
+    			\item $\frac{22}{5}$
+    			\item $7$
+    			\item $\frac{7}{18}$ \\\\\\\\\\\\\\
+    		\end{enumerate}
+    		\item O valor de $x$ que satisfaz a equação $\frac{x - 1}{2} + \frac{9 - 3x}{7} = - \frac{x}{5}$~$(U = \mathbb{Q})$ é:
+    		\begin{enumerate}[a)]
+    			\item $- \frac{55}{19}$
+    			\item $\frac{21}{70}$
+    			\item $- \frac{43}{14}$
+    			\item $\frac{19}{10}$
+    			\item $- \frac{67}{35}$
+    		\end{enumerate}
+    		\newpage
+    		\item A raiz da equação $\frac{x}{5} - \frac{2x}{7} = -1$ é um número:
+    		\begin{enumerate}[a)]
+    			\item inteiro.
+    			\item menor que 10.
+    			\item negativo.
+    			\item maior de 15.
+    			\item racional não inteiro. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    		\end{enumerate}
+    		\item Resolver as equações a seguir no universo dos números racionais:
+    		\begin{enumerate}[a)]
+    			\item $x = 0$
+    			\item $x + 21 = 0$
+    			\item $5x - 12 = 0$
+    			\item $3x  + 42 = 0$
+    			\item $3x - 7 = 2x + 1 - 4 + x$
+    			\item $6x - 13 = 2x - 17$
+    			\item $5(2 - x) - 3(x + 2) = 4 - 8x$
+    			\item $7(x + 1) = 4(2 - x)$
+    			\item $- \frac{5x}{3} - 4 = \frac{x}{8}$
+    			\item $\frac{x + 3}{5} - \frac{x}{2} = \frac{9 - x}{10}$
+    		\end{enumerate}
+    	\end{enumerate}
+    $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$\\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\
+	\end{multicols}
+\end{document}

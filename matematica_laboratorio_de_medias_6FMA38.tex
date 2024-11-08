@@ -1,0 +1,97 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{float}
+\usepackage{extsizes}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA38 - Matemática} 
+	
+	\begin{center}Laboratório de médias (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	\noindent \\ Antes de iniciar, vejamos algumas definições:
+	\begin{itemize}
+		\item \textbf{PIB:} Produto Interno Bruto - indicador econômico que representa a soma dos valores de todos os bens produzidos dentro de um país, em determinado período.
+		\item \textbf{Renda \textit{per capita}:} quantia em reais que cada habitante receberia caso o PIB fosse dividido igualmente entre toda a população.
+		\item \textbf{Densidade demográfica:} é a razão entre a população de um país e a sua superfície.
+	\end{itemize}
+	\noindent A tabela abaixo representa algumas informações importantes relativas a 10 países.
+	\begin{table}[h]
+		\centering
+		\begin{tabular}{|c|c|c|>{\centering}p{2.5cm}|>{\centering}p{2cm}|>{\centering}p{1.8cm}|p{2cm}|} % Define 7 colunas
+			\hline
+			\textbf{} & \textbf{País} & \textbf{População} & \textbf{Extensão territorial (em km²)} & \textbf{PIB (em bilhões de dólares)} & \textbf{Renda \textit{per capita}} & \textbf{Densid. demog.} \\ 
+			\hline
+			1 & China & 1 338 612 968 & 9 640 821 & 6 473 &  &  \\ 
+			\hline
+			2 & Estados Unidos & 307 212 123 & 9 372 610 & 13 820 &  &  \\ 
+			\hline
+			3 & Rússia & 140 041 247 & 17 075 400 & 1 985 &  &  \\ 
+			\hline
+			4 & Japão & 127 078 679 2 & 377 873 & 4 262 &  &  \\ 
+			\hline
+			5 & Noruega & 4 660 539 & 385 155 & 253 &  &  \\ 
+			\hline
+			6 & França & 64 057 792 & 551 500 & 2 074 &  &  \\ 
+			\hline
+			7 & Brasil & 198 739 269 & 8 547 906 & 1 794 &  &  \\ 
+			\hline
+			8 & Nigéria & 149 229 090 & 923 768 & 299 &  &  \\ 
+			\hline
+			9 & Índia & 1 166 079 217 & 3 287 782 & 2 816 &  &  \\ 
+			\hline
+			10 & Bangladesh & 156 050 883 & 143 998 & 201 &  &  \\ 
+			\hline
+		\end{tabular}
+	\end{table}
+	\begin{flushright}Disponível em: www.indexmundi.com  1º jan. 2009 \end{flushright}
+	\noindent Observando a tabela, podemos concluir que o PIB dos Estados Unidos é muito maior que o da Noruega (na verdade, quase 55 vezes maior), e o PIB da Noruega é muito próximo (mas ainda menor) do PIB da Nigéria. Mas isso não significa que os estadunidenses são "em média" 55 vezes mais ricos que os noruegueses, e nem que os noruegueses e nigerianos têm em média o mesmo salário. \\
+	\noindent Quando calculamos a renda \textit{per capita} para Estados Unidos, Noruega e Nigéria, obtemos os seguintes resultados: \\\\
+	Estados Unidos: $\frac {13 820 000 000 000}{307 212 123} \approx$ 44 985 dólares/ano \\\\
+	Noruega: $\frac{253 000 000 000}{4 660 359} \approx$ 54 285 dólares/ano \\\\
+	Nigéria: $\frac{299 000 000 000}{149 229 090} \approx$ 2 003 dólares/ano \\\\
+	Isso quer dizer que, em média, a renda anual de um norueguês é maior que a de um estadunidense, e mais de 25 vezes maior que a de um nigeriano.
+    \begin{multicols}{2}
+    	\begin{enumerate}
+    		\item Utilizando a tabela fornecida na página anterior, coloque os países em ordem descrescente em relação ao PIB e também em relação à renda \textit{per capita}. \\
+    		Se observarmos novamente a tabela, poderemos concluir que a população da China é muito maior que a população de Bangladesh, porém, quando calculamos a densidade demográfica desses países, notamos que na China existem $\frac{1 338 612 968}{9 640 821} \approx $139 habitantes por km², enquanto em Bangladesh existem $\frac{156 050 883}{143 998} = 1 084 $ habitantes por km².
+    		\columnbreak
+    		\item Utilizando a tabela fornecida na página anterior, coloque os países em ordem decrescente em relação à sua população e também em relação à sua densidade demográfica. \\\\\\\\\\\\\\\\\\\\\\\\
+    		\textbf{Desafio olímpico}  \\\\
+    		(OBMEP) Pedrinho colocou 1 copo de suco em uma jarra e, em seguida, acrescentou 4 copos de água. Depois, decidiu acrescentar mais água até dobrar o volume que havia na jarra. Ao final, qual é o percentual de suco na jarra? \\
+    		a) 5\% ~ b) 10\% ~ c) 15\% ~ d) 20\% ~ e) 25\%
+    	\end{enumerate}
+    \end{multicols}
+\end{document}

@@ -1,0 +1,194 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{float}
+\usepackage{extsizes}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA92 - Matemática} 
+	
+	\begin{center}Número de elementos de um conjunto (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	~ \\ ~
+	\begin{multicols}{2}
+	\noindent Se A é um conjunto finito, a quantidade de elementos de A é indicada por $n(A)$ ou \# $(A)$. \\
+	Se a intersecção entre dois conjuntos $A$ e $B$ é o conjunto vazio (conjuntos distintos), a quantidade de elementos da união entre $A$ e $B$ é dada por:
+	\begin{equation*}
+		n(A \cup B) = n(A) + n(B)
+	\end{equation*}
+	Exemplo: \\
+	Se $A = \{5, 6, 7, 8\}$ e $B = \{1, 2, 3\}$, temos $n(A) = 4$, $n(b) = 3$ e $n(A~\cup~B) = 4 + 3 = 7$. \\
+	Para uma quantidade maior de conjuntos a regra é a mesma, desde que eles sejam disjuntos 2 a 2, ou seja, dados os conjuntos finitos $A, B$ e $C$, se $A~\cap~B = \varnothing$ e $B~\cap~C = \varnothing$, então $n(A~\cup~B~\cup~C) = n(A) + n(B) + n(C)$. \\
+	Se 2 conjuntos $A$ e $B$ não são disjuntos, ao contarmos os elementos de $A$ e $B$, os comuns (ou seja, $A~\cap~B$) serão contados 2 vezes. \\
+	Nesse caso, temos que:
+	\begin{equation*}
+		n(A~\cup~B) = n(A) + n(B) - n(A~\cap~B)
+	\end{equation*}
+	Para 3 conjuntos,$~A, B$ e $C$, que não são disjuntos, o número de elementos de $A \cup B \cup C$ é dado por: \\\\
+	$
+		n(A~\cup~B~\cup~C) = n(A) + n(B) \\
+		+ n(C) - n(A~\cap~B) - n(A~\cap~C) \\ 
+		- n(B~\cap~C) 
+		+ n(A~\cap~B~\cap~C)
+		$
+	\end{multicols}
+\noindent\textsubscript{~-----------------------------------------------------------------------------------------------------------------------------------------------------}
+	\begin{multicols}{2}
+    	\begin{enumerate}
+    		\item Pesquisando a preferência musical de alguns jovens sobre três bandas, $A, B$ e $C$, chegou-se ao seguinte resultado:
+    		\begin{itemize}
+    			\item 366: $A$;
+    			\item 331: $B$;
+    			\item 348: $C$;
+    			\item 91: $A$ e $B$;
+    			\item 82: $B$ e $C$;
+    			\item 83: $A$ e $C$;
+    			\item 78: $A$, $B$ e $C$;
+    			\item 55: nem $A$, nem $B$, nem $C$.
+    		\end{itemize}
+    	\begin{enumerate}[a)]
+    		\item Quantas pessoas foram entrevistadas? \\\\
+    		\item Quantas pessoas responderam apenas $A$? \\\\
+    		\item Quantas pessoas responderam apenas $B$? \\\\
+    		\item Quantas pessoas responderam apenas $C$? \\\\
+    		\item Quantas pessoas responderam apenas $A$ e $B$? \\\\
+    		\item Quantas pessoas responderam apenas $A$ e $C$? \\\\
+    		\item Quantas pessoas responderam apenas $B$ e $C$? \\\\
+    	\end{enumerate}
+    	\item Numa pesquisa, perguntava-se a um conjunto de pessoas se gostavam de café ou chá ou de ambos. 51 pessoas responderam café; 45, chá; 17, ambos; e 75 responderam que nunca haviam pensado no assunto.
+    	\begin{enumerate}[a)]
+    		\item Quantas pessoas foram entrevistadas? \\\\\\
+    		\item Quantas pessoas gostavam apenas de café? \\\\\\
+    		\item Quantas pessoas gostavam apenas de chá? \\\\\\
+    	\end{enumerate}
+    	\textbf{Desafio olímpico} \\\\
+    	(OBMEP) No refeitório da escola de Quixajuba, na hora do almoço, 130 alunos comeram carne e 150 comeram macarrão, sendo que $\frac{1}{6}$ dos alunos comeram carne e também macarrão. Além disso, 70 alunos não comeram carne nem macarrão. Quantos alunos comeram carne, mas não comeram macarrão? \\
+    	\begin{enumerate}[a)]
+    		\item 80 \\
+    		\item 90 \\
+    		\item 100 \\
+    		\item 120 \\
+    		\item 130 \\ \newpage
+    	\end{enumerate}
+    	\item Em uma pesquisa, perguntou-se a um grupo de pessoas a forma como elas verificam as horas. Sabe-se que 57 olham o celular, 51 olham o relógio e 16 olham os dois. Quantas pessoas foram entrevistadas? \\\\\\\\\\\\\\\\\\\\
+    	\item Em uma sala de aula o professor perguntou a todos os alunos presentes se gostavam de brigadeiro ou de pão de queijo ou de ambos. 12 alunos responderam pão de queijo; 9 responderam brigadeiro, 7 ambos e 6 responderam que nunca haviam pensado no assunto.
+    	\begin{enumerate}[a)]
+    		\item Quantos alunos estavam presentes? \\\\\\\\\\
+    		\item Quantos alunos gostam apenas de brigadeiro? \\\\\\\\\\
+    		\item Quantos alunos gostam apenas de pão de queijo? \\\\\\\\\\
+    	\end{enumerate}
+    	\item Em uma escola de dança, sabe-se que:
+    	\begin{itemize}
+    		\item 70 estudam Salsa;
+    		\item 64 estudam Tango;
+    		\item 79 estudam Forró;
+    		\item 28 estudam Salsa e Tango;
+    		\item 37 estudam Salsa e Forró;
+    		\item 33 estudam Tango e Forró;
+    		\item 22 estudam Salsa, Tango e Forró;
+    		\item 13 não estudam Salsa, nem Tango e nem Forró.
+    	\end{itemize}
+    	\begin{enumerate}[a)]
+    		\item Desenhe um diagrama de Venn e escreva o número de elementos de cada uma das oito regiões. \\\\\\\\\\\\\\\\\\\\\\\\
+    		\item Quantas pessoas estudam apenas Salsa? \\\\\\\\\\
+    		\item Quantas pessoas estudam apenas Tango? \\\\\\\\\\
+    		\item Quantas pessoas estudam apenas Salsa e Tango? \\\\\\\\\\
+    		\item Quantas pessoas estudam apenas Salsa e Forró? \\\\\\\\\\
+    		\item Quantas pessoas há no grupo? \\\\\\\\\\
+    	\end{enumerate}
+    	\item Pesquisando a preferência de alguns jovens sobre três produtos $a, b$ e $c$, chegou-se ao seguinte resultado: \\
+    	\begin{itemize}
+    		\item 391 - $a$
+    		\item 416 - $b$
+    		\item 339 - $c$
+    		\item 132 - $b$ e $c$
+    		\item 104 - $a$ e $c$
+    		\item 150 - $a$ e $b$
+    		\item 42 - $a$, $b$ e $c$
+    		\item 28 - nem $a$, nem $b$ e nem $c$
+    	\end{itemize}
+    	\begin{enumerate}[a)]
+    		\item Quantas pessoas foram entrevistadas?
+    		\item Quantas pessoas responderam apenas $a$?
+    		\item Quantas pessoas responderam apenas $b$?
+    		\item Quantas pessoas responderam apenas $c$?
+    		\item Quantas pessoas responderam apenas $a$ e $b$?
+    		\item Quantas pessoas responderam apenas $a$ e $c$?
+    		\item Quantas pessoas responderam apenas $b$ e $c$?
+    	\end{enumerate}
+    	\item Sabe-se que n($X$) indica o número de elementos do conjunto $X$. Então, o número de elementos do conjunto $A \cup B$ é:
+    	\begin{enumerate}[a)]
+    		\item $n(A) + n(B) - n(A~\cap~B)$
+    		\item $n(B) - n(A)$
+    		\item $n(A~\cap~B) + n(A) + n(B)$
+    		\item $n(A) \cdot n(B) - n(A~\cap~B)$
+    		\item $n(A) + n(A~\cap~B)$
+    	\end{enumerate}
+    	\item Para os conjuntos finitos $M$ e $N$, temos $n(M~\cup~N) = 150$, $n(M) = 74$ e $n(N) = 93$. Podemos afirmar que $n(M~\cap~N)$ vale:
+    	\begin{enumerate}[a)]
+    		\item 12
+    		\item 17
+    		\item 21
+    		\item 27
+    		\item 34
+    	\end{enumerate}
+    	\item Em uma pesquisa, 85 pessoas foram entrevistadas quanto ao tipo de letra utilizada para escrever: cursiva ou de fôrma. 42 pessoas responderam que utilizam a letra de fôrma e 23 utilizam os dois tipos. O número de pessoas que só escrevem com letra cursiva é:
+    	\begin{enumerate}[a)]
+    		\item 16
+    		\item 29
+    		\item 31
+    		\item 43
+    		\item 52
+    	\end{enumerate}
+    	\item Considere $n(X)$ o número de elementos do conjunto $X$. Pode-se afirmar que, para $A$ e $B$ subconjuntos do conjunto universo $U$, o valor de $n(A~\cap~B) - n(B)$ é:
+    	\begin{enumerate}[a)]
+    		\item $n(A) - n(A~\cap~B)$
+    		\item $n(B)$
+    		\item $n(A~\cup~B) - n(A~\cap~B)$
+    		\item $n(A)$
+    		\item $n(A) - n(A~\cup~B)$
+    	\end{enumerate}
+    	\item Uma escola oferece dois cursos de línguas: inglês e espanhol. Dos 98 alunos do período da tarde, 73 fazem o de inglês, 41 o de espanhol e 11 não fazem o curso de línguas. Quantos alunos fazem os dois cursos?
+    	\begin{enumerate}[a)]
+    		\item 13
+    		\item 49
+    		\item 27
+    		\item 56
+    		\item 34
+    	\end{enumerate}
+    \end{enumerate}
+$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ 
+	\end{multicols}
+\end{document}
