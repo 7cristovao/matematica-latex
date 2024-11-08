@@ -1,0 +1,54 @@
+Se no próximo mês o consumo de energia elétrica dobrar, qual o novo valor da conta?
+
+Dos gráficos a seguir, o que melhor representa o valor da conta de água, de acordo com o consumo, é:
+
+A taxa de vacinação contra a gripe em uma cidade nos períodos de 2013 a 2015, e de 2015 a 2017, se deu de forma linear.
+
+Desta forma, determine:
+
+A taxa de vacinação em 2014.
+A taxa de vacinação em 2016.
+Um resumo das médias da temperatura e da umidade relativa do ar de uma cidade, para um período de 15 dias, foi apresentado no gráfico.
+
+ O serviço de meteorologia desta cidade emite relatórios diários com as médias da temperatura e da umidade relativa do ar. De posse dessas informações a prefeitura emite três tipos de alertas para a população:
+
+Alerta cinza: deverá ser emitido sempre que o relatório indicar que a média da temperatura é inferior a 10°C, e a umidade relativa do ar for inferior a 40%.
+
+Alerta laranja: deverá ser emitido sempre que o relatório indicar que a média da temperatura está entre 30°C e menor que 40°C, e a umidade relativa do ar está abaixo de 30%.
+
+Alerta vermelho deverá ser emitido sempre que o relatório indicar que a média da temperatura é superior a 40°C, e a humidade relativa do ar for inferior a 25%.
+
+Determine quantos alertas cinzas foram emitidos.
+
+Determine quantos alertas laranja foram emitidos.
+
+Determine quantos alertas vermelhos foram emitidos.
+
+Determine quantos alertas foram emitidos no total.
+
+A seguinte tabela mostra o lucro obtido por uma empresa durante o ano passado.
+
+Elabore um gráfico poligonal que represente o lucro ao longo do tempo. O mês deve estar no eixo das abscissas e o lucro no eixo das ordenadas.
+
+A partir do gráfico, determine o mês de maior lucro e o maior intervalo de tempo em que houve apenas crescimento no lucro entre meses consecutivos.
+
+O lucro cresceu mais entre os meses do quarto bimestre ou entre os meses do último? Justifique.
+
+Desafio olímpico
+
+ 
+
+A principal atração do parque Gelistone é o gêiser Esguichão. As erupções do gêiser são visíveis de todo o parque, e não duram mais que 3 minutos.
+
+ 
+
+O gerente do Parque quer maximizar a chance de os visitantes verem de perto uma erupção do esguichando sem, porém deixarem de visitar a loja de lembranças, principal fonte de renda do Parque. Para isso, contratou um estagiário que monitorou o gêiser e anotou os seguintes dados:
+
+ 
+
+Faça um gráfico cartesiano, com escala, e marque os pontos (x, y) nos quais x é o tempo da erupção, em minutos, e y é o tempo decorrido entre a erupção correspondente e a próxima erupção, em horas. Você vai ter que descartar a última erupção de cada dia.
+
+ 
+
+Às 7:00 do dia 14, momento em que o parque Abril, o guia do Parque, junto com os visitantes da primeira excursão do dia, viu, ou longe, uma erupção, que durou um minuto e 45 segundos. Utilizando o gráfico que você fez no item (a), estime a que horas a excursão deve chegar nas imediações do Esguichão, para que os visitantes possam ver sua próxima erupção.
+

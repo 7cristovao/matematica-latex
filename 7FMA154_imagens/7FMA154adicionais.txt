@@ -1,0 +1,28 @@
+Usando a racionalização de denominadores mostre que
+
+ 
+
+O que podemos concluir sobre o produto dos valores de m para os ângulos de 30° e 60°?
+
+ 
+
+Sendo alfa e beta ângulos agudos de um triângulo retângulo, mostre que os valores de m para alfa e beta tem produto igual a um.
+
+ 
+
+Usando a figura a seguir, calcule o valor de m para o ângulo de 58°
+
+ 
+
+Sejam r e s as retas das equações 3x + 8y = 24 e y = 2x - 4, respectivamente.
+
+No plano cartesiano da figura a seguir, trace as retas r e s e indique suas intersecções com os eixos coordenados.
+
+ 
+
+Calcule a inclinação das retas r e s.
+
+ 
+
+Em relação ao exercício anterior, escreva uma equação da reta r na forma y = ax + b. O que podemos concluir sobre a para as duas retas, r e s?
+
