@@ -1,0 +1,135 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{float}
+\usepackage{extsizes}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{tcolorbox}
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA106 - Matemática} 
+	
+	\begin{center}Propriedades de potência (II) (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	~ \\ ~
+	\begin{multicols}{2}
+		\noindent Sendo $a, b, a_1, a_2, ..., a_k \in \mathbb{Z},~m,~n,~n_1, \\ ~n_2,~...,~n_k~ \in~\mathbb{N}$, valem as seguintes propriedades: \\
+		\begin{itemize}
+			\item \textbf{P3}. $a^m \cdot b^m = (a \cdot b)^m$
+			\item \textbf{P3*}. $a_1^m \cdot a_2^m \cdot ... \cdot a_k^m = (a_1 \cdot a_2 \cdot ... \cdot a_k)^m$
+			\item \textbf{P4}. $(a^m)^n = a^{m \cdot n}$
+			\item \textbf{P4*}. $(((a^{n_1})^{n_2})^{...})^{n_k} = a^{n_1 \cdot n_2 \cdot ... \cdot n_k}$
+			\item \textbf{P5}. $a^{m^{n}} = a^{(m^{n})}$
+		\end{itemize}
+	\textsubscript{---------------------------------------------------------------------}
+    	\begin{enumerate}
+    		\item Escrever na forma $a^n$
+    		\begin{enumerate}[a)]
+    			\item $4^7 \cdot (-9)^7$ \\\\\\\\\\\\\\
+    			\item $7^5 \cdot 6^5$ \\\\\\\\\\\\
+    			\item $(-2)^{15} \cdot 0^{15} \cdot 7^{15} \cdot 21^{15}$ \\\\\\\\\\
+    			\item $8^{31} \cdot (-5)^{31} \cdot 20^{31}$
+    		\end{enumerate}
+    		\item Escrever na forma $a^n$
+    		\begin{enumerate}[a)]
+    			\item $((-21)^6)^4$ \\\\\\\\\\
+    			\item $(12^{10})^9$  \\\\\\\\\\
+    			\item $(((-42)^{2})^{6})^{4}$ \\\\\\\\\\
+    			\item $((13^{28})^{0})^{32}$ \newpage
+    		\end{enumerate}
+    		\item Calcular o valor de:
+    		\begin{enumerate}[a)]
+    			\item $\frac{(4^2)^{4} \cdot (4^3)^{2}}{(4^4)^{2} \cdot (4^2)^{2} \cdot (4^6)^{0}}$ \\\\\\\\\\
+    			\item $\frac{(-6)^{12} \cdot 3^{12} \cdot (-5)^{12}}{10^9 \cdot (-9)^9}$ \\\\\\\\\\
+    		\end{enumerate}
+    		\item Escrever na forma $a^n$
+    		\begin{enumerate}[a)]
+    			\item $(-7)^{3^{3}}$ \\\\\\\\\\
+    			\item $26^{8^2}$ \\\\\\\\\\
+    			\item $(-135)^{2^4}$ \\\\\\\\\\
+    			\item $(-11)^{6^3}$ \\\\\\\\\\
+    		\end{enumerate}
+    		\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso).
+    		\begin{enumerate}[a)]
+    			\item $(~~~)~(-3)^{2^2} = ((-3)^2)^2$
+    			\item $(~~~)~(-7)^{4^0} = ((-7)^4)^0$
+    			\item $(~~~)~0^{24^2} = (0^{24})^2$
+    			\item $(~~~)~12^{3^3} = ((12^3)^{3})^{3}$
+    			\item $(~~~)~(8^2)^{4} = 8^{2^4}$
+    			\item $(~~~)~((-5)^3)^2 = (-5)^{3^2}$ \\\\\\\\\\\\\\\\\\\\
+    		\end{enumerate}
+    		\textbf{Desafio olímpico} \\\\
+    		(OBMEP) Qual é a soma dos algarismos do número que se obtém ao calcular $2^{100} \cdot 5^{103}$? \\
+    		\begin{enumerate}[a)]
+    			\item 7
+    			\item 8
+    			\item 10
+    			\item 12
+    			\item 13 \newpage
+    		\end{enumerate}
+    		\item Calcule:
+    		\begin{enumerate}[a)]
+    			\item $\frac{(2^2)^4 \cdot (2^3)^3 \cdot (2^7)^0}{(2^3)^2 \cdot (2^5)^1}$ \\\\\\\\\\\\\\\\\\\\
+    			\item $\frac{4^{15} \cdot (-3)^{15} \cdot (-10)^{15}}{(2^3)^{13} \cdot 3^{13} \cdot 5^{13}}$ \\\\\\\\\\\\\\\\\\\\
+    		\end{enumerate}
+    		\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso):
+    		\begin{enumerate}[a)]
+    			\item $(~~~)~2^{5^2} = (2^5)^2$
+    			\item $(~~~)~(-12^9)^0 = (-12)^{0^9}$
+    			\item $(~~~)~7^{9^2} = (7^9)^2$
+    			\item $(~~~)~(-4)^{7^2} = ((-4)^7)^2$
+    			\item $(~~~)~7^{4^3} = ((7^4)^4)^4)$
+    			\item $(~~~)~0^{15^7} = (0^{15})^7$
+    			\item $(~~~)~((-3)^3)^4 = (-3)^{3^4}$
+    			\item $(~~~)~(8^2)^7 = 8^{2^7}$
+    			\item $(~~~)~(-6)^{4^3} = ((-6)^4)^3$
+    			\item $(~~~)~2^{3^6} = (2^3)^6$
+    		\end{enumerate}
+    		\item Complete com $\boldsymbol{>}$, $\boldsymbol{<}$ ou \textbf{=}.
+    		\begin{enumerate}[a)]
+    			\item $9^{2^2} .....~(9^2)^2$
+    			\item $((-3)^7)^2 .....~(-3)^{7^2}$
+    			\item $(5^7)^3 .....~5^{7^3}$
+    			\item $0^{7^5} .....~(0^7)^5$
+    		\end{enumerate}
+    		\item Mostrar que se $a$ e $b$ são inteiros e $n$ é natural, então $(ab)^n = a^nb^n$. \\\\\\\\\\\\\\\\\\\\\\\\
+    		\item Mostrar que se $m$ e $n$ são naturais, então para qualquer inteiro $a$ temos $(a^m)^n = a^{m \cdot n}$ \newpage
+    		\item Qual é a diferença entre calcular $a^{m^n}$ e $(a^m)^n$? Justifique. \\\\\\\\\\\\\\\\\\\\
+    		\item Determine o valor do número natural $m$ para que a igualdade $(a^m)^n = a^{m^n}$ seja válida para qualquer inteiro $a$ e qualquer natural não nulo $n$. \\\\\\\\\\\\\\\\\\\\
+    		\item Para qual valor natural de $n$ é verdade que $(a^m)^n = a^{m^n}$, sendo $a$ um número inteiro qualquer e $m$ um número natural qualquer?
+    		
+    	\end{enumerate}
+    	$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ 
+	\end{multicols}
+\end{document}

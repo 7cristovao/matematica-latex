@@ -1,0 +1,210 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{float}
+\usepackage{extsizes}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{tcolorbox}
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA45 - Matemática} 
+	
+	\begin{center}O algoritmo da multiplicação (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	\begin{multicols}{2}
+		\noindent Nesta aula, praticamos o algoritmo da multiplicação. Para entender seu funcionamento vamos checar, por exemplo, a multiplicação $16 \times 7$. \\
+		$16 \times 7 = 7 \times 16 = 7 \times (10 + 6) = 7 \times 10 + 7 \times 6 = 70 + 42 = 70 + 40 + 2 = 110 + 2 = 100 + 10 + 2$
+		\begin{itemize}
+			\item 16 unidades é o mesmo que 1 dezena e 6 unidades.
+			\item 1 dezena multiplicada por 7 é igual a 7 dezenas e 6 unidades multiplicadas por 7 resulta em 42 unidades, ou seja, 4 dezenas e 2 unidades.
+			\item Temos agora 7 + 4 = 11 dezenas e 2 unidades, que é igual a 110 + 2 = 112.\\
+			Na prática:
+		\end{itemize}
+	\textsubscript{---------------------------------------------------------------------}
+    	\begin{enumerate}
+    		\item Complete as contas a seguir.
+    		\begin{enumerate}[a)]
+    		\item \[
+    		\begin{array}{ccc}
+    			~ & 1 & 7 \\
+    			\times & ~ & 8 \\
+    			\hline
+    		\end{array}
+    		\] \\\\\\
+    		\item \[
+    		\begin{array}{ccc}
+    			~ & 4 & 5 \\
+    			\times & ~ & 6 \\
+    			\hline
+    		\end{array}
+    		\] \\
+    		\item \[
+    		\begin{array}{ccc}
+    			~ & 7 & 9 \\
+    			\times & ~ & 8 \\
+    			\hline
+    		\end{array}
+    		\] \\\\\\
+    		\item \[
+    		\begin{array}{cccc}
+    			~ & 4 & 2 & 1 \\
+    			\times & ~ & ~ & 7 \\
+    			\hline
+    		\end{array}
+    		\] \\\\\\
+    		\item \[
+    		\begin{array}{ccc}
+    			~ & 5 & 2 \\
+    			\times & 2 & 1 \\
+    			\hline
+    		\end{array}
+    		\] \\\\\\
+    		\item \[
+    		\begin{array}{ccc}
+    			~ & 7 & 6 \\
+    			\times & 2 & 8 \\
+    			\hline
+    		\end{array}
+    		\] \\\\\\
+    		\item \[
+    		\begin{array}{cccc}
+    			~ & 3 & 2 & 1 \\
+    			\times & ~ & 4 & 3 \\
+    			\hline
+    		\end{array}
+    		\] \\\\\\
+    		\item \[
+    		\begin{array}{ccc}
+    			~ & 8 & 6 \\
+    			\times & 7 & 9 \\
+    			\hline
+    		\end{array}
+    		\] \\\\\\
+    		\item \[
+    		\begin{array}{cccc}
+    			~ & 2 & 1 & 5 \\
+    			\times & ~ & 5 & 3 \\
+    			\hline
+    		\end{array}
+    		\] \\\\\\
+    		\end{enumerate}
+    		\item Quanto vale 456 multiplicado por 22? \\\\\\\\\\\\\\\\\\\\
+    		\item Qual é o valor do produto $66 \cdot 141?$ \\\\\\\\\\\\\\\\\\\\\\\\
+    		\item Calcule $34 \times 34 \times 34$. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    		\item Um caminhão transporta 228 caixas com 36 garrafas de refrigerante cada uma. Quantas garrafas são transportadas pelo caminhão? \\\\\\\\\\\\\\
+    		\item Durante uma mudança, Júlio carregou 5 caixas de 25 kg cada. Quantos quilogramas ele carregou nessa mudança? \newpage
+    		\item Um caminhão carrega 1426 caixas de bombons com 24 bombons cada uma. Quantos bombons são carregados pelo caminhão: \\\\\\\\\\\\\\
+    		\item Complete as contas abaixo:
+    		\begin{enumerate}[a)]
+    			\item \[
+    			\begin{array}{ccc}
+    				~ & 1 & 4 \\
+    				\times & ~ & 7 \\
+    				\hline
+    			\end{array}
+    			\] \\\\\\
+    			\item \[
+    			\begin{array}{ccc}
+    				~ & 4 & 8 \\
+    				\times & ~ & 6 \\
+    				\hline
+    			\end{array}
+    			\] \\\\\\
+    			\item \[
+    			\begin{array}{ccc}
+    				~ & 7 & 7 \\
+    				\times & ~ & 9 \\
+    				\hline
+    			\end{array}
+    			\] \\\\\\
+    			\item \[
+    			\begin{array}{cccc}
+    				~ & 1 & 5 & 3 \\
+    				\times & ~ & ~ & 8 \\
+    				\hline
+    			\end{array}
+    			\] \\\\\\
+    			\item \[
+    			\begin{array}{ccc}
+    				~ & 3 & 7 \\
+    				\times & 1 & 5 \\
+    				\hline
+    			\end{array}
+    			\] \\\\\\
+    			\item \[
+    			\begin{array}{ccc}
+    				~ & 8 & 6 \\
+    				\times & 2 & 7 \\
+    				\hline
+    			\end{array}
+    			\] \\\\\\
+    			\item \[
+    			\begin{array}{cccc}
+    				~ & 1 & 3 & 4 \\
+    				\times & ~ & 6 & 3 \\
+    				\hline
+    			\end{array}
+    			\] \\\\\\
+    			\item \[
+    			\begin{array}{ccc}
+    				~ & 9 & 6 \\
+    				\times & 3 & 8 \\
+    				\hline
+    			\end{array}
+    			\] \\\\\\
+    			\item \[
+    			\begin{array}{cccc}
+    				~ & 1 & 8 & 4 \\
+    				\times & ~ & 5 & 7 \\
+    				\hline
+    			\end{array}
+    			\] \newpage
+    		\end{enumerate}
+    		\item Calcule:
+    		\begin{enumerate}[a)]
+    			\item $128 \cdot 31$ \\\\\\\\\\\\\\\\
+    			\item $109 \cdot 36$ \\\\\\\\\\\\\\\\
+    			\item $13 \cdot 13 \cdot 13$ \\\\\\\\\\\\\\\\\\\\\\
+    			\item $136 \cdot 37 + 46 \cdot 42$ \\\\\\\\\\\\\\
+    		\end{enumerate}
+    		\item Ana comprou em uma papelaria 5 canetas de 2 reais cada e, em outra, 3 canetas de 4 reais cada.
+    		\begin{enumerate}[a)]
+    			\item Represente, usando adição e multiplicação, o valor gasto por Ana. \\\\\\\\\\\\\\\\\\\\
+    			\item Quanto Ana gastou no total? \\\\\\\\\\\\\\\\\\\\
+    		\end{enumerate}
+    		\item Gabriela comprou 4 quilogramas de carne que custava 7 reais o quilograma. Depois foi a uma loja e comprou 9 metros de tecido que custava 6 reais o metro e ainda lhe sobraram 38 reais. Quanto Gabriela tinha inicialmente? 
+    	\end{enumerate}
+    	$~$ \\ $~$
+	\end{multicols}
+\end{document}

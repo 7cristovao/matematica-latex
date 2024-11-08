@@ -1,0 +1,705 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{extsizes}
+\usepackage{amsmath}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=1in, right=1in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{EF09MA13-A, EF05MA12, EF05MA17, EF08MA23, EF09MA09, EF07MA26, EF09MA02}
+	
+	\begin{center}
+		\textbf{Exercícios de Matemática - Caderno de Exercícios de Vestibulinho - Versão p/ professor}
+	\end{center}
+	
+	\bigskip
+	
+	%\noindent\textbf{Nome:} \underline{\hspace{15cm}}
+	
+	\bigskip
+	\section*{Questões de Matemática - SENAI 2023}
+	
+	\begin{enumerate}
+		\item Em uma viagem entre as cidades de São Paulo e Araçatuba-SP, distantes 440 km uma da outra, Fabiana,
+		partindo do km 0, percorreu na 1ª hora do trajeto, 20 km. Na 2ª hora ela estava no km 42,5, na 3ª hora,
+		no km 65, e assim sucessivamente. 
+		\newline
+		Ao completar a 12ª hora do percurso, a que distância Fabiana estava de Araçatuba-SP?
+		\begin{enumerate}
+			\item 47,5 km.
+			\item 172,5 km.
+			\item 267,5 km.
+			\item 372,5 km.
+			\item 392,5 km.
+		\end{enumerate}
+		Resposta: alternativa b
+		\newline
+		distância = 440 km \\
+		$h_{1}$ = 20 km \\
+		$h_{2}$ = 42,5 km \\
+		$h_{3}$ = 65 \\
+		$h_{4}$ = 87,5 \\
+		$h_{5}$ = 110 \\ 
+		$h_{6}$ = 132,5 \\
+		$h_{7}$ = 155 \\
+		$h_{8}$ = 177,5 \\
+		$h_{9}$ = 200 \\
+		$h_{10}$ = 222,5 \\
+		$h_{11}$ = 245 \\
+		$h_{12}$ = 267,5 \\
+		
+		42,5 - 20 = 22,5 \\
+		440 - 267,5 = 172,5
+		
+		\vspace{1cm}
+
+	    
+	    \item Uma determinada receita de bolo indica que será necessário \(\frac{3}{4}\)
+	    de uma xícara de leite. Sabendo que se
+	    refere a uma xícara com capacidade total de 240 mL, quantos mililitros de leite serão necessários nessa
+	    receita?
+	    \begin{enumerate}
+	    	\item 60.
+	    	\item 80.
+	    	\item 160.
+	    	\item 180.
+	    	\item 320.
+	    \end{enumerate}
+		Resposta: alternativa d
+		\newline
+		\\
+		$\frac{3}{4} \cdot x$ \\ \\
+		x = 240 mL \\ \\
+		$\frac{3}{4} \cdot 240 = \frac{720}{4}$ = 180 \\
+
+	    \vspace{0cm}
+	    
+	    \item Em um polígono convexo, quanto maior for o número de lados, maior será a soma dos ângulos internos.
+	    \newline Veja alguns exemplos na tabela a seguir.
+	    \newline
+	    \newline
+	    % Início da tabela
+	    \begin{tabular}{|c|c|} % Define duas colunas centradas com linhas verticais
+	    	\hline % Linha horizontal no topo da tabela
+	    	Polígono convexo & Soma dos ângulos internos \\ % Conteúdo da primeira linha da tabela
+	    	\hline % Linha horizontal
+	    	Triângulo & 180°. \\ % Conteúdo da segunda linha da tabela
+	    	\hline % Linha horizontal
+	    	Quadrilátero & 360° \\ % Conteúdo da terceira linha da tabela
+	    	\hline % Linha horizontal no final da tabela
+	    	Pentágono & 540° \\ % Conteúdo da terceira linha da tabela
+	    	\hline % Linha horizontal no final da tabela
+	    \end{tabular}
+        \newline
+        \newline
+        Considerando o padrão apresentado, qual o valor da soma dos ângulos internos em um decágono
+        convexo?
+        \begin{enumerate}
+        	\item 1440°.
+        	\item 1620°.
+        	\item 1260°.
+        	\item 1800°.
+        	\item 1080°.
+        \end{enumerate}
+        Resposta: alternativa a
+        \newline
+        \begin{table}[h]
+        	\centering
+        	\caption{Elabore esta tabela com número de lados de um polígono convexo e quantidade de triângulos contidos em cada polígono}
+        	\label{tab:poligonos}
+        	\begin{tabular}{cc}
+        		\toprule
+        		\textbf{Número de Lados} & \textbf{Quantidade de Triângulos} \\
+        		\midrule
+        		3  & 1 \\
+        		4  & 2 \\
+        		5  & 3 \\
+        		6  & 4 \\
+        		7  & 5 \\
+        		8  & 6 \\
+        		9  & 7 \\
+        		10 & 8 \\
+        		\bottomrule
+        	\end{tabular}
+        \end{table}
+        \\
+        $180 \cdot 8 = 1440$ 
+        \vspace{1cm}
+        
+        \item Joana tem um apartamento no 13º andar de um edifício de 15 andares. A distância entre o piso do andar,
+        onde ela tem o apartamento, e o piso térreo é 39,0 m. Seu marido Augusto, cuja altura é de 1,8 m, está
+        parado do lado desse edifício e projeta uma sombra de 30,0 cm.
+        Nesse mesmo instante, a sombra projetada pelo edifício onde se encontra o apartamento de Joana é igual a 
+        \begin{enumerate}
+        	\item 6,5m.
+        	\item 6,6m.
+        	\item 7,0m.
+        	\item 7,5m.
+        	\item 8,0m.
+        \end{enumerate}
+		Resposta: alternativa e
+		\\
+		\\
+		Considerando que cada andar tem a mesma altura, temos 12 andares mais o térreo, ou seja, 13 pavimentos, cada pavimento mede 3 metros de altura. Se somarmos as alturas dos andares 13, 14, 15, temos que o edifício mede 48 metros. Então teremos:
+		\\
+		\\
+		$\frac{1,8}{0,3} = \frac{48}{x}$ \\
+		$1,8x = 48 \cdot 0,3$ \\
+		$1,8x = 14,4$ \\
+		$x = \frac{14,4}{1,8}$ \\
+		$x = 8m$ \\
+        
+        \vspace{4cm}
+        
+        \item Na tabela a seguir, estão registradas as velocidades (em km/h) de todos os carros que passaram por um
+        radar, ao longo de 1 hora.
+        
+        % Início da tabela
+        \begin{tabular}{|c|c|c|c|c|} % Define cinco colunas centradas com linhas verticais
+        	\hline % Linha horizontal no topo da tabela
+        	32 & 34 & 48 & 52 & 50 \\ % Conteúdo da primeira linha da tabela
+        	\hline % Linha horizontal
+        	42 & 54 & 56 & 49 & 25 \\ % Conteúdo da segunda linha da tabela
+        	\hline % Linha horizontal
+        	35 & 45 & 46 & 74 & 68 \\ % Conteúdo da terceira linha da tabela
+        	\hline % Linha horizontal no final da tabela
+        	37 & 50 & 48 & 40 & 41 \\ % Conteúdo da terceira linha da tabela
+        	\hline % Linha horizontal no final da tabela
+        \end{tabular}
+        \newline
+        \newline
+        Se a velocidade máxima permitida era de 50 km/h, sem tolerância, qual foi a frequência relativa (em %)
+        de carros multados nesse período?
+        \newline
+        \begin{enumerate}
+        	\item 5\%.
+        	\item 10\%.
+        	\item 25\%.
+        	\item 30\%.
+        	\item 35\%.
+        \end{enumerate}
+        Resposta: alternativa c \\ \\
+        Marque as velocidades maiores que 50 km/h. \\
+        Divida pela quantidade de velocidades registradas \\ \\
+        $\frac{5}{20} = 0,25$ \\
+        \vspace{0cm}
+        
+        \item O gerente de uma loja de cosméticos verificou que sobraram 5 produtos distintos em seu estoque e
+        decidiu montar kits com 3 desses produtos, para sortear entre os clientes.
+        Nessas condições, quantos kits diferentes podem ser montados?
+        \begin{enumerate}
+        	\item 6.
+        	\item 10.
+        	\item 20.
+        	\item 30.
+        	\item 60.
+        \end{enumerate}
+        Resposta: alternativa b \\ \\
+        \begin{tabular}{c}
+        	\toprule
+        	\textbf{Produto}  \\
+        	\midrule
+        	A  \\
+        	B  \\
+        	C  \\
+        	D  \\
+        	E  \\
+        	\bottomrule
+        \end{tabular}
+    	\newline
+        \begin{tabular}{c}
+        	\toprule
+        	\textbf{Kit}  \\
+        	\midrule
+        	ABC  \\
+        	ABD  \\
+        	ABE \\
+        	BCD  \\
+        	BCE  \\
+        	CDE \\
+        	ACD \\
+        	ACE \\
+        	ADE \\
+        	BDE \\
+        	\bottomrule
+        \end{tabular}
+        \\
+    	\\ Total: 10 kits
+        \vspace{0cm}
+        
+        \item Rubens está comprando uma bicicleta por R\$ 314,40 de entrada e mais 4 parcelas que se encontram
+        em progressão geométrica. As duas primeiras parcelas são de R\$ 300,00 e R\$ 240,00, respectivamente.
+        Quando Rubens terminar de pagar todas as parcelas, ele terá pago pela bicicleta o valor total de
+        \begin{enumerate}
+        	\item R\$ ~~854,40.
+        	\item R\$ ~~885,60.
+        	\item R\$ 1.154,40.
+        	\item R\$ 1.200,00.
+        	\item R\$ 1.529,40.
+        \end{enumerate}
+        Resposta: alternativa d \\ \\
+        314,40 : entrada \\
+        300,00 : parcela 1 \\
+        240,00 : parcela 2 \\
+        ? : parcela 3 \\
+        ? : parcela 4 \\
+        \\
+        razão = r \\
+        $r = \frac{240}{300} = \frac{12}{15} = \frac{4}{5} = 0,8$ \\ \\
+        $3P = 2P \cdot r$ \\
+        $3P = 240 \cdot 0,8 = 192$ \\
+        $4P = 192 \cdot 0,8 = 153,6$ \\
+        \\ Total das parcelas \\
+        314,40 + 300,00 + 240,00 + 192,00 + 153,60 = 1200,00 
+        
+        \vspace{0cm}
+        
+        \item Uma lombo-faixa foi construída com uma rampa com 15° de ambos os lados. A base do triângulo
+        retângulo das rampas mede 1,94 m de cada lado e a superfície plana mede 3,0 m, conforme mostra a
+        figura. As medidas não estão na proporção correta.
+        \begin{figure}[h] % Ambiente figure para a imagem
+        	\centering
+        	\includegraphics[width=1\textwidth]{senai01.png} % Substitua "nome_do_arquivo" pelo nome do arquivo da sua imagem
+        \end{figure}
+        \newline
+        Dados: sen 15° = 0,25;
+        cos 15° = 0,97;
+        tg 15° = 0,27.
+        \newline
+        \newline
+        Depois de atravessar completamente a rampa, o carro terá se deslocado
+        \begin{enumerate}
+        	\item 7 m.
+        	\item 18,52 m.
+        	\item 17,36 m.
+        	\item 6,88 m.
+        	\item 4,94 m.
+        \end{enumerate}
+        Resposta: alternativa a \\
+        \newline
+        $cos~15^{\circ} = \frac{cateto~adjacente}{hipotenusa}$ \\
+        $0,97 = \frac{1,94}{H}$ \\
+        $0,97 H = 1,94 $ \\
+        $H = \frac{1,94}{0,97} $ \\
+        $H = 2$ \\ \\
+        Como há dois lados idênticos da lombo-faixa o carro percorre um total de 2 + 2 + 3 = 7 metros
+        
+        
+    	\vspace{0cm}
+    	
+    	\item Um arquiteto projetou um galpão. A figura fora de escala a seguir, representa um dos cortes desse
+    	projeto, que mostra detalhes, principalmente, do telhado. Para informações técnicas de instalação do
+    	telhado é necessário determinar as medidas dos segmentos BC e CD. \\
+    	\begin{figure}[h] % Ambiente figure para a imagem
+    		\centering
+    		\includegraphics[width=0.5\textwidth]{senai02.png} % Substitua "nome_do_arquivo" pelo nome do arquivo da sua imagem
+    	\end{figure}
+    	\newline
+    	Dados: sen 30º = 0,50; sen 60º = 0,86.
+    	\newline
+    	\newline
+    	Sabendo que AC= 4 metros, qual é a medida de (BC + CD), em metros? \\
+    	\begin{enumerate}
+    		\item 3,35 m.
+    		\item 4,65 m.
+    		\item 5,44 m.
+    		\item 8,00 m.
+    		\item 12,65 m.
+    	\end{enumerate}
+        Resposta: alternativa e
+        \newline
+        \\
+        $sen~\alpha = \frac{cateto~oposto}{hipotenusa}$ \\
+        $0,5 = \frac{4}{H}$ \\
+        $0,5 \cdot H = 4$ \\
+        $H = \frac{4}{0,5}$ \\ 
+        $H = 8$ \\
+        \\
+        $0,86 = \frac{4}{H}$ \\
+        $0,86 \cdot H = 4$ \\
+        $H = \frac{4}{0,86}$ \\
+        $H = 4,65$ \\
+        \\
+        BC + CD \\
+        8 + 4,65 = 12,65 \\
+        
+    	\vspace{0cm}
+    	
+    	\item Um investidor está acompanhando a variação do valor de compra de uma ação na bolsa de valores. Ele
+    	registrou dois valores: o primeiro, às 00h00, e o segundo, às 08h00, e fez o esboço de um gráfico, que
+    	revelou uma tendência linear de queda, conforme mostrado na figura fora de escala a seguir. \\
+   		\begin{figure}[h] % Ambiente figure para a imagem
+    		\centering
+    		\includegraphics[width=1\textwidth]{senai03.png} % Substitua "nome_do_arquivo" pelo nome do arquivo da sua imagem
+    	\end{figure}
+    	Supondo que essa tendência se mantenha, qual será o valor de compra dessa ação às 10h00? \\
+    	\begin{enumerate}
+    		\item R\$ ~2,50.
+    		\item R\$ ~8,00.
+    		\item R\$ ~9,50.
+    		\item R\$ ~9,60.
+    		\item R\$ 10,00.
+    	\end{enumerate}
+    	Resposta: alternativa c \\
+    	\\ 
+    	Se a cada 8h cai R\$ 2 \\
+    	~~~a cada 4h cai R\$ 1 \\
+    	~~~a cada 2h cai R\$ 0,50 \\
+    	\\
+    	Ou seja, R\$ 9,50 
+    	
+    	\vspace{0cm}
+    	
+    	\item A figura a seguir representa a visão lateral de uma casa na qual será construída uma rampa reta, $\overline{AC}$
+    	especialmente para a acessibilidade de um dos moradores que é cadeirante. A distância entre A e B é
+    	de 6 m. Entre os pontos B e C, a distância equivale a 10 m e o ângulo ABC é de 120°. \\
+    	
+
+    	Dadas essas informações, qual deve ser o comprimento da rampa, em metros? \\
+    	    
+	   	\begin{enumerate}
+    		\item 4.
+    		\item 14.
+    		\item 16.
+    		\item 76.
+    		\item 196.
+    	\end{enumerate}
+    
+        \begin{figure}[h] % Ambiente figure para a imagem
+    	\centering
+    	\includegraphics[width=1\textwidth]{senai04.png} % Substitua "nome_do_arquivo" pelo nome do arquivo da sua imagem
+        \end{figure}
+    
+        Resposta: alternativa b \\ \\
+        $x^2 = 10^2 + 6^2 - 2 \cdot 10 \cdot 6 \cdot (-0,5)$ \\
+        $x^2 = 100 + 36 + 60$ \\
+        $x^2 = \sqrt{196}$ \\
+        $x = \pm{14}$
+        \newline
+        \item Considere que o lucro de uma empresa é modelado pela função
+        L(p) = $-10p^2 + 70p - 60$
+        onde p é o número de unidades vendidas e L é o lucro obtido (em milhares de reais).
+        Sendo assim, qual é o lucro máximo que essa empresa poderá obter?
+        \begin{enumerate}
+        	\item 1.
+        	\item 6.
+        	\item 3,5.
+        	\item 62,5.
+        	\item 625.
+        \end{enumerate}
+        Resposta: alternativa d \\ \\
+        $x = \frac{-b}{2a}$ \\
+        a = -10; b = 70 \\
+        $p = \frac{-b}{2a} = \frac{-70}{2 \cdot (-10)} = \frac{-70}{-20} = 3,5$ \\
+        \\
+        Agora substitua p = 3,5 na função de lucro \\
+        \\
+        $L(p) = -10p^2 + 70p - 60$ \\
+        $L(3,5) = -10 \cdot (3,5)^2 + 70 \cdot (3,5) - 60$ \\
+        $L(3,5) = -10 \cdot (12,25) + 245 - 60$ \\
+        $L(3,5) = -122,5 + 185$ \\
+        $L(3,5) = 62,5$ \\ \\
+        
+        \item Um sistema de controle de temperatura foi instalado em determinado ambiente de estudo científico. Esse
+        aparelho liga automaticamente quando a temperatura está a zero graus Celsius, ativando a variação de
+        temperatura, segundo a função $y = 0,2x^2
+        - 2,4x$, em que y é a temperatura do ambiente, em graus Celsius,
+        e x é o tempo decorrido, em horas, após o início do ciclo. Sabe-se, ainda, que esse aparelho é desligado
+        automaticamente, quando a temperatura retorna a zero graus Celsius e começa um novo ciclo.
+        Segundo essas informações, qual será, respectivamente, a temperatura mínima, em graus Celsius,
+        atingida nesse ambiente e o tempo, em horas, decorrido em cada ciclo?
+        \begin{enumerate}
+        	\item -7,2 e 12.
+        	\item -7,2 e 6.
+        	\item 5,7 e 12.
+        	\item -4,8 e 6.
+        	\item 4,8 e 24.
+        \end{enumerate}
+        Resposta: alternativa a \\ \\
+        Analisar $y = 0,2x^2 - 2,4x$ \\
+        Esta é uma função quadrática. A temperatura será mínima quando atingir o valor mínimo da função. Para encontrar esse valor mínimo, usaremos o vértice da parábola que ocorre no ponto ($x_v$,~$y_v$), onde: \\ \\
+        $x_v = \frac{-b}{2a}$ \\ \\
+        E $y_v$ é o valor da função nesse ponto. \\
+        Para a função dada $y = 0,2x^2 - 2,4x$ \\
+        $a = 0,2$ \\
+        $b = -2,4$ \\
+        Calculando $x_v$: \\
+        $x_v = -\frac{(-2,4)}{2~\cdot~0,2} = \frac{2,4}{0,4} = 6$ \\ \\
+        Então o tempo decorrido para atingir a temperatura é de 6 horas. \\
+        Agora para encontrar a temperatura mínima substituímos x = 6 na equação. \\
+        $y = 0,2 \cdot (6)^2 - 2,4 \cdot (6)$ \\
+        $y = 0,2 \cdot 36 - 14,4$ \\
+        $y = 7,2 - 14,4$ \\
+        $y = -7,2$ \\ \\
+        Portanto a temperatura mínima atingida é de -7,2 graus Celsuius após 6 horas. O próximo ciclo se completa quando a temperatura retorna a zero, ou seja, y = 0 \\ \\
+        $0 = 0,2x^2 - 2,4x$ \\
+        $0,2^2 - 2,4x = 0$ \\
+        Podemos fatorar para resolver a equação: \\
+        $0,2x \cdot (x - 12) = 0$ \\
+        Isso nos dá duas soluções: x = 0 ou x = 12. \\
+        Como o ciclo começa quando a temperatura está em zero graus Celsius, o tempo decorrido em cada ciclo é de 12 horas. \\
+        Portanto a resposta correta é a opção a: -7,2°C é a temperatura mínima atingida e o tempo decorrido em cada ciclo é de 12 horas. \\
+        \item Em um salão de festas serão colocadas mesas e cadeiras para um evento beneficente. O espaço,
+        ocupado por uma mesa e quatro cadeiras, considerando quatro pessoas sentadas confortavelmente,
+        é de $4m^2$
+        .
+        Tendo em vista que o salão é retangular e de medidas 20 m de comprimento por 18 m de largura, quantos
+        conjuntos de uma mesa e quatro cadeiras são possíveis formar em todo o salão?
+        \begin{enumerate}
+			\item 23.
+			\item 38.
+			\item 72.
+			\item 76.
+			\item 90.
+		\end{enumerate}
+	    Resposta: alternativa e \\ \\
+	    $area = base \cdot altura$ \\
+	    $20 \cdot 18 = 360$ \\
+	    $360 \div 4 = 90$
+	
+	    \item Os triângulos semelhantes ABC e DEF representam prateleiras fabricadas em uma marcenaria. Um
+	    cliente encomendou uma prateleira com as medidas do triângulo DEF, conforme figura fora de escala a
+	    seguir, pedindo, entretanto, para que fosse colocada uma fita especial preenchendo totalmente os lados
+	    DE e DF que vão encostar na parede.
+	    \newline
+	    \newline
+	    \newline
+	    \newline
+	    \newline
+	    \newline
+	    \newline
+	    \newline
+	    \newline
+	    \newline
+	    \newline
+	    \newline
+	    \newline
+        \begin{figure}[h] % Ambiente figure para a imagem
+        	\centering
+        	\includegraphics[width=1\textwidth]{senai05.png} % Substitua "nome_do_arquivo" pelo nome do arquivo da sua imagem
+        \end{figure}
+        Segundo essas informações, para produzir a prateleira, qual será o comprimento mínimo necessário,
+        em cm, dessa fita especial?
+        \begin{enumerate}
+        	\item 15.
+        	\item 25.
+        	\item 35.
+        	\item 40.
+        	\item 60.
+        \end{enumerate}
+        Resposta: alternativa c \\ \\
+        $\frac{AB}{DE} = \frac{AC}{DF} = \frac{BC}{EF}$ \\ \\
+        Devemos encontrar DE \\ \\
+        $\frac{AB}{DE} = \frac{AC}{DF}$ \\ \\
+        $\frac{30}{DE} = \frac{40}{20}$ \\ \\
+        $DE = \frac{(30 \cdot 20)}{40}$ \\ \\
+        $DE = \frac{600}{40}$ \\ \\
+        $DE = 15cm$ \\ \\ 
+        Sabendo que DE é 15 cm e DF é 20 cm (dado), podemos encontrar o comprimento total da fita que vai preencher os lados DE e DF \\
+        DE + DF = 15 + 20 \\
+        DE + DF = 35 cm \\ \\
+    
+        \item Em um edifício de 2 andares, com 2 apartamentos por andar, as vagas de garagem 01 e 02 são presas
+        como mostra a figura, sendo necessário realizar um rodízio semestral com os moradores. \\
+    
+	    Considerando as informações da página anterior, qual o número máximo de combinações diferentes que podem ser feitas para que todos passem por todas as vagas? \\
+	    \begin{enumerate}
+        	\item 256.
+        	\item 24.
+        	\item 16.
+        	\item 8.
+        	\item 4.
+        \end{enumerate}
+    
+	    \begin{figure}[h] % Ambiente figure para a imagem
+	    	\centering
+	    	\includegraphics[width=1\textwidth]{senai06.png} % Substitua "nome_do_arquivo" pelo nome do arquivo da sua imagem
+	    \end{figure}
+
+        Resposta: alternativa b \\ \\
+        Para encontrar o número máximo de combinações diferentes para que todos os moradores passem por todas as vagas, podemos usar combinação e permutação. \\
+        Há 4 vagas disponíveis. \\
+        1º semestre \\
+        $4! = 4 \cdot 3 \cdot 2 \cdot 1 = 24$ \\
+        2º semestre \\
+        Igual \\
+        \item Durante um jogo oficial de vôlei, um dos jogadores dá uma “cortada” na bola, no exato momento em que
+        ela se encontra a uma altura de 3,1 m do solo e perfeitamente alinhada à rede, conforme ilustrado na
+        figura fora de escala a seguir.
+        \newline
+        \newline 
+        Dados: sen 37º = 0,60; cos 37º = 0,80; tg 37º = 0,75.
+        \newline
+        \newline
+        Se a bola realiza uma trajetória retilínea que forma um ângulo de 37° com o solo, a que distância
+        (aproximada, em metros) do pé do poste que sustenta a rede, a bola toca o solo?
+        \begin{enumerate}
+        	\item 2,21.
+        	\item 2,32.
+        	\item 3,88.
+        	\item 4,13.
+        	\item 5,17.
+        \end{enumerate}
+	    \begin{figure}[h] % Ambiente figure para a imagem
+	    	\centering
+	    	\includegraphics[width=1\textwidth]{senai07.png} % Substitua "nome_do_arquivo" pelo nome do arquivo da sua imagem
+	    \end{figure}
+	    
+    
+    
+        Resposta: alternativa d \\ \\
+        $sen 37^{\circ} = \frac{cateto~oposto}{hipotenusa}$ \\
+        $0,60 = \frac{3,1}{H}$ \\
+        $0,60H = 3,1$ \\
+        $H = \frac{3,1}{0,6}$ \\
+        $H = 5,16$ \\ \\
+        $cos 37^{\circ} = \frac{cateto~adjacente}{hipotenusa}$ \\
+        $0,80 = \frac{x}{5,16}$ \\
+        $0,80 \cdot 5,16 = x$ \\
+        $x = 4,128$ \\
+        $x \approx 4,13$ \\ \\
+    
+        \item O preço de uma viagem de táxi é definido por um valor fixo conhecido como bandeirada e um valor
+        variável que depende do número de quilômetros rodados. Um taxista realiza viagens cobrando
+        R\$ 10,00 a bandeirada e R\$ 4,00 por quilômetro rodado.
+        Sabendo que “y” é o valor, em reais, pago pela viagem e “x” é o número de quilômetros rodados pelo
+        taxista durante o trajeto, afirma-se que esta função é corretamente representada por
+        
+        \begin{enumerate}[label=\Roman*.]
+        	\item y = 4x + 10.
+        	\item y = 10x + 4.
+        	\item x = 4y + 10.
+        	\item f(x) = 4x + 10.
+        \end{enumerate}
+        
+        Dessas informações, conclui-se que está correto o modo de representação indicado
+        
+        \begin{enumerate}
+        	\item somente em I.
+        	\item somente em II. 
+        	\item somente em III.
+        	\item somente em IV.
+        	\item em I e IV.
+        \end{enumerate}
+        Resposta: alternativa e \\ \\
+        $R\$ 10,00 : bandeira$ \\
+        $R\$ ~4,00 : km$ \\ \\
+        $y \rightarrow valor$ \\
+        $x \rightarrow numero~de~km$ \\ \\
+        $y = x \cdot 4 + 10$ \\
+        $y = 4x + 10$ \\ \\
+        $-4x + y = 10$ \\
+        $-4x = 10 - y$ \\
+        $x = \frac{10-y}{4}$ \\ \\
+        $f(x) = 4x + 10$ \\`
+        
+        \item As fórmulas matemáticas a seguir, referem-se a duas importantes leis trigonométricas.
+        \newline
+        \newline
+        Lei dos senos: $\frac{a}{sen~A} = \frac{b}{sen~B} = \frac{c}{sen~C}$
+        \newline
+        \newline
+        Lei dos cossenos: $a^2 = b^2 + c^2~–~2 \cdot b \cdot c \cdot cos~A$
+        \newline
+        Considere as seguintes afirmações sobre essas duas leis. 
+        
+        \begin{enumerate}[label=\Roman*.]
+        	\item A lei dos senos permite relacionar lados e ângulos apenas em triângulos retângulos.
+        	\item É possível aplicar a lei dos cossenos para relacionar lados e ângulos de triângulos que não possuem
+        	um ângulo reto.
+        	\item É possível aplicar a lei dos senos a um triângulo retângulo, para se obter o seno de um de seus
+        	ângulos agudos.
+        	\item Num triângulo de medidas 5 cm, 7 cm e 8 cm, o valor do cosseno do menor ângulo interno é  $\frac{\sqrt{3}}{2}$.
+        \end{enumerate}
+    	São verdadeiras as afirmações feitas apenas em
+    
+        \begin{enumerate}
+        	\item II e III.
+        	\item I e II.
+        	\item II e IV.
+        	\item III e IV.
+        	\item I e IV.
+        \end{enumerate}
+        Resposta: alternativa a \\ \\
+        Vamos analisar cada afirmação: \\
+        
+        I. A lei dos senos permite relacionar lados e ângulos apenas em triângulos retângulos. \\
+        Esta afirmação é falsa. A Lei dos Senos é aplicável não apenas em triângulos retângulos, mas em qualquer triângulo, relacionando os lados e os ângulos. \\
+        
+        II. É possível aplicar a lei dos cossenos para relacionar lados e ângulos de triângulos que não possuem um ângulo reto. \\
+        Isso é verdadeiro. A Lei dos Cossenos é aplicável em triângulos quaisquer, não se limitando a triângulos retângulos. Ela relaciona os lados e ângulos de um triângulo usando os comprimentos dos lados e os cossenos dos ângulos. \\
+        
+        III. É possível aplicar a lei dos senos a um triângulo retângulo, para se obter o seno de um de seus ângulos agudos.
+        Sim, isso é verdadeiro. A Lei dos Senos pode ser aplicada em qualquer tipo de triângulo, inclusive em triângulos retângulos, para relacionar os lados e os senos dos ângulos. \\
+        
+        IV. Num triângulo de medidas 5 cm, 7 cm e 8 cm, o valor do cosseno do menor ângulo interno é $\frac{\sqrt{3}}{2}$ \\
+        Para verificar se isso é verdadeiro, precisamos calcular os ângulos desse triângulo usando as medidas dos lados e, em seguida, verificar o valor do cosseno do menor ângulo interno. \\
+        
+        Usando a Lei dos Cossenos: \\
+        $8^2 = 5^2 + 7^2 - 2 \cdot 5 \cdot 7 \cdot cos~A$ \\
+        $64 = 25 + 49 - 70~cos~A$ \\
+        $64 = 74 - 70~cos~A$ \\
+        $70~cos~A = 74 - 64$ \\
+        $70~cos~A = 10$ \\
+        $cos~A = \frac{10}{70}$ \\
+        $cos~A = \frac{1}{7}$ \\ \\
+
+        O cosseno de um ângulo de 60 graus é $\frac{\sqrt{3}}{2}$, não $\frac{1}{7}$. Portanto, essa afirmação é falsa. \\
+        
+        Portanto, as afirmações verdadeiras são II e III. Logo, a resposta correta é a opção a. II e III. \\
+        \item A respeito dos conjuntos numéricos, considere as seguintes afirmativas.
+        \begin{enumerate}[label=\Roman*.]
+        	\item Todo número Racional também é Inteiro.
+        	\item Se um número é Natural, então ele também é Inteiro e Racional.
+        	\item Todo número que é Irracional, também é Real.
+        	\item Se um número é Inteiro, então ele também é Racional e Real.
+        \end{enumerate}
+        
+        Está correto o que se afirmar em
+        
+        \begin{enumerate}
+        	\item I, II, III e IV.
+        	\item III e IV, apenas. 
+        	\item II, III e IV, apenas.
+        	\item II e III, apenas.
+        	\item I e II, apenas.
+        \end{enumerate}
+        Resposta: alternativa c \\ \\
+        Vamos analisar cada uma das afirmativas: \\
+        
+        I. Todo número Racional também é Inteiro.
+        Isso não é verdadeiro. Nem todo número racional é inteiro. Por exemplo, $\frac{1}{2}$ é um número racional, mas não é um número inteiro. \\
+        
+        II. Se um número é Natural, então ele também é Inteiro e Racional. \\
+        Todo número natural é de fato um número inteiro e um número racional. Os números naturais são um subconjunto dos números inteiros e dos números racionais. \\
+        
+        III. Todo número que é Irracional, também é Real. \\
+        Isso é verdadeiro. Todo número irracional faz parte do conjunto dos números reais. \\
+        
+        IV. Se um número é Inteiro, então ele também é Racional e Real.
+        Todo número inteiro é de fato um número racional (pois pode ser escrito na forma de fração com denominador 1) e é um número real, então essa afirmação é verdadeira. \\
+        
+        Portanto, as afirmativas corretas são II, III e IV. Portanto, a resposta correta é a opção c.
+        
+	\end{enumerate}
+    
+
+	
+\end{document}
