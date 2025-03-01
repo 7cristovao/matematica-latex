@@ -1,0 +1,133 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{float}
+\usepackage{extsizes}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{tcolorbox}
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA65 - Matemática} 
+	
+	\begin{center}Algoritmo da divisão euclidiana(Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	\begin{multicols}{2}
+		\noindent Na divisão
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{ll}
+				\multicolumn{1}{l|}{a} & b \\ \cline{2-2} 
+				r                      & z
+			\end{tabular}
+		\end{table}
+		com $a$ e $b$ naturais, temos: \\
+		$a$ é o dividendo, $b$ é o divisor, $q$ é o quociente e $r$ é o resto, com $r$ < $b$. \\
+		Além disso, temos que $a = b \cdot q + r$. \\
+		Exemplo: \begin{table}[H]
+			\centering
+			\begin{tabular}{ll}
+				\multicolumn{1}{l|}{17} & 5 \\ \cline{2-2} 
+				2                      & 3 \\\\
+			\end{tabular} \\
+			\centering $17 = 3 \cdot 5 + 2$
+		\end{table} 
+		Quando $r = 0$, dizemos que $a$ é divisível por $b$
+    	\textsubscript{---------------------------------------------------------------------}
+    	\begin{enumerate}
+   			\item Complete cada uma das divisões euclidianas abaixo, calculando o quociente e o resto. \\
+   			\begin{enumerate}[a)]
+   				\item ~ \\
+    			\begin{tabular}{ll}
+    			\multicolumn{1}{l|}{28} & 6 \\ \cline{2-2} 
+    			~                      & ~ \\\\
+    			\end{tabular} \\\\
+    			\item ~ \\
+    			\begin{tabular}{ll}
+    				\multicolumn{1}{l|}{10} & 3 \\ \cline{2-2} 
+    				~                      & ~ \\\\
+    			\end{tabular} \\\\
+    			\item ~ \\
+    			\begin{tabular}{ll}
+    				\multicolumn{1}{l|}{30} & 7 \\ \cline{2-2} 
+    				~                      & ~ \\\\
+    			\end{tabular} \\\\
+    			\item ~ \\
+    			\begin{tabular}{ll}
+    				\multicolumn{1}{l|}{18} & 3 \\ \cline{2-2} 
+    				~                      & ~ \\\\
+    			\end{tabular} \\\\
+    			\item ~ \\
+    			\begin{tabular}{ll}
+    				\multicolumn{1}{l|}{53} & 8 \\ \cline{2-2} 
+    				~                      & ~ \\\\
+    			\end{tabular} \\\\
+    			\item ~ \\
+    			\begin{tabular}{ll}
+    				\multicolumn{1}{l|}{34} & 6 \\ \cline{2-2} 
+    				~                      & ~ \\\\
+    			\end{tabular} \\\\
+    			\item ~ \\
+    			\begin{tabular}{ll}
+    				\multicolumn{1}{l|}{29} & 4 \\ \cline{2-2} 
+    				~                      & ~ \\\\
+    			\end{tabular} \\\\
+    			\item ~ \\
+    			\begin{tabular}{ll}
+    				\multicolumn{1}{l|}{45} & 6 \\ \cline{2-2} 
+    				~                      & ~ \\\\
+    			\end{tabular} \newpage
+    			\item ~ \\
+    			\begin{tabular}{ll}
+    				\multicolumn{1}{l|}{74} & 8 \\ \cline{2-2} 
+    				~                      & ~ \\\\
+    			\end{tabular} \\\\
+   			\end{enumerate}
+   			\item Quando dividimos um número natural por 8, quais restos podem aparecer? \\\\\\\\\\\\\\
+   			\item Susana comprou dois cachos de uma para fazer um piquenique com suas sete amigas. Ela retirou todas as uvas dos cachos, obtendo 62. Como Susana deve fazer a distribuição das uvas de forma que todas as meninas - inclusive ela - recebam a mesma quantidade, a maior possível? \\\\\\\\\\\\\\
+   			\item Dona Suzana tem uma coleção de 61 quadros e quer dá-los a seus 8 sobrinhos. Ela gostaria de dar a mesma quantidade de quadros para cada um, mas como isso não é possível, ela fez o seguinte: distribuiu os quadros da maneira mais justa possível e o que sobrou distribuiu igualmente entre os 5 sobrinhos mais velhos. De que maneira ela fez a distribuição? \\\\\\\\\\\\\\
+   			% 55 a 58
+   			\item Utilizando o algoritmo da divisão euclidiana, determine o quociente e o resto da divisão de:
+   			\begin{enumerate}[a)]
+   				\item 243 por 7. \\\\\\\\\\\\\\
+   				\item 326 por 8. \\\\\\\\\\\\\\
+   				\item 417 por 9. \newpage
+   			\end{enumerate}
+   			\item Seu Marcelo queria dividir 209 reais para seus três filhos. Como 209 não é divisível por 3, ele calculou o quociente e o resto da divisão, cabendo a cada filho o maior quociente possível. O resto ele usou para comprar biscoitos ao preço de 3 por um real. \\ Quantos biscoitos Seu Marcelo comprou?  \\\\\\\\\\\\\\\\\\\\\\
+   			\item Alice está em Londres e decide comprar algumas camisetas. Se ela comprasse 4 camisetas de 16 libras cada uma, lhe sobrariam 8 libras. Mas sua irmã lhe emprestou 22 libras e, com o total, Alice comprou uma camiseta de 16 libras e 3 vestidos longos. Quanto custou cada vestido longo? \\\\\\\\\\\\\\\\\\\\
+   			\item Um número dividido por 17 dá quociente 46 e resto 5. Qual é esse número?
+        \end{enumerate}
+        $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$  \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\
+	\end{multicols}
+\end{document}

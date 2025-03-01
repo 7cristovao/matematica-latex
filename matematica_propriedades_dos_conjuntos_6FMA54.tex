@@ -1,0 +1,113 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{float}
+\usepackage{extsizes}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{tcolorbox}
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA54 - Matemática} 
+	
+	\begin{center}Propriedades dos conjuntos (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	\begin{multicols}{2}
+    		\noindent Os diagramas de Venn são utilizados também para visualizar algumas propriedades de conjuntos. Por exemplo, a propriedade: \\
+    		\begin{equation*} A \cap (B \cup C) = (A \cap B) \cup (A \cap C) \\ \end{equation*}
+    		\begin{enumerate}[I.]
+    			\item Construir $A\cap (B \cup C)$
+    			\includegraphics[width=1.1\linewidth]{"6FMA54_imagens/imagem1"}
+    			\columnbreak
+    			\item Construir $(A \cap B) \cup (A \cap C)$
+    			\includegraphics[width=1.1\linewidth]{"6FMA54_imagens/imagem2"}
+    			Obtemos a mesma região hachurada para \\
+    			$A \cap (B \cup C)$ e para \\ $(A \cap B) \cup (A \cap C)$. \\ Logo, $A \cap (B \cup C) = \\ (A \cap B) \cup (A \cap C)$.
+    		\end{enumerate}
+    \end{multicols}
+    \noindent\textsubscript{-----------------------------------------------------------------------------------------------------------------------------------------------------------}
+    \begin{multicols}{2}
+    		\begin{enumerate}
+    			\item Utilizando diagramas de Venn e o exemplo apresentado, verifique as seguintes igualdades:
+    			\begin{enumerate}[a)]
+    				\item $(A \cup B) \cup C = A \cup (B \cup C)$
+    				\begin{enumerate}[I.]
+    					\item $(A \cup B) \cup C$ \\
+    					\noindent\includegraphics[width=1.1\linewidth]{"6FMA54_imagens/imagem3"} \\
+    					\item $A \cup (B \cup C)$ \\
+    					\noindent\includegraphics[width=1.1\linewidth]{"6FMA54_imagens/imagem4"} \newpage
+    				\end{enumerate}
+    				\item $(B \cap C) \cap (A \cap C) = (A \cap B) \cap C$
+    				\begin{enumerate}[I.]
+    					\item $(B \cap C) \cap (A \cap C)$ \\
+    					\noindent\includegraphics[width=1.1\linewidth]{"6FMA54_imagens/imagem5"} \\
+    					\item $(A \cap B) \cap C$ \\
+    					\noindent\includegraphics[width=1.1\linewidth]{"6FMA54_imagens/imagem6"}
+    				\end{enumerate}
+    				\item $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+    				\begin{enumerate}[I.]
+    					\item $A \cup (B \cap C)$ \\
+    					\includegraphics[width=1.1\linewidth]{"6FMA54_imagens/imagem7"}
+    					\item $(A \cup B) \cap (A \cup C)$ \\
+    					\noindent\includegraphics[width=1.1\linewidth]{"6FMA54_imagens/imagem8"}
+    				\end{enumerate}
+    			\end{enumerate}
+    			\item Em cada item, determine em que condições os conjuntos $A$ e $B$ satisfazem a igualdade.
+    			\begin{enumerate}[a)]
+    				\item $A \cap B = B$ \\\\\\\\
+    				\item $A \cup B = A$ \\\\\\\\
+    				\item $A \cap B = \varnothing$ \\\\\\\\
+    				\item $A \cup B = A \cap B$ \\\\\\\\
+    			\end{enumerate}
+    			\textbf{Desafio olímpico} \\\\
+    			\noindent Na figura ao lado há três circunferências que formam sete regiões. Em cada uma delas há um número obtido a partir da soma dos números escritos nas regiões vizinhas. Sabendo-se que duas regiões são vizinhas quando seus limites têm mais de um ponto comum, o valor de $x$ indicado na figura é: \\\\
+    			\textbf{a)} -3 ~ \textbf{b)} 4 ~ \textbf{c)} -2 ~ \textbf{d)} 3 ~ \textbf{e)} -1 \newpage
+    			\item Utilizando diagramas de Venn, verifique se as igualdades são verdadeiras ou falsas.
+    			\begin{enumerate}[a)]
+    				\item $A \cup (A \cap B) = A$
+    				\item $(A \cup B) \cap C = A \cup (B \cap C)$
+    				\item $B \cap (A \cup B) = B$
+    				\item $A \cap (B \cap C) = (A \cap B) \cap C$
+    				\item $(A \cup B) \cup (B \cap C) = \\ (A \cap B) \cap (B \cup C)$
+    				\item $(A \cup B) \cup (B \cup C) = A \cup (B \cup C)$
+    			\end{enumerate}
+    			\item Para quaisquer conjuntos $A, B$ e $C$ é verdade que $(A \cap B) \cup C = (A \cap C) \cup (B \cap C)$? \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    			\item 
+    			\begin{enumerate}[a)]
+    				\item Sabendo que os conjuntos $A$ e $B$ são distintos e que $A \cap B = A$, determine $A \cup B$. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+    				\item Para os conjuntos $A, B$ e $C$ temos $B \subset A$ e $A \cap C = \varnothing$. Determine $A \cap B$, $A \cup B$ e $B \cap C$.
+    			\end{enumerate}
+    		\end{enumerate}
+    		$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\
+	\end{multicols}
+\end{document}

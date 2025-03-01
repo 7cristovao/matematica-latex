@@ -1,0 +1,139 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+\usepackage{xcolor} % Para cores do fundo de tabelas
+\usepackage{colortbl} % Para cores do fundo de tabelas
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA86 - Matemática} 
+	
+	\begin{center}Comparando frações (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+		\noindent Para compararmos frações com denominadores diferentes, basta deixarmos os denominadores iguais. Para isso, calculamos o mmc de tais números. \\
+		Além disso, a partir de agora, podemos utilizar o mesmo método para somar quaisquer quantidades de frações com denominadores diferentes entre si. \\
+		Quando somamos um número inteiro com uma fração, podemos multiplicar esse inteiro pelo denominador da fração e somar com seu numerador, mantendo o denominador original. \\
+		Exemplo: $3 + \frac{2}{5} = \frac{3}{1} + \frac{2}{5} \\\\ = \frac{3 \cdot 5 + 2}{5} = \frac{17}{5}$. Nesse caso, é costume escrevermos $3 + \frac{2}{5} = 3\frac{2}{5}$. 
+		\noindent\textsubscript{-----------------------------------------------------------------------}
+		\begin{enumerate} 
+			\item Qual das duas frações tem maior valor: $\frac{7}{15}$ ou $\frac{13}{35}$? \\\\\\\\\\\\\\\\\\\\\\
+			\item Coloque as frações a seguir em ordem crescente.
+			\begin{enumerate}[a)]
+				\item $\frac{4}{5}, \frac{13}{14}, \frac{7}{8}, \frac{5}{6}$. \\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item $\frac{13}{10}, \frac{18}{25}, \frac{29}{30}, \frac{32}{45}$. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\item Carlos tem $\frac{7}{20}$ da idade de sua avó, seu irmão tem $\frac{9}{16}$ da idade dela. Qual dos dois é mais velho? \\\\\\\\\\\\\\\\\\\\\\
+			\item Calcule:
+			\begin{enumerate}[a)]
+				\item $\frac{1}{2} + \frac{3}{4} + \frac{5}{6} + \frac{7}{8}$ \\\\\\\\\\\\\\\\\\\\\\
+				\item $\frac{3}{7} + \frac{2}{9} + \frac{4}{63}$ \\\\\\\\\\\\\\\\\\\\
+				\item $8 + \frac{6}{13}$ \\\\\\\\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\item Fábio recebe R\$ 4.200,00 por mês de salário e em abril usou $\frac{1}{4}$ dele para pagar o aluguel do apartamento e $\frac{7}{24}$ para o seguro do carro. Para os estudos, ele gastou $\frac{1}{8}$ com livros e $\frac{3}{16}$ para pagar a faculdade.
+			\begin{enumerate}[a)]
+				\item Que fração do seu salário ele gastou somando os itens mencionados? Quantos reais ele gastou no total? \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item Que fração do seu salário representa o gasto com estudos? \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\textbf{Desafio olímpico} \\\\
+			Qual é o valor de $\frac{2 001}{11} + \frac{3 006}{33}$, sabendo que $\frac{1 001}{11} = 91$?
+			\begin{enumerate}[a)]
+				\item 142
+				\item 403
+				\item 11
+				\item 159
+				\item 273 \newpage
+			\end{enumerate}
+			%47 a 50
+			\item ~ \begin{enumerate}[a)]
+				\item Coloque em ordem crescente: \\ 
+				$3, \frac{9}{2}, \frac{2}{5}, \frac{11}{4}$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item Qual fração tem o maior valor: $\frac{5}{6}, \frac{19}{21}$ ou $\frac{37}{42}$? \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\item (Enem) Um jogo pedagógico é formado por cartas nas quais está impressa uma fração em uma de suas faces. Cada jogador recebe quatro cartas e vence aquele que primeiro consegue ordenar crescentemente suas cartas pelas respectivas frações impressas. O vencedor foi o aluno que recebeu as cartas com as frações: $\frac{3}{5}, \frac{1}{4}, \frac{2}{3}$ e $\frac{5}{9}$. A ordem que esse aluno apresentou foi
+			\begin{enumerate}[a)]
+				\item $\frac{1}{4}; \frac{5}{9}; \frac{3}{5}; \frac{2}{3}$.
+				\item $\frac{1}{4}; \frac{2}{3}; \frac{3}{5}; \frac{5}{9}$.
+				\item $\frac{2}{3}; \frac{1}{4}; \frac{3}{5}; \frac{5}{9}$.
+				\item $\frac{5}{9}; \frac{1}{4}; \frac{3}{5}; \frac{2}{3}$.
+				\item $\frac{2}{3}; \frac{3}{5}; \frac{1}{4}; \frac{5}{9}$.
+			\end{enumerate}
+			\item Calcule.
+			\begin{enumerate}[a)]
+				\item $\frac{1}{5} + \frac{1}{2} + \frac{1}{7}$ \newpage
+				\item $\frac{4}{5} + \frac{6}{7} + \frac{2}{9}$ \\\\\\\\\\\\\\\\\\\\\\\\
+				\item $\frac{3}{5} + \frac{8}{3} + \frac{1}{8} + \frac{7}{10}$ \\\\\\\\\\\\\\\\\\\\\\\\
+				\item $\frac{1}{3} + \frac{3}{4} + \frac{2}{5} + \frac{5}{6} + \frac{4}{7}$ \\\\\\\\\\\\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\item Camila deu a cada um de seus dois filhos uma quantia em dinheiro para que eles comprassem o lanche da escola. Eduardo gastou $\frac{x}{12}$ de sua quantia e Felipe ficou com $\frac{5}{12}$ do valor recebido. Sabendo que a quantia gasta por eles foi a mesma, qual o valor de $x$? \\\\\\\\\\\\\\\\\\\\\\\\
+		\end{enumerate}
+		$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$
+	\end{multicols}
+\end{document}

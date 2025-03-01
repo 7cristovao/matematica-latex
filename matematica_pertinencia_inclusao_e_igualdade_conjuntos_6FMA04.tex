@@ -1,0 +1,139 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+
+
+%tikzpicture
+\usepackage{tikz}
+\usepackage{scalerel}
+\usepackage{pict2e}
+\usepackage{tkz-euclide}
+\usetikzlibrary{calc}
+\usetikzlibrary{patterns,arrows.meta}
+\usetikzlibrary{shadows}
+\usetikzlibrary{external}
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA04 - Matemática} 
+	
+	\begin{center}Pertinência, inclusão e igualdade (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+		\noindent Dois conjuntos são iguais se têm os mesmos elementos. \\
+		Consideremos os conjuntos: \\
+		$A = \{1, 1 + 1, 2, 2, 3 - 1, 2 + 0, 2, 3\}$ e \\
+		$B = \{2 - 1, 2, 1 + 1 + 1, 3, 5 - 2, 2 + 1, 3\}$ \\
+		Temos $A = B$, pois os elementos de $A$ são 1, 2 e 3 e os elementos de $B$ também são 1, 2 e 3. \\
+		$A = B$ se, e somente se, $A \subset B$ e $B \subset A$.
+		\noindent\textsubscript{-----------------------------------------------------------------------}
+		\begin{enumerate}
+			\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso).
+			\begin{enumerate}[a)]
+				\item (~~) O conjunto vazio é elemento de qualquer conjunto.
+				\item (~~) O conjunto vazio é subconjunto de qualquer conjunto.
+				\item (~~) Todo conjunto é subconjunto de si mesmo.
+				\item (~~) $\{1\} \in \{1\}$
+				\item (~~) $\{1\} \subset \{1\}$
+				\item (~~) $1 \subset \{1\}$
+				\item (~~) $1 \in \{1\}$
+				\item (~~) $\{\varnothing\} \subset \{1, 2, \varnothing\}$
+				\item (~~) $\varnothing \in \{1, 2, \varnothing\}$
+				\item (~~) Para quaisquer conjuntos $A$ e $B$, se $A \subset B$ e $B \subset A$, então $A = B$.
+				\item (~~) Para quaisquer conjuntos $A$ e $B$, se $A = B$, então $A \subset B$ e $B \subset A$.
+				\item (~~) \\ $\{2\} = \left\{1 + 1,3 - 1, \frac{4}{2}, 7 - 6 + 1\right\}$
+			\end{enumerate}
+			\item Apresente todos os subconjuntos de $A = \{1, 2\}$. \\\\\\\\\\\\\\\\\\\\
+			\item Quantos subconjuntos tem o conjunto $A = \{a, b\}$, com $a \neq b$? \\\\\\\\\\\\\\\\\\\\
+			\item Apresente todos os subconjuntos de $A = \{1, 2, 3\}$. \\\\\\\\\\
+			\item Quantos subconjuntos tem o conjunto $A = \{a, b, c\}$, com $a \neq b$, $a \neq c$ e $b \neq c$? \\\\\\\\\\\\\\\\\\\\
+			%10 a 15
+			\item (FCC) Sendo $A = \{\varnothing, a, \{b\}\}$, com $\{b\} \neq a \neq b \neq \varnothing$, então:
+			\begin{enumerate}[a)]
+				\item $\{\varnothing, \{b\}\} \subset A$
+				\item $\{\varnothing, b\} \subset A$
+				\item $\{\varnothing, \{a\}\} \subset A$
+				\item $\{a, b\} \subset A$
+				\item $\{\{a\}, \{b\}\} \subset A$
+			\end{enumerate}
+			\item Escreva todos os subconjuntos do conjunto $A = \{1, 2, \{3\}\}$. \\\\\\\\\\\\\\\\\\\\
+			\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso).
+			\begin{enumerate}[a)]
+				\item (~~) $3 = 3$
+				\item (~~) $\{12, 16\} = \{16, 12, 12, 16, 16\}$
+				\item (~~) $\{21\} = \{\{21\}\}$
+				\item (~~) $14 \not\in \varnothing$
+				\item (~~) $\varnothing \in \varnothing$
+				\item (~~) $\varnothing \subset \varnothing$
+				\item (~~) $10 \in \{2\}$
+				\item (~~) $\{17\} \subset \{17\}$
+				\item (~~) $\{5, \{17\}\} = \{5, 17\}$
+				\item (~~) $\{3, 12\} = \{10 + 13, 9 + 3\}$
+			\end{enumerate}
+			\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso).
+			\begin{enumerate}[a)]
+				\item (~~) $\{11, 16\} = \{11, 11, 11, 16, 16\}$
+				\item (~~) $\{18\} = \{18, 17 + 1, 16 + 2, 15 + 3, 14 + 4\}$
+				\item (~~) $\{7, 5 + 1\} = \{8 - 1, 7 - 2, 3 + 4, 7, 6 + 1\}$
+				\item (~~) $\{2, 2, 3\} = \{2, 2, 2, 2, 2 + 3\}$
+				\item (~~) $\{0, 10, 100, 1 000\} = \{10, 10 - 10, 10 + 10, 10 + 100\}$
+			\end{enumerate}
+			\item Escreva todos os subconjuntos de $A = \{1, 3, \{5\}, 9\}$. \\\\\\\\\\\\\\
+			\item Quantos subconjuntos tem o conjunto $B = \{1, \{1\}, 2, \{2\}\}$? \\\\\\\\\\\\\\\\
+		\end{enumerate}
+	\end{multicols}
+\end{document}

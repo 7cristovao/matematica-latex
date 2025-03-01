@@ -1,0 +1,193 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA18 - Matemática} 
+	
+	\begin{center}Utilização dos algoritmos da soma e da subtração (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+		\begin{enumerate} 
+			\item Calcule
+			\begin{enumerate}[a)]
+				\item 29 + 64 \\\\\\\\\\
+				\item 38 + 47 \\\\\\\\\\
+				\item 123 + 56 \\\\\\\\\\
+				\item 108 + 283 \\\\\\\\\\
+				\item 563 + 347 \\\\\\\\\\\\\\
+				\item 2 987 + 725 \\\\\\\\\\
+				\item 2 834 + 3 762 \\\\\\\\\\
+				\item 15 083 + 7 232 \\\\\\\\\\
+				\item 672 + 453 + 1 204 \\\\\\\\\\
+			\end{enumerate}
+			\item Calcule.
+			\begin{enumerate}[a)]
+				\item 86 - 32 \\\\\\\\\\\\\\
+				\item 118 - 26 \\\\\\\\\\
+				\item 308 - 125 \\\\\\\\\\
+				\item 3 042 - 963 \\\\\\\\\\
+				\item 7 210 - 4065 \\\\\\\\\\
+				\item 21 712 - 3 864 \\\\\\\\\\
+				\item 43 108 - 25 632 \\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\textbf{Desafio olímpico} \\\\
+			(OBMEP) Ana listou todos os números de três algarismos em que um dos algarismos é par e os outros dois são ímpares e diferentes entre si. Beto fez outra lista com todos os números de três algarismos em que um dos algarismos é ímpar e os outros dois são pares e diferentes entre si. Qual é a maior diferença possível entre um número da lista de Ana e um número da lista de Beto?
+			\begin{enumerate}[a)]
+				\item 795
+				\item 863
+				\item 867
+				\item 873
+				\item 885
+			\end{enumerate}
+			%64 a 68
+			\item Efetue.
+			\begin{enumerate}[a)]
+				\item 4 + 2 \\\\\\
+				\item 13 + 21 \\\\\\
+				\item 248 + 129 \newpage
+				\item 1 314 + 9 873 \\\\\\\\\\
+				\item 23 471 + 18 952 \\\\\\\\\\
+				\item 7 809 + 420 \\\\\\\\\\
+				\item 2 563 + 1032 \\\\\\\\\\
+				\item 1 463 + 2172 \\\\\\\\\\
+				\item 9 370 + 3 214 \\\\\\\\\\
+				\item 9 999 + 1 \\\\
+				\item 807 + 103 \\\\\\\\\\
+				\item 5 081 + 1 320 \\\\\\\\\\
+				\item 4 324 + 3 527 \\\\\\\\\\
+				\item 25 663 + 8 765 \\\\\\\\\\
+				\item 17 652 + 32 706 \\\\\\\\\\
+				\item 25 762 + 82 133 \newpage
+				\item 18 902 + 42 101 \\\\\\\\\\
+				\item 50 830 + 42 926 \\\\\\\\\\
+				\item 72 813 + 1 876 321 \\\\\\\\\\
+				\item 85 213 + 46 796 \\\\\\\\\\
+				\item 123 456 789 + 111 113 \\\\\\\\\\
+			\end{enumerate}
+			\item Calcule.
+			\begin{enumerate}[a)]
+				\item 42 - 7 \\\\\\\\\\
+				\item 37 - 19 \\\\\\\\\\
+				\item 83 - 26 \\\\\\\\\\
+				\item 115 - 84 \\\\\\\\\\
+				\item 321 - 198 \\\\\\\\\\
+				\item 3 402 - 789 \\\\\\\\\\
+				\item 10 293 - 8 998 \\\\\\\\\\
+				\item 200 002 - 78 962 \\\\\\\\\\
+				\item 1000 - 83 \\\\\\\\\\
+			\end{enumerate}
+			\item Calcule a soma de todos os naturais de 50 a 100 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\item Complete, colocando no lugar das letras os algarismos que tornam corretos os cálculos.
+			\begin{enumerate}[a)]
+				\item \[
+				\begin{array}{cccc}
+					~ & 3 & 2 & 1 \\
+					+ & 5 & 8 & 9 \\
+					\hline
+					~ & z & y & x \\
+				\end{array}
+				\] \\\\
+				$x = \underline{~~~~~} ~~~~y = \underline{~~~~~} ~~~~z = \underline{~~~~~} $
+				\item \[
+				\begin{array}{cccc}
+					~ & 1 & 2 & x \\
+					+ & y & 0 & 6 \\
+					\hline
+					~ & 4 & 2 & 8 \\
+				\end{array}
+				\] \\\\
+				$x = \underline{~~~~~} ~~~~y = \underline{~~~~~}$
+				\item \[
+				\begin{array}{ccccc}
+					~ & 3 & 9 & 2 & x \\
+					+ & ~ & 1 & y & 7 \\
+					\hline
+					~ & 4 & z & 6 & 8\\
+				\end{array}
+				\] \\\\
+				$x = \underline{~~~~~} ~~~~y = \underline{~~~~~} ~~~~z = \underline{~~~~~} $
+			\end{enumerate}	
+			\item Na soma abaixo, calcule os algarismos $x, y$ e $z$.
+			 \[
+			\begin{array}{ccc}
+				~ & x & y \\
+				+ & y & x \\
+				\hline
+				y & y & z \\
+			\end{array}
+			\] \\\\
+			$x = \underline{~~~~~} ~~~~y = \underline{~~~~~} ~~~~z = \underline{~~~~~} $
+		\end{enumerate}
+		$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$
+	\end{multicols}
+\end{document}

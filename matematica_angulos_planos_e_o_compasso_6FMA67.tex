@@ -1,0 +1,284 @@
+\documentclass[a4paper,14pt]{article}
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+
+%tikzpicture
+\usepackage{tikz}
+\usepackage{scalerel}
+\usepackage{pict2e}
+\usepackage{tkz-euclide}
+\usetikzlibrary{calc}
+\usetikzlibrary{patterns,arrows.meta}
+\usetikzlibrary{shadows}
+\usetikzlibrary{external}
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA67 - Matemática} 
+	
+	\begin{center}Ângulos planos e o compasso (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	\begin{multicols}{2}
+		\noindent \textbf{Ângulos planos}
+		\begin{center}
+			\begin{tikzpicture}
+				\draw[{Circle[scale=1.5]}-{Circle[scale=1.5]}] (0,0) -- (2,0)
+				node[pos=0, below]{A}  node[pos=1, below]{B}; 
+				\draw[-{Stealth[scale=2]}] (2,0) -- (4,0);
+				\draw[{Circle[scale=1.5]}-{Circle[scale=1.5]}] (5,0) -- (8,0)
+				node[pos=0, above]{A} node[pos=1, above]{B};
+			\end{tikzpicture}
+		\end{center}
+		\noindent Indicamos por $\overrightarrow{AB}$ a semirreta que tem origem $A$ e passa pelo ponto $B$. Já o segmento de reta que une os pontos $A$ e $B$ é indicado por $\overline{AB}$. \\
+		Um ângulo é a união de duas semirretas de mesma origem.
+		\begin{center}
+			\begin{tikzpicture}
+				\draw[{Circle[scale=1.5]}-{Circle[scale=1.5]}] (1,3) -- (4.5,6)
+				node[pos=0, left]{A} node[pos=1, above]{B};
+				\draw (4.5,6) -- (7,8);
+				\draw[-{Circle[scale=1.5]}]  (1,3) -- (4,2)
+				node[pos=1, below]{C};
+				\draw (4,2) -- (7,1);
+			\end{tikzpicture}
+		\end{center}
+		As semirretas $\overrightarrow{AB}$ e $\overrightarrow{AC}$ têm a mesma origem $A$. \\
+		As semirretas $\overrightarrow{AB}$ e $\overrightarrow{AC}$ são chamadas de lados do ângulo. Se os lados de um ângulo são semirretas opostas aos lados de outro ângulo, dizemos que são ângulos opostos pelo vértice. \\
+		O ângulo indicado no triângulo a seguir pode ser representado por $A\hat{B}C$ ou simplesmente $\hat{B}$.
+		\begin{center}
+			\begin{tikzpicture}
+				\coordinate[label=left:B] (B) at (1,1);
+				\coordinate[label=right:C] (C) at (7,1);
+				\coordinate[label=above:A] (A) at (4,6);
+				
+				\draw (B) -- (A) -- (C) -- cycle;
+				
+				\tkzMarkAngle(C,B,A)
+			\end{tikzpicture}
+		\end{center}
+		\noindent \textbf{Compasso} \\\\
+		Para desenhar uma circunferência precisamos saber seu centro e seu raio. Posicionamos a ponta seca no centro e a distância entre a ponta-seca e a ponta da grafite é o raio. \\
+		O diâmetro de uma circunferência é igual ao dobro do seu raio.
+	\end{multicols}		
+    	\noindent\textsubscript{-----------------------------------------------------------------------------------------------------------------------------------------------------------}
+    \begin{multicols}{2}
+    	\begin{enumerate}
+   			\item Dados os pontos $A$ e $B$ a seguir, desenhe a semirreta $\overrightarrow{AB}$ com caneta azul e a semirreta $\overrightarrow{BA}$ com caneta vermelha. Em seguida, responda.
+   			\begin{enumerate}[a)]
+   				\item As semirretas são iguais ou diferentes? \\\\\\
+   				\item O que as duas semirretas têm em comum? \\\\\\\\\\\\
+   				\item Podemos dizer que elas são duas semirretas opostas? Explique.  \\\\\\\\\\\\
+   				\item Desenhe duas semirretas opostas. \\\\\\\\\\\\
+   			\end{enumerate}
+   			\item Desenhe a reta $\overleftrightarrow{AB}$, o segmento $\overline{AC}$, a semirreta $\overrightarrow{AD}$ e a circunferência de centro $C$ passando pelo ponto $B$ a seguir. Use régua e compasso. \\\\\\\\\\\\\\\\\\\\
+   			\item \begin{enumerate}[a)]
+   				\item Desenhe o ângulo $M\hat{P}N$, dados $M, N, P$ a seguir. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+   				\item Desenhe o ângulo $M\hat{P}N$. Qual é a sua conclusão a respeito dos dois ângulos desenhados? \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+   			\end{enumerate}
+   			\item Dê o nome de todos os ângulos internos do quadrilátero de vértices $A, B, C$ e $D$, representado a seguir.
+   			\begin{center}
+   				\begin{tikzpicture}
+   					\coordinate[label=left:A] (A) at (1,7.5);
+   					\coordinate[label=right:B] (B) at (7,8);
+   					\coordinate[label=right:C] (C) at (6.5,5);
+   					\coordinate[label=below:D] (D) at (2.5,2);
+   					
+   					\draw (A) -- (B) -- (C) -- (D) -- cycle;
+   				\end{tikzpicture}
+   			\end{center}
+   			\vspace{14cm}
+   			\item Desenhe a circunferência de centro $O$ e raio $r$, fornecidos a seguir: 
+   			\begin{center}
+   				\begin{tikzpicture}
+   					\coordinate (R0) at (1.5,12);
+   					\coordinate (R1) at (5.5,12);
+   					\coordinate[label=below:O] (O) at (3.5,4);
+   					\draw (R0) -- (R1);
+   					\tkzLabelSegment[label=above:r](R0,R1){~}
+   					\filldraw[black] (3.5,4) circle (2pt);
+   				\end{tikzpicture}
+   			\end{center}
+   			\vspace{6cm}
+   			\item Uma circunferência tem um diâmetro medindo 18 cm. Quantos centímetros mede o raio dessa circunferência? \newpage
+   			\item Desenhe, usando a régua, as semirretas:
+   			\begin{center}
+	   			$\overrightarrow{AB}$, $\overrightarrow{AC}$, $\overrightarrow{CB}$, $\overrightarrow{BD}$ e $\overrightarrow{DA}$
+	   			\begin{tikzpicture}
+	   				\coordinate[label=left:C] (C) at (1,7);
+	   				\filldraw[black] (1,7) circle (2pt);
+	   				\coordinate[label=left:A] (A) at (3,1);
+	   				\filldraw[black] (3,1) circle (2pt);
+	   				\coordinate[label=above:D] (D) at (4,4);
+	   				\filldraw[black] (4,4) circle (2pt);
+	   				\coordinate[label=above:B] (B) at (7,6);
+	   				\filldraw[black] (7,6) circle (2pt);
+	   			\end{tikzpicture}
+	   		\end{center}
+	   		\item Identifique os pares de ângulos opostos pelo vértice.
+	   		\begin{center}
+	   			\begin{tikzpicture}
+	   				%ponto BB
+	   				\coordinate (BB) at (1,8);
+	   				%ponto A
+	   				\coordinate[label=above:A] (A) at (3,7);
+	   				\filldraw[black] (3,7) circle (2pt);
+	   				%ponto B
+	   				\coordinate[label=above:B] (B) at (2,7.5);
+	   				\filldraw[black] (2,7.5) circle (2pt);
+	   				%ponto C
+	   				\coordinate[label=above:C] (C) at (4,7.5);
+	   				\filldraw[black] (4,7.5) circle (2pt);
+	   				%ponto CC
+	   				\coordinate (CC) at (5,8);
+	   				%\filldraw[black] (5,8) circle (2pt);
+	   				%ponto H
+	   				\coordinate[label=left:H] (H) at (0,5.5);
+	   				\filldraw[black] (0,5.5) circle (2pt);
+	   				%ṕonto D
+	   				\coordinate[label=right:D] (D) at (6, 5.5);
+	   				\filldraw[black] (6,5.5) circle (2pt);
+	   				%ponto F
+	   				\coordinate[label=above:F] (F) at (3,4);
+	   				\filldraw[black] (3,4) circle (2pt);
+	   				%ponto G
+	   				\coordinate[label=left:G] (G) at (3,2);
+	   				\filldraw[black] (3,2) circle (2pt);
+	   				%ponto E
+	   				\coordinate[label=above:E] (E) at (5,3);
+	   				\filldraw[black] (5,3) circle (2pt);
+	   				%ponto EE
+	   				\coordinate (EE) at (6,2.5);
+	   				%ponto GG
+	   				\coordinate (GG) at (3,1);
+	   				\draw (BB) -- (B) -- (A) -- (C) -- (CC);
+	   				\draw (H) -- (A) -- (D) -- (F) -- cycle;
+	   				\draw (F) -- (E) -- (EE);
+	   				\draw (F) -- (G) -- (GG);
+	   			\end{tikzpicture}
+	   		\end{center}
+	   		\vspace{6cm}
+	   		\item Desenhe os ângulos $M\hat{Q}P$, $P\hat{M}N$, $M\hat{Q}R$ e represente-os por $x$, $y$ e $z$, respectivamente.
+	   		\begin{center}
+	   			\begin{tikzpicture}`
+	   				\coordinate[label=below:R] (R) at (0,0);
+	   				\filldraw[black] (0,0) circle (2pt);
+	   				\coordinate[label=below:Q] (Q) at (2,3);
+	   				\filldraw[black] (2,3) circle (2pt);
+	   				\coordinate[label=above:M] (M) at (2,7);
+	   				\filldraw[black] (2,7) circle (2pt);
+	   				\coordinate[label=below:P] (P) at (6,2.5);
+	   				\filldraw[black] (6,2.5) circle (2pt);
+	   				\coordinate[label=above:N] (N) at (7,5);
+	   				\filldraw[black] (7,5) circle (2pt);
+	   			\end{tikzpicture}
+	   		\end{center}
+	   		\begin{enumerate}[a)]
+	   			\item \textbf{V} ou \textbf{F}:$x > y > z$.
+	   			\item Coloque em ordem decrescente as medidas $x, y, z$. \newpage
+	   		\end{enumerate}
+	   		\item Desenhe, usando régua, a reta $\overleftrightarrow{BD}$, o segmento $\overline{CD}$ e as semirretas $\overrightarrow{BA}, \overrightarrow{DE}$ e $\overrightarrow{BC}$:
+	   		\begin{center}
+	   			\begin{tikzpicture}
+	   				\coordinate[label=below:C] (C) at (7,7);
+	   				\filldraw[black] (7,7) circle (2pt);
+	   				\coordinate[label=above:B] (B) at (3,5);
+	   				\filldraw[black] (3,5) circle (2pt);
+	   				\coordinate[label=below:E] (E) at (2.5,0);
+	   				\filldraw[black] (2.5,0) circle (2pt);
+	   				\coordinate[label=left:D] (D) at (0.5,2);
+	   				\filldraw[black] (0.5,2) circle (2pt);
+	   				\coordinate[label=above:A] (A) at (0,4);
+	   				\filldraw[black] (0,4) circle (2pt);
+	   			\end{tikzpicture}
+	   		\end{center}
+	   		\begin{enumerate}[a)]
+	   			\item Há algum par de semirretas opostas? Se sim, quais? \\\\\\\\\\\\\\\\\\
+	   			\item Coloque em ordem crescente as medias $A\hat{B}D, C\hat{B}D, B\hat{C}D,$ e $C\hat{D}E$. \\\\\\
+	   		\end{enumerate}
+	   		\item Dadas as medidas $r$ e $s$, copie para seu caderno os pontos $P$ e $Q$ da figura a seguir, mantendo a mesma distância entre $P$ e $Q$, em seguida desenhe as circunferências de centro $P$ e raio $r$ e centro $Q$ e raio $s$. Você percebe alguma coisa de particular nesse desenho?
+	   		\begin{center}
+	   			\begin{tikzpicture}
+		   			\coordinate (R0) at (1,4);
+		   			\coordinate (R1) at (4,4);
+		   			\coordinate (S0) at (1,3);
+		   			\coordinate (S1) at (5,3);
+		   			\coordinate[label=above:P] (P) at (0,2);
+		   			\coordinate[label=above:Q] (Q) at (7,1);
+		   			\filldraw[black] (0,2) circle (2pt);
+		   			\filldraw[black] (7,1) circle (2pt);
+		   			\draw (R0) -- (R1);
+		   			\draw (S0) -- (S1);
+		   			\tkzLabelSegment[label=above:r](R0,R1){~}
+		   			\tkzLabelSegment[label=above:s](S0,S1){~}
+	   			\end{tikzpicture}
+	   		\end{center}
+	   		\vspace{3cm}
+	   		\item Na figura abaixo, trace duas circunferências: uma com centro em $A$ e que passa por $B$ e outra com centro em B e raio igual a $r$, cuja medida é dada a seguir:
+	   		\begin{center}
+		   		\begin{tikzpicture}
+		   			\coordinate (R0) at (4,6);
+		   			\coordinate (R1) at (6,6);
+		   			\coordinate[label=right:B] (B) at (3.5, 3);
+		   			\coordinate[label=left:A] (A) at (0,0);
+		   			\filldraw[black] (3.5,3) circle (2pt);
+		   			\filldraw[black] (0,0) circle (2pt);
+		   			\draw (R0) -- (R1);
+		   			\tkzLabelSegment[label=above:r](R0,R1){~};
+		   		\end{tikzpicture}
+		   	\end{center}
+		   	A circunferência com centro em $B$ passa pelo ponto $A$? Justifique.
+		   	\item Desenhe em seu caderno uma circunferência que 10 cm de diâmetro e diga quantos centímetros ela tem de raio.
+	    \end{enumerate} 
+        $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$  \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$
+	\end{multicols}
+\end{document}

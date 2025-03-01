@@ -1,0 +1,109 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA17 - Matemática} 
+	
+	\begin{center}Posição dos números naturais na reta (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+		\noindent Podemos representar os números naturais em uma reta. Quando somamos 1 a um número natural, estamos encontrando seu sucessor, se diminuirmos 1, encontramos seu antecessor. O 0 (zero) é o único número natural que não tem antecessor natural, ou seja, na reta, não há números naturais à esquerda de zero. \\
+		Para somar o número $b$ ao número $a$, partimos de $a$ e caminhamos $b$ unidades para a direita; para subtrair $b$ do número $a$, partimos de $a$ e caminhamos $b$ unidades para a esquerda.
+		\noindent\textsubscript{-----------------------------------------------------------------------}
+		\begin{enumerate} 
+			\item Represente, na reta abaixo, os números naturais 2, 3, 7 e 12. \\\\\\
+			\includegraphics[width=1\linewidth]{6FMA17_imagens/imagem1}
+			\item Quando você soma 1 a qualquer número, seu valor aumenta ou diminui? \\\\\\\\
+			\item Qual é o sucessor de 0? E seu antecessor? \\\\\\\\
+			\item O número 5 é quantas unidades menor do que 14? \\\\\\
+			\item Coloque o sinal $<$ ou $>$ nos espaços indicados, de forma que a afirmação seja verdadeira.
+			\begin{enumerate}[a)]
+				\item 9 $\underline{~~~~~~~~~~~~~~~}$ 7
+				\item 12 $\underline{~~~~~~~~~~~~~~~}$ 15
+				\item 2 $\underline{~~~~~~~~~~~~~~~}$ 3
+				\item 1 001 $\underline{~~~~~~~~~~~~~~~}$ 999
+			\end{enumerate}
+			%60 a 63
+			\item Complete a figura abaixo, colocando os números que estão faltando. \\\\
+			\includegraphics[width=1\linewidth]{6FMA17_imagens/imagem2}
+			\item \begin{enumerate}[a)]
+				\item O número 9 é quantas unidades menor que 17? \\\\\\\\
+				\item Represente uma reta com os números 3, 7, 8, e 14. \\\\\\\\\\\\
+				\item Complete a reta abaixo, colocando os números que faltam. \\\\
+				\includegraphics[width=1\linewidth]{6FMA17_imagens/imagem3}
+				\item Sejam $a$ e $b$ dois números naturais quaisquer tais que $b > a$. Represente na reta os pontos associados a esses dois números.
+			\end{enumerate}
+		\end{enumerate}
+		$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$
+	\end{multicols}
+\end{document}

@@ -1,0 +1,204 @@
+\documentclass[a4paper,14pt]{article}
+\usepackage{float}
+\usepackage{extsizes}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{tcolorbox}
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA66 - Matemática} 
+	
+	\begin{center}Mais divisões (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	\begin{multicols}{2}
+		\noindent Para acharmos o quociente e o resto, por exemplo, de 137 por 6, fazemos o seguinte:
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{ll}
+				\multicolumn{1}{l|}{137} & 6 \\ \cline{2-2} 
+				~                      & ~
+			\end{tabular}
+		\end{table}
+		Como 1 dividido por 6 dá quociente 0, devemos tomar 13, em vez de 1. Já que 13 dividido por 6 tem quociente 2 e o resto 1, escrevemos: \\
+		Exemplo: \begin{table}[H]
+			\centering
+			\begin{tabular}{ll}
+				\multicolumn{1}{l|}{137} & 6 \\ \cline{2-2} 
+				~1                      & 2
+			\end{tabular}
+		\end{table} 
+		Em seguida, "abaixamos" o 7 e como 17 dividido por 6 tem quociente 2 e resto 5, temos: \\
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{ll}
+				\multicolumn{1}{l|}{137} & 6 \\ \cline{2-2} 
+				~17                      & 22 \\
+				~~5
+			\end{tabular}
+		\end{table} 
+		Logo, o quociente da divisão de 137 por 6 é 22 e o resto é 5.
+    	\textsubscript{---------------------------------------------------------------------}
+    	\begin{enumerate}
+   			\item Complete as divisões a seguir \\
+   			\begin{enumerate}[a)]
+   				\item ~ \\
+    			\begin{tabular}{ll}
+    			\multicolumn{1}{l|}{105} & 4 \\ \cline{2-2} 
+    			~                      & ~ \\\\
+    			\end{tabular} \\\\
+    			\item ~ \\
+    			\begin{tabular}{ll}
+    				\multicolumn{1}{l|}{523} & 5 \\ \cline{2-2} 
+    				~                      & ~ \\\\
+    			\end{tabular} \\\\\\\\\\
+    			\item ~ \\
+    			\begin{tabular}{ll}
+    				\multicolumn{1}{l|}{421} & 12 \\ \cline{2-2} 
+    				~                      & ~ \\\\
+    			\end{tabular} \\\\\\\\\\
+    			\item ~ \\
+    			\begin{tabular}{ll}
+    				\multicolumn{1}{l|}{953} & 11 \\ \cline{2-2} 
+    				~                      & ~ \\\\
+    			\end{tabular} \\\\\\\\\\
+   			\end{enumerate}
+   			\item Na loteria federal, o prêmio de R\$ 700.000,00 foi dividido entre 146 acertadores. Desprezando os centavos, determine a parte de cada ganhador. \\\\\\
+   			\item Determine o quociente e o resto da divisão euclidiana de 11 627 por 607. \\\\\\\\\\\\\\\\\\
+   			\item Um caminhão deve transportar 19 872 bombons em caixas que acomodam 16 bombons. Quantas caixas serão necessárias? \\\\\\\\\\\\\\\\\\
+   			\textbf{Desafio olímpico} \\\\
+   			Ao multiplicar um número inteiro por 506, Flávio esqueceu o zero e fez a multiplicação por 56, obtendo corretamente 1 008. Se ele fizesse a conta com 506, qual seria o resultado obtido?
+   			\begin{enumerate}[a)]
+   				\item 9 062
+   				\item 9 160
+   				\item 9 108
+   				\item 9 506
+   				\item 9 560
+   			\end{enumerate}
+   			%59 a 64
+   			\item Efetue as divisões a seguir:
+   			\begin{enumerate}[a)]
+   				\item ~ \\
+   				\begin{tabular}{ll}
+   					\multicolumn{1}{l|}{171} & 24 \\ \cline{2-2} 
+   					~                      & ~ \\\\
+   				\end{tabular} \\\\\\\\\\\\\\
+   				\item ~ \\
+   				\begin{tabular}{ll}
+   					\multicolumn{1}{l|}{334} & 31 \\ \cline{2-2} 
+   					~                      & ~ \\\\
+   				\end{tabular} \\\\\\\\\\\\\\
+   				\item ~ \\
+   				\begin{tabular}{ll}
+   					\multicolumn{1}{l|}{521} & 42 \\ \cline{2-2} 
+   					~                      & ~ \\\\
+   				\end{tabular} \\\\\\\\\\\\\\
+   				\item ~ \\
+   				\begin{tabular}{ll}
+   					\multicolumn{1}{l|}{511} & 32 \\ \cline{2-2} 
+   					~                      & ~ \\\\
+   				\end{tabular} \\\\\\\\\\\\
+   				\item ~ \\
+   				\begin{tabular}{ll}
+   					\multicolumn{1}{l|}{350} & 43 \\ \cline{2-2} 
+   					~                      & ~ \\\\
+   				\end{tabular} \\\\\\\\\\\\\\
+   				\item ~ \\
+   				\begin{tabular}{ll}
+   					\multicolumn{1}{l|}{852} & 52 \\ \cline{2-2} 
+   					~                      & ~ \\\\
+   				\end{tabular} \\\\\\\\\\\\\\
+   				\item ~ \\
+   				\begin{tabular}{ll}
+   					\multicolumn{1}{l|}{693} & 63 \\ \cline{2-2} 
+   					~                      & ~ \\\\
+   				\end{tabular} \\\\\\\\\\\\\\
+   				\item ~ \\
+   				\begin{tabular}{ll}
+   					\multicolumn{1}{l|}{983} & 88 \\ \cline{2-2} 
+   					~                      & ~ \\\\
+   				\end{tabular} \\\\\\\\\\
+	        \end{enumerate}
+	        \item Efetue as divisões a seguir:
+	        \begin{enumerate}[a)]
+	        	\item ~ \\
+	        	\begin{tabular}{ll}
+	        		\multicolumn{1}{l|}{254} & 35 \\ \cline{2-2} 
+	        		~                      & ~ \\\\
+	        	\end{tabular} \\\\\\\\\\\\\\
+	        	\item ~ \\
+	        	\begin{tabular}{ll}
+	        		\multicolumn{1}{l|}{443} & 36 \\ \cline{2-2} 
+	        		~                      & ~ \\\\
+	        	\end{tabular} \\\\\\\\\\\\\\
+	        	\item ~ \\
+	        	\begin{tabular}{ll}
+	        		\multicolumn{1}{l|}{390} & 27 \\ \cline{2-2} 
+	        		~                      & ~ \\\\
+	        	\end{tabular} \\\\\\\\\\\\\\
+	        	\item ~ \\
+	        	\begin{tabular}{ll}
+	        		\multicolumn{1}{l|}{342} & 53 \\ \cline{2-2} 
+	        		~                      & ~ \\\\
+	        	\end{tabular} \\\\\\\\
+	        	\item ~ \\
+	        	\begin{tabular}{ll}
+	        		\multicolumn{1}{l|}{631} & 55 \\ \cline{2-2} 
+	        		~                      & ~ \\\\
+	        	\end{tabular} \\\\\\\\\\\\\\
+	        	\item ~ \\
+	        	\begin{tabular}{ll}
+	        		\multicolumn{1}{l|}{567} & 27 \\ \cline{2-2} 
+	        		~                      & ~ \\\\
+	        	\end{tabular} \\\\\\\\\\\\\\
+	        	\item ~ \\
+	        	\begin{tabular}{ll}
+	        		\multicolumn{1}{l|}{682} & 52 \\ \cline{2-2} 
+	        		~                      & ~ \\\\
+	        	\end{tabular} \\\\\\\\\\\\\\
+	        	\item ~ \\
+	        	\begin{tabular}{ll}
+	        		\multicolumn{1}{l|}{500} & 34 \\ \cline{2-2} 
+	        		~                      & ~ \\\\
+	        	\end{tabular} \\\\\\\\\\\\
+	        \end{enumerate}
+	        \item O número 33 534 é divisível por 54? Justifique. \\\\\\\\\\\\\\\\\\
+	        \item André ganhou R\$ 503,00 em um jogo e resolveu dividir igualmente entre seus 6 filhos. Como 503 não é divisível por 6, ele determinou o quociente e o resto da divisão, cabendo a cada um o maior quociente possível. O resto do dinheiro ele usou para comprar balas ao preço de 9 por 1 real, dividindo igualmente o máximo de balas entre ele e seus filhos. As balas que sobraram, André deu para seu neto. Quantas balas cada um recebeu? \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+	        \item Um número dividido por 47 resulta em 12. Qual é o número? \\\\\\\\\\\\\\\\\\
+	        \item Marcos decidiu colocar um aquário em sua sala e após montá-lo, foi a um $pet shop$ com uma certa quantia em dinheiro para comprar alguns peixes. Depois de pesquisar, decidiu levar 16 peixes pequenos que custavam R\$ 12,00 cada. Se Marcos recebeu 8 reais de troco, qual era a quantia levada por ele? \\\\\\\\\\\\\\\\\\
+	    \end{enumerate} 
+        $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$  \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\
+	\end{multicols}
+\end{document}

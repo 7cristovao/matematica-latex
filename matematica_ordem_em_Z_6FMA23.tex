@@ -1,0 +1,187 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+\usepackage{xcolor} % Para cores do fundo de tabelas
+\usepackage{colortbl} % Para cores do fundo de tabelas
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA23 - Matemática} 
+	
+	\begin{center}Ordem em $\mathbb{Z}$ (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+		\noindent São dados dois números inteiros, $a$ e $b$. Dizemos que $a$ é maior que $b$ (ou que $b$ é menor que $a$) se o número $a$ está à direita do número $b$. Indicamos isso por $a > b$ ou $b < a$. \\
+		\begin{itemize}
+			\item $a \geq b$ significa que $a > b$ ou $a = b$.
+			\item $a \leq b$ significa que $a < b$ ou $a = b$.
+			\item $a < b < c$ significa que $a < b$ e $b < c$.
+			\item A negação de $a \leq b$ é $a > b$.
+			\item A negação de $a < b$ é $a \geq b$.
+			\item A negação de $a \geq b$ é $a < b$.
+			\item A negação de $a > b$ é $a \leq b$.
+		\end{itemize}
+		\noindent\textsubscript{-----------------------------------------------------------------------}
+		\begin{enumerate} 
+			\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso).
+			\begin{enumerate}[a)]
+				\item (~~) $4 \geq 6$
+				\item (~~) $-2 \leq 7$
+				\item (~~) $3 > -4$
+				\item (~~) $-8 \leq -2$
+				\item (~~) $7 > 10$
+				\item (~~) $-12 \geq 12$
+				\item (~~) $21 < -10$
+				\item (~~) $-1 < -5$
+				\item (~~) $-5 > 0$
+				\item (~~) $-6 \leq 3$
+				\item (~~) $2 > -4$
+				\item (~~) $-15 < -8$
+				\item (~~) $0 \geq 0$
+				\item (~~) $0 \leq 0$
+				\item (~~) $-5 \geq -5$
+			\end{enumerate}
+			\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso).
+			\begin{enumerate}[a)]
+				\item (~~) Para todo $x$ inteiro, $x \geq$ x.
+				\item (~~) Dados $x$ e $y$ inteiros, então ocorre uma das situações: $x = y$ ou $x > y$ ou $y > x$.
+				\item (~~) Existem $x$ e $y$ inteiros tais que $x < y$ e $x > y$.
+				\item (~~) Se $x$ e $y$ são inteiros e $x$ é negativo e $y$ é positivo, então $x < y$.
+				\item (~~) Existem números inteiros $x$ e $y$ tais que $x \leq y$ e $x \geq y$.
+				\item (~~) Se $a, b$ e $c$ são números inteiros, temos que se $a \leq b$ e $b \leq c$, então $a \leq c$.
+			\end{enumerate}
+			\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso).
+			\begin{enumerate}[a)]
+				\item (~~) $-1 < 2 < 7$
+				\item (~~) $-2 \leq -8 \leq 5$
+				\item (~~) $8 < 1 < -2$
+				\item (~~) $-3 < -1 \leq 2$
+				\item (~~) $-5 > -3 > 1$
+				\item (~~) $-3 \leq 2 \leq 7$
+				\item (~~) $-2 > 0 \geq 4$
+				\item (~~) $0 \geq 1 > -2$
+				\item (~~) $3 \geq 3 \geq -1$
+				\item (~~) $-6 > 1 \geq -2$
+			\end{enumerate}
+			\item Complete.
+			\begin{enumerate}[a)]
+				\item A negação de $x \leq 2$ é $\underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}$.
+				\item A negação de $3 > y$ é $\underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}$.
+				\item A negação de $b \leq -2$ é $\underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}$.
+				\item Não é verdade que $a > 1$ quando $\underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}$.
+				\item A negação de $x > 0$ é $\underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}$.
+				\item Não é verdade que $8 < x$ quando $\underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}$.
+				\item A negação de $x < x$ é $\underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}$.
+				\item Não é verdade que $x \geq -3$ quando $\underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~}$.
+			\end{enumerate}
+			\item Use letras para simbolizar:
+			\begin{enumerate}[a)]
+				\item os números que não são menores do que 6. \\\\\\\\\\
+				\item a idade, em anos, no Brasil, em que é obrigatório votar. \\\\\\\\\\
+				\item a idade, em anos, no Brasil, em que você pode, mas não é obrigado a votar. \\\\\\\\\\
+			\end{enumerate}
+			%81 a 84
+			\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso).
+			\begin{enumerate}[a)]
+				\item (~~) $-1 < 2 < 3$
+				\item (~~) $-7 \leq 1 < 2$
+				\item (~~) $-5 > 2 \geq 2$
+				\item (~~) $9 < -1 < 8$
+				\item (~~) $7 > 14 > 0$
+				\item (~~) $-5 < -1 \leq 5$
+				\item (~~) $8 \geq 6 > 0$
+				\item (~~) $-3 < -4 < -5$
+				\item (~~) $7 > 5 \geq 0$
+				\item (~~) $-3 < 8 \leq 8$ \newpage
+			\end{enumerate}
+			\item Para o próximo feriado, a previsão do tempo diz que a temperatura mínima será de -2°C e a máxima de 15°C. Sendo $t$ a temperatura prevista, em °C, escreva os valores que $t$ pode assumir, usando desigualdades. \\\\\\\\\\\\\\\\\\\\
+			\item Complete.
+			\begin{enumerate}[a)]
+				\item A negação de $-5 \leq -10$ é .....
+				\item A negação de $-5 > -10$ é .....
+				\item A negação de $8 < 8$ é ..... .
+				\item A negação de $-1 \geq 2$ é ..... .
+				\item A negação de $x \leq 0$ é ..... .
+				\item A negação de $-6 > x$ é ..... .
+				\item A negação de $x \geq 1 200$ é ..... .
+				\item A negação de $x \leq x$ é ..... .
+			\end{enumerate}
+			\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso) (se você sentir dificuldade em algum item, desenhe a reta). Para $a, b, c$ inteiros:
+			\begin{enumerate}[a)]
+				\item (~~) se $a \leq b$ e $b \leq c$, então $a \leq c$.
+				\item (~~) sempre ocorre $a \leq a$.
+				\item (~~) se $a \leq b$ e $b \leq a$, então $a = b$.
+				\item (~~) se $a \leq b, b \leq c$ e $c \leq a$, então $a = b = c$.
+				\item (~~) se $a \geq b$ e $a \geq c$, então $b \geq c$.
+			\end{enumerate}
+		\end{enumerate}
+		$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\
+	\end{multicols}
+\end{document}

@@ -1,0 +1,129 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+
+\begin{comment}
+%tikzpicture
+\usepackage{tikz}
+\usepackage{scalerel}
+\usepackage{pict2e}
+\usepackage{tkz-euclide}
+\usetikzlibrary{calc}
+\usetikzlibrary{patterns,arrows.meta}
+\usetikzlibrary{shadows}
+\usetikzlibrary{external}
+\end{comment}
+	
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA71 - Matemática} 
+	
+	\begin{center}Revisão: pertinência, inclusão e igualdade entre conjuntos (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+		\noindent 
+		\begin{itemize}
+			\item Pertinência é uma relação entre um elemento e um conjunto.
+			\item Inclusão é uma relação entre dois conjuntos, para todo conjunto $A$, $\varnothing \subset A$ e $A \subset A$.
+			\item Igualdade: $A = B$ se, e somente se, $A \subset B$ e $B \subset A$.
+		\end{itemize}
+		\noindent\textsubscript{--------------------------------------------------------------------------}
+    	\begin{enumerate}
+   			\item Diga quantos e quais são os elementos dos conjuntos:
+   			\begin{enumerate}[a)]
+   				\item $A = \{5, 6, 7, 8, 9\}$ \\\\\\\\\\\\\\\\\\\\
+   				\item $B = \varnothing$ \\\\\\\\\\\\\\\\\\\\
+   				\item $C =\{0, 1, \{2\},\{3, 4\}, 5\}$ \\\\\\\\\\\\\\\\\\\\
+   				\item $D = \{0, 1, \{0, 1\}, \varnothing\}$ \\\\\\\\\\\\\\\\\\\\
+   			\end{enumerate}
+   			\item Escreva em linguagem simbólica.
+   			\begin{enumerate}[a)]
+   				\item 5 não pertence a $A$. \\\\\\\\\\\\\\\\\\\\
+   				\item \{7\} contém $\varnothing$. \\\\\\\\\\\\\\\\
+   				\item $\mathbb{N}$ está contido em $\mathbb{Z}$. \\\\\\\\\\\\\\\\
+   				\item \{4\} é subconjunto de \{3, 4, 5\}. \\\\\\\\\\\\\\\\
+   				\item \{3\} pertence a \{1, 2, 3, 4\}. \\\\\\\\\\\\\\\\
+   			\end{enumerate}
+   			\item Dado o conjunto \\ $A = \{2, \{1\}, \{2\}\}$, assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso):
+   			\begin{enumerate}[a)]
+   				\item (~~) $2 \in A$ \\
+   				\item (~~) $2 \subset A$ \\
+   				\item (~~) $\{2\} \in A$ \\
+   				\item (~~) $\{1\} \subset A$ \\
+   				\item (~~) $1 \in A$ \\
+   				\item (~~) $\{1\} \in A$ \\
+   				\item (~~) $\{\{1\}, 2\} \subset A$ \\
+   			\end{enumerate}
+   			\item Dado o conjunto \\ $A = \{0, 1, 2, 3, \{3\}, \{4\}, 5\}$, assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso).
+   			\begin{enumerate}[a)]
+   				\item (~~) $0 \in A$
+   				\item (~~) $0 \subset A$
+   				\item (~~) $A \ni \{3\}$
+   				\item (~~) $A \notin \{4\}$
+   				\item (~~) $\{\{4\}\} \subset A$
+   				\item (~~) $\varnothing \in A$
+   				\item (~~) $\varnothing \subset A$
+   				\item (~~) $4 \in A$
+   				\item (~~) $\{2\} \in A$
+   				\item (~~) $\{2\} \subset A$
+   				\item (~~) $A \supset \{3, 4, 5\}$
+   				\item (~~) $A \not\supset \{0, 1, 2, 3, 4, 5\}$
+   			\end{enumerate}
+	    \end{enumerate} 
+        $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$
+	\end{multicols}
+\end{document}

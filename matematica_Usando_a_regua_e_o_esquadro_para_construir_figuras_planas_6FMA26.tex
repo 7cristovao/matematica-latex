@@ -1,0 +1,157 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+
+
+%tikzpicture
+\usepackage{tikz}
+\usepackage{scalerel}
+\usepackage{pict2e}
+\usepackage{tkz-euclide}
+\usetikzlibrary{calc}
+\usetikzlibrary{patterns,arrows.meta}
+\usetikzlibrary{shadows}
+\usetikzlibrary{external}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA26 - Matemática} 
+	
+	\begin{center}Usando a régua e o esquadro para construir figuras planas (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+		\noindent $\overline{AB}$ representa o segmento de reta de extremidades $A$ e $B$. \\
+		Os três segmentos de reta que formam um triângulo são chamados lados e os pontos em que estes se unem são os vértices. \\
+		Um quadrilátero é uma figura que possui 4 lados. \\
+		Um retângulo é um quadrilátero que possui 4 ângulos iguais (retos) e um quadrado é um quadrilátero que possui os 4 lados e os 4 ângulos iguais. \\
+		Para desenharmos segmentos perpendiculares, utilizamos o esquadro.
+		\\
+		\noindent\textsubscript{-----------------------------------------------------------------------}
+		\begin{enumerate} 
+			\item Desenhe o segmento de reta que tem como extremidades os pontos $M$ e $N$ representados abaixo.
+			\begin{center}
+				\begin{tikzpicture}
+					%\draw[lightgray] (0,0) grid (7,2);
+					\filldraw[black] (0,1.5) circle (3pt);
+					\filldraw[black] (7,0) circle (3pt);
+					\coordinate[label=above:M] (M) at (0,1.5);
+					\coordinate[label=above:N] (N) at (7,0);
+				\end{tikzpicture}
+			\end{center}
+			\item Agora, desenhe a semirreta que começa em $M$ e passa pelo ponto $N$.
+			\begin{center}
+				\begin{tikzpicture}
+					%\draw[lightgray] (0,0) grid (7,2);
+					\filldraw[black] (0,1.5) circle (3pt);
+					\filldraw[black] (7,0) circle (3pt);
+					\coordinate[label=above:M] (M) at (0,1.5);
+					\coordinate[label=above:N] (N) at (7,0);
+				\end{tikzpicture}
+			\end{center}
+			\item Trace a reta que passa pelos pontos $M$ e $N$.
+			\begin{center}
+				\begin{tikzpicture}
+					%\draw[lightgray] (0,0) grid (7,2);
+					\filldraw[black] (0,1.5) circle (3pt);
+					\filldraw[black] (7,0) circle (3pt);
+					\coordinate[label=above:M] (M) at (0,1.5);
+					\coordinate[label=above:N] (N) at (7,0);
+				\end{tikzpicture}
+			\end{center}
+			\item Utilizando régua e lápis, desenhe o triângulo cujos vértices são os pontos $A$, $B$ e $C$ representados abaixo.
+			\begin{center}
+				\begin{tikzpicture}
+					%\draw[lightgray] (0,0) grid (7,2);
+					\filldraw[black] (1.5,1.5) circle (3pt);
+					\filldraw[black] (7,0) circle (3pt);
+					\filldraw[black] (0,-2.5) circle (3pt);
+					\coordinate[label=above:A] (A) at (1.5,1.5);
+					\coordinate[label=above:C] (C) at (7,0);
+					\coordinate[label=above:B] (B) at (0,-2.5);
+				\end{tikzpicture}
+			\end{center}
+			\item \begin{enumerate}[a)]
+				\item Desenhe um segmento $BC$ perpendicular ao segmento $AB$ dado abaixo. \\\\\\\\
+				\begin{center}
+					\begin{tikzpicture}
+						%\draw[lightgray] (0,0) grid (7,2);
+						\draw (0,0) -- (5,0);
+						%\filldraw[black] (0,0) circle (3pt);
+						%\filldraw[black] (6,0) circle (3pt);
+						\coordinate[label=left:A] (A) at (0,0);
+						\coordinate[label=right:B] (B) at (5,0);
+					\end{tikzpicture}
+				\end{center}
+			\end{enumerate}
+			\newpage
+			\item Qual é a diferença entre um quadrado e um retângulo? \\\\\\\\\\\\\\\\\\\\
+			\item A régua de Carlinhos quebrou e ele ficou com o pedaço maior, que permite ler a partir do traço que marca 12 cm. Como ele deve fazer para medir segmentos? \\\\\\\\\\\\\\\\\\\\
+			\item \begin{enumerate}[a)]
+				\item Desenhe o quadrado cujo lado possua a medida $\ell$ dada abaixo.
+				\begin{center}
+					\begin{tikzpicture}
+						%\draw[lightgray] (0,0) grid (7,2);
+						\draw (0,0) -- (5,0);
+						\coordinate[label=above:$\ell$] (l) at (2.5,0);
+					\end{tikzpicture}
+				\end{center}
+			\end{enumerate}
+		\end{enumerate}
+		$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$  
+	\end{multicols}
+\end{document}
