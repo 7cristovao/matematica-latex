@@ -1,0 +1,163 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+\usepackage{xcolor} % Para cores do fundo de tabelas
+\usepackage{colortbl} % Para cores do fundo de tabelas
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA114 - Matemática} 
+	
+	\begin{center}Revisão: frações e decimais (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+		\noindent Você deve lembrar que: \begin{itemize} 
+		\item para somar frações de mesmo denominador, devemos somar os numeradores e manter o denominador: \\\\
+		$\frac{1}{4} + \frac{2}{4} = \frac{1 + 2}{4} = \frac{3}{4}$ \\\\
+		\item para subtrair frações de mesmo denominador, devemos subtrair os numeradores e manter o denominador: \\\\
+		$\frac{9}{13} - \frac{6}{13} = \frac{9 - 6}{13} = \frac{3}{13}$ \\\\
+		\item para multiplicar frações, multiplicamos os numeradores e os denominadores: \\\\
+		$\frac{2}{3} \cdot \frac{5}{7} = \frac{2 \cdot 5}{3 \cdot 7} = \frac{10}{21}$ \\\\
+		\item para dividir frações, multiplicamos a primeira fração pelo inverso da segunda fração. \\\\
+		$\frac{3}{2} : \frac{7}{5} = \frac{3}{2} \cdot \frac{5}{7} = \frac{15}{14}$ \\\\
+		\item para somar ou subtrair frações com denominadores diferentes, devemos primeiro transformá-las em frações equivalentes com o mesmo denominador: \\\\
+		$\frac{2}{3} = \frac{3}{4} = \frac{8}{12} + \frac{9}{12} = \frac{17}{12}$
+		\end{itemize}
+	\end{multicols}
+		\noindent\textsubscript{--------------------------------------------------------------------------------------------------------------------------------------------------------------}
+	\begin{multicols}{2}
+		\begin{enumerate} 
+			\item Calcule:
+			\begin{enumerate}[a)]
+				\item $\frac{2}{5} + \frac{3}{5} + \frac{4}{5}$ \\\\\\\\
+				\item $12 \cdot \frac{7}{9}$ \\\\\\\\
+				\item $\frac{3}{7} - \frac{2}{3} + \frac{4}{5}$ \\\\\\\\
+				\item $\frac{9}{7} : \frac{3}{8}$ \\\\\\\\\\
+			\end{enumerate}
+			\item Joana fez um bolo para comer com suas três amigas. Ela o repartiu igualmente em 12 pedaços e comeu 2 pedaços.
+			\begin{enumerate}[a)]
+				\item Que fração do bolo Joana comeu? \\\\\\\\\\\\
+				\item As amigas Bianca e Patrícia também comeram 2 pedaços de bolo cada uma e Carol comeu 3. Quantos pedaços do bolo restaram? Qual é a fração que representa este valor em relação à quantidade inicial de pedaços de bolo?  \\\\\\\\\\\\
+			\end{enumerate}
+			\item Clara comprou 24 balas e distribuiu $\frac{3}{8}$ do total para seus amigos. Quantas balas restaram? \\\\\\\\\\\\\\\\\\\\
+			\item Escreva na forma de numeral decimal.
+			\begin{enumerate}[a)]
+				\item $\frac{26}{10}$ \\\\\\\\\\\\
+				\item $\frac{7}{10}$ \\\\\\\\\\\\
+				\item $\frac{74}{100}$ \\\\\\\\\\\\
+				\item $\frac{321}{100}$ \\\\\\\\\\\\
+			\end{enumerate}
+			\item Escrever na forma de fração decimal.
+			\begin{enumerate}[a)]
+				\item 61,7 \\\\\\\\
+				\item 9,3 \\\\\\\\\\\\
+				\item 2,05 \\\\\\\\\\\\
+				\item 4,9 \\\\\\\\\\\\
+			\end{enumerate}
+			\item Escreva como se lê.
+			\begin{enumerate}[a)]
+				\item 2,31 \\\\\\\\
+				\item $\frac{7}{10}$ \\\\\\\\
+				\item $\frac{34}{10}$ \\\\\\\\
+				\item 0,16 \\\\\\\\
+			\end{enumerate}
+			%13 a 17
+			\item Escreva na forma de numeral decimal:
+			\begin{enumerate}[a)]
+				\item $\frac{207}{10}$ \\\\\\\\\\\\
+				\item $\frac{1532}{100}$ \\\\\\\\\\\\
+				\item $\frac{631}{100}$ \\\\\\\\\\\\
+				\item $\frac{39,7}{10}$ \newpage
+			\end{enumerate}
+			\item Escreva na forma de fração decimal:
+			\begin{enumerate}[a)]
+				\item 21,2 \\\\\\\\\\
+				\item 47,03 \\\\\\\\\\
+				\item 5,6 \\\\\\\\\\
+				\item 78,49 \\\\\\\\\\
+			\end{enumerate}
+			\item Complete:
+			\begin{enumerate}[a)]
+				\item $\frac{3}{5} = ... \cdot \frac{7}{8}$
+				\item $\frac{2}{3} + \frac{5}{6} = ... \cdot \frac{7}{2}$
+				\item $16 \cdot \frac{5}{128} = ... + \frac{7}{8}$
+			\end{enumerate}
+			\item Depois de algum tempo construindo uma piscina, Paula decidiu fazer uma festa em comemoração ao fim das obras. Após encher $\frac{91}{420}$ da piscina, seu irmão chegou para ajudá-la. Se a piscina de Paula tem capacidade para 30 000 litros, quantos litros de água Paula e seu irmão ainda precisam colocar para encher a piscina completamente? \\\\\\\\\\\\\\\\\\\\
+			\item Renato tem um carro total $flex$. Esse tipo de carro aceita tanto álcool quanto gasolina como combustível e ambos podem ser colocados ao mesmo tempo no tanque. Imagine que o carro de Renato esteja com $\frac{4}{5}$ do tanque com gasolina e que ele gaste um terço dessa quantidade indo trabalhar. Na volta, ele completa o tanque com álcool. Nesse momento, que fração do tanque está com álcool?
+			\begin{enumerate}[a)]
+				\item $\frac{4}{15}$
+				\item $\frac{7}{15}$
+				\item 1
+				\item $\frac{11}{15}$
+				\item $\frac{13}{15}$
+			\end{enumerate}
+		\end{enumerate}
+	\end{multicols}
+\end{document}
