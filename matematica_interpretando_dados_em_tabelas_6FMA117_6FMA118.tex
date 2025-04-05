@@ -1,0 +1,416 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+\usepackage{xcolor} % Para cores do fundo de tabelas
+\usepackage{colortbl} % Para cores do fundo de tabelas
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA117, 6FMA118 - Matemática} 
+	
+	\begin{center}Interpretando dados em tabelas (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+		% \noindent \\
+		% \noindent\textsubscript{--------------------------------------------------------------------------}
+		\begin{enumerate} 
+			\item Muitas usinas hidrelétricas estão situadas em barragens. As características de algumas das grandes represas e usinas brasileiras estão apresentadas no quadro a seguir.
+			\begin{table}[H]
+					\begin{tabular}{|p{2.4cm}|p{2.4cm}|p{2.4cm}|}
+						\hline
+						\textbf{Usina} & \textbf{Área alagada (km²)} & \textbf{Potência} \\ \hline
+						$A$   & 3 298   & 2 040   \\ \hline
+						$B$   & 4 720   & 3 508   \\ \hline
+						$C$   & 5 100   & 3 467   \\ \hline
+						$D$   & 6 403   & 1 345   \\ \hline
+						$E$   & 2 176   & 1 803   \\ \hline
+					\end{tabular}
+			\end{table}
+			A razão entre a área da região alagada por uma represa e a potência produzida pela usina nela instalada é uma das formas de estimar a relação entre o dano e o benefício trazidos por um projeto hidrelétrico. A partir dos dados apresentados no quadro, qual é o projeto que mais onerou o ambiente em termos de área alagada por potência? \\\\\\\\\\\\\\\\\\
+			\item Visando adotar um sistema de reutilização de água, uma indústria testou cinco sistemas com diferentes fluxos de entrada de água suja e fluxos de saída de água purificada.
+			\begin{table}[H]
+				\begin{tabular}{|p{2.4cm}|p{2.4cm}|p{2.4cm}|}
+					\hline
+					\textbf{~} & \textbf{Fluxo de entrada (água suja)} & \textbf{Fluxo de saída (água purificada)} \\ \hline
+					Sistema I   & 60 L/h   & 10 L/h   \\ \hline
+					Sistema II   & 15 L/h   & 6 L/h   \\ \hline
+					Sistema III   & 30 L/h   & 10 L/h   \\ \hline
+					Sistema IV   & 25 L/h   & 5 L/h   \\ \hline
+					Sistema V   & 36 L/h   & 14 L/h   \\ \hline
+				\end{tabular}
+			\end{table}
+			Supondo que o custo por litro de água purificada seja o mesmo para todos os sistemas, qual é o sistema pelo qual obtém-se maior eficiência na purificação? \newpage
+			\item O índice de massa corpórea (IMC) é uma medida que permite aos médicos fazer uma avaliação preliminar das condições físicas e dos risco de uma pessoa desenvolver certas doenças, conforme mostra a tabela a seguir.
+			\begin{table}[H]
+				\begin{tabular}{|p{1.8cm}|p{3cm}|p{2.4cm}|}
+					\hline
+					\textbf{IMC} & \textbf{Classificação} & \textbf{Risco de doenças} \\ \hline
+					menos de 18,5   & magreza   & elevado   \\ \hline
+					entre 18,5 e 24,9   & normalidade   & baixo   \\ \hline
+					entre 25 e 29,9   & sobrepeso   & elevado   \\ \hline
+					entre 30 e 39,9   & obesidade   & muito elevado   \\ \hline
+					40 ou mais   & obesidade grave   & muitíssimo elevado   \\ \hline
+				\end{tabular}
+				\caption*{Fonte: $<$www.somatematica.com.br$>$.}
+			\end{table}
+			Considere as seguintes informações a respeito de Andreia, Carlos, Daniel, Eduarda e Flávia:
+			\begin{table}[H]
+				\begin{tabular}{|p{1.6cm}|p{1.6cm}|p{1.6cm}|p{1.6cm}|}
+					\hline
+					\textbf{Nome} & \textbf{Peso (kg)} & \textbf{Altura (m)} & \textbf{IMC} \\ \hline
+					Andreia   & 64,8   & 1,80 & 20  \\ \hline
+					Carlos   & 49,5   & 1,50 & 22  \\ \hline
+					Daniel   & 70,4   & 1,60 & 27,5 \\ \hline
+					Eduarda   & 86,7   & 1,70 & 30   \\ \hline
+					Flávia   & 56,6  & 1,60 & 22,5   \\ \hline
+				\end{tabular}
+			\end{table}
+			Podemos afirmar que:
+			\begin{enumerate}[a)]
+				\item Carlos está com sobrepeso, mas não corre risco de desenvolver doenças?
+				\item Eduarda está dentro dos padrões de normalidade?
+				\item Daniel está com sobrepeso e seu risco de desenvolver doenças é elevado?
+				\item Para se determinar o IMC de uma pessoa, utilizamos a seguinte fórmula: \\\\ IMC = $\frac{\text{massa(kg)}}{\text{[altura]²(m)}}$. \\\\ Construa um fluxograma que determine o IMC de um indivíduo e, conforme a primeira tabela, indique a qual classificação ele pertence. \newpage
+			\end{enumerate}
+			\item Para responder à questão, considere a tabela a seguir que apresenta dados sobre a concentração de cinco substâncias no sangue e na urina de um indivíduo.
+			\begin{table}[H]
+				\begin{tabular}{|p{2.8cm}|p{2.2cm}|p{2.2cm}|}
+					\hline
+					\textbf{Substâncias} & \textbf{Concen- tração no sangue (mg/100 mL)} & \textbf{Concen- tração na urina (mg/100 mL)} \\ \hline
+					ureia & 30 & 2 000 \\ \hline
+					ácido úrico & 4 & 50 \\ \hline
+					sais & 720 & 1 500 \\ \hline
+					proteínas & 7 000 & 35 \\ \hline
+					glicose & 100 & 4 \\ \hline
+				\end{tabular}
+				\caption*{Fonte: Construindo~consciência~2008.}
+			\end{table}
+			Observando os dados da tabela, pode-se concluir que em 1 litro de sangue, o total, em mg, de ureia e ácido úrico, é, aproximadamente:
+			\begin{enumerate}[a)]
+				\item 240
+				\item 260
+				\item 300
+				\item 320
+				\item 340
+			\end{enumerate}
+			\textbf{Agora é a sua vez}
+			\\
+			\item Vamos fazer uma coleta de informações na sua sala de aula:
+			\begin{enumerate}[a)]
+				\item \textbf{Passo 1: coleta} \\
+				Pergunte aos seus colegas em que mês cada um deles nasceu e anote. \newpage
+				\item \textbf{Passo 2: organização} \\
+				Coloque os dados na tabela a seguir. Caso você tenha alguma dúvida, fale com o seu professor.
+					\begin{table}[H]
+					\begin{tabular}{|p{3.5cm}|p{3.5cm}|}
+						\hline
+						\textbf{Mês do nascimento} & \textbf{Número de alunos}  \\ \hline
+						Janeiro & ~~  \\ \hline
+						Fevereiro & ~~ \\ \hline
+						Março & ~~ \\ \hline
+						Abril & ~~ \\ \hline
+						Maio & ~~  \\ \hline
+						Junho & ~~  \\ \hline
+						Julho & ~~  \\ \hline
+						Agosto & ~~  \\ \hline
+						Setembro & ~~  \\ \hline
+						Outubro & ~~  \\ \hline
+						Novembro & ~~  \\ \hline
+						Dezembro & ~~  \\ \hline
+						\textbf{Total} & ~~  \\ \hline
+					\end{tabular}
+				\end{table}
+				Observe que o total de alunos deve ser o número de alunos que estavam na sua sala no dia da coleta. Confira!
+			\item \textbf{Passo 3: interpretação}
+			\begin{itemize}
+				\item Quantos alunos nasceram em fevereiro? \\\\\\\\\\
+				\item Quantos alunos nasceram nas férias (janeiro, julho ou dezembro)? \\\\\\
+				\item Quantos alunos nasceram em um mês cujo nome começa com a letra A? \\\\\\
+				\item Existe um mês do ano em que nasceram mais de 10 colegas? Qual? \\\\\\
+				(O espaço abaixo é reservado para a sua criatividade. Faça perguntas aos seus colegas sobre a tabela e anote suas respostas.) \\\\\\
+				\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} \\\\\\
+				\item \underline{~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~} \\\\\\
+			\end{itemize}
+			\item \textbf{Passo 4: conclusão} \\
+			Anote as conclusões que você achar interessantes. Peça ajuda aos seus colegas e ao professor.
+			\end{enumerate}
+			%29 a 35
+			\item Imagine uma eleição envolvendo 3 candidatos $A, B, C$ e 36 eleitores (votantes). Cada eleitor vota fazendo uma ordenação dos três candidatos. Os resultados são os seguintes:
+			\begin{table}[H]
+				\begin{tabular}{|p{3.5cm}|p{3.5cm}|}
+					\hline
+					\textbf{Ordenação} & \textbf{Nº de eleitores}  \\ \hline
+					$A B C$ & 11  \\ \hline
+					$A C B$ & 5 \\ \hline
+					$B A C$ & 7 \\ \hline
+					$B C A$ & 3 \\ \hline
+					$C A B$ & 6  \\ \hline
+					$C B A$ & 4  \\ \hline
+					\textbf{Total} & 36  \\ \hline
+				\end{tabular}
+			\end{table}
+			A primeira linha do quadro descreve que 11 eleitores escolheram $A$ em 1º lugar, $B$ em 2º lugar e $C$ em 3º lugar e assim por diante. \\
+			Considere o sistema de eleição no qual cada candidato ganha 3 pontos quando é escolhido em 1º lugar, 2 pontos quando é escolhido em 2º lugar e 1 ponto quando é escolhido em 3º lugar. O candidato que acumular mais pontos é eleito. Nesse caso:
+			\\
+			\begin{enumerate}[a)]
+				\item $C$ é eleito com 71 pontos.
+				\item $A$ é eleito com 64 pontos.
+				\item $B$ é eleito com 72 pontos.
+				\item $C$ é eleito com 64 pontos.
+				\item $A$ é eleito com 81 pontos.
+			\end{enumerate}
+			\item Na cidade de Lucas e Renata haverá shows no teatro principal. Pensando em todos, foram feitos pacotes para que as pessoas escolhessem o que seria melhor para si.
+			\begin{table}[H]
+				\begin{tabular}{|p{2cm}|p{2.6cm}|p{2.6cm}|}
+					\hline
+					\textbf{Pacote} & \textbf{Taxa fixa} & \textbf{Taxa por show} \\ \hline
+					1 & - & R\$ 80,00 \\ \hline
+					2 & R\$ 40,00 & R\$ 60,00 \\ \hline
+					3 & R\$ 60,00 & R\$ 70,00 \\ \hline
+				\end{tabular}
+			\end{table}
+			Lucas assistirá 6 shows e Renata, 4. As melhores opções para Lucas e Renata são, respectivamente, os pacotes:
+			\begin{enumerate}[a)]
+				\item 1 e 2.
+				\item 2 e 3.
+				\item 3 e 3.
+				\item 2 e 1.
+				\item 2 e 2.
+			\end{enumerate}
+			\item No quadro seguinte são informados os turnos em que foram eleitos os prefeitos das capitais de todos os estados brasileiros em 2004.
+			\begin{table}[H]
+				\begin{tabular}{|p{0.4cm}|p{4.6cm}|p{2cm}|}
+					\hline
+				 & \textbf{Cidade} & \textbf{Turno} \\ \hline
+					1 & Aracaju (SE) & 1º \\ \hline
+					2 & Belém (PA) & 2º \\ \hline
+					3 & Belo Horizonte (MG) & 1º \\ \hline
+					4 & Boa Vista (RR) & 1º \\ \hline
+					5 & Campo Grande (MS) & 1º \\ \hline
+					6 & Cuiabá (MT) & 2º \\ \hline
+					7 & Curitiba (PR) & 2º \\ \hline
+					8 & Florianópolis (SC) & 2º \\ \hline
+					9 & Fortaleza (CE) & 2º \\ \hline
+					10 & Goiânia (GO) & 2º \\ \hline
+					11 & João Pessoa (PB) & 1º \\ \hline
+					12 & Macapá (AP) & 1º \\ \hline
+					13 & Maceió (AL) & 2º \\ \hline
+					14 & Manaus (AM) & 2º \\ \hline
+					15 & Natal (RN) & 2º \\ \hline
+					16 & Palmas (TO) & 1º \\ \hline
+					17 & Porto Alegre (RS) & 2º \\ \hline
+					18 & Porto Velho (RO) & 2º \\ \hline
+					19 & Recife (PE) & 1º \\ \hline
+					20 & Rio Branco (AC) & 1º \\ \hline
+					21 & Rio de Janeiro (RJ) & 1º \\ \hline
+					22 & Salvador (BA) & 2º \\ \hline
+					23 & São Luís (MA) & 1º \\ \hline
+					24 & São Paulo (SP) & 2º \\ \hline
+					25 & Teresina (PI) & 2º \\ \hline
+					26 & Vitória (ES) & 2º \\ \hline
+				\end{tabular}
+				\caption*{Fonte: TSE. Almanaque Abril - Brasil 2005. São Paulo: Editora Abril, 2005 }
+			\end{table}
+			Na região Norte, a porcentagem de prefeitos eleitos no 2º turno foi de, aproximadamente:
+			\begin{enumerate}[a)]
+				\item 42,86\%
+				\item 44,44\%
+				\item 50,00\%
+				\item 57,14\%
+				\item 57,69\%
+			\end{enumerate}
+			\item Os níveis de irradiância ultravioleta efetiva (IUV) indicam o risco de exposição ao sol para pessoas de pele do tipo II - pele de pigmentação clara. O tempo de exposição segura (TES) corresponde ao tempo de exposição ao raios solares sem que ocorram queimaduras de pele. A tabela a seguir mostra a correlação entre riscos de exposição, IUV e TES.
+			\begin{table}[H]
+				\begin{tabular}{|p{2.2cm}|p{2.2cm}|p{2.2cm}|}
+					\hline
+					\textbf{Risco de exposição} & \textbf{IUV} & \textbf{TES (em minutos)} \\ \hline
+					baixo & 0 a 2 & máximo 60 \\ \hline
+					médio & 3 a 5 & 30 a 60 \\ \hline
+					alto & 6 a 8 & 20 a 30 \\ \hline
+					extremo & acima de 8 & máximo 20 \\ \hline
+				\end{tabular}
+			\end{table}
+			Uma das maneiras de se proteger contra queimaduras provocadas pela radiação ultravioleta é o uso dos protetores solares, cujo Fator de Proteção Solar (FPS) é calculado da seguinte maneira:
+			\begin{equation*}
+				\text{FPS} = \frac{\text{TPP}}{\text{TPD}}
+			\end{equation*}
+			TPP = tempo de exposição mínima para produção de vermelhidão na pele protegida (em minutos). \\
+			TPD = tempo de exposição mínima para produção de vermelhidão na pele desprotegida (em minutos). \\
+			O FPS mínimo que uma pessoa de pele tipo II necessita para evitar queimaduras ao se expor ao sol, considerando TPP o intercalo das 12h às 14h, num dia em que a irradiância efetiva é maior que 8, de acordo com os dados fornecidos, é: 
+			\begin{enumerate}[a)]
+				\item 5
+				\item 6
+				\item 8
+				\item 10
+				\item 20
+			\end{enumerate}
+			\item A tabela a seguir contém as informações nutricionais de um bolo de banana com 360 g. Observe e responda ao que se pede. \\\\
+			
+			\begin{table}[H]
+				\begin{tabular}{|p{2.5cm}|p{2.9cm}|p{1.6cm}|}
+					\hline
+					\multicolumn{3}{|p{7cm}|}{\textbf{Informação Nutricional (porção de 60 g - fatia média)}} \\
+					\hline
+					\multicolumn{2}{|p{5.5cm}|}{Quantidade por porção} & \%VD* \\
+					\hline
+					valor energético & 175 kcal = 735 kJ & 9 \\ \hline
+					carboidratos & 3 a 5 & 30 a 60 \\ \hline
+					proteínas & 6 a 8 & 20 a 30 \\ \hline
+					gorduras totais & acima de 8 & máximo 20 \\ \hline
+					gorduras saturadas & acima de 8 & máximo 20 \\ \hline
+					gorduras $trans$ & acima de 8 & máximo 20 \\ \hline
+					fibra alimentar & acima de 8 & máximo 20 \\ \hline
+					sódio & acima de 8 & máximo 20 \\ \hline
+				\end{tabular}
+				\caption*{(*) Valores diários de referência com base em uma dieta de 2000 kcal ou 8400 kj. Seus valores diários podem ser maiores ou menores dependendo de suas necessidades energéticas.}
+				\label{tab:exemplo}
+			\end{table}
+			\begin{enumerate}[a)]
+				\item Qual o valor energético em kcal, do bolo inteiro? \\\\\\\\
+				\item A que fração do bolo corresponde 1 fatia? \\\\\\\\
+				\item Qual a quantidade de gorduras não saturadas em 1 fatia? \newpage
+				\item Qual a quantidade de gorduras não saturadas no bolo inteiro? \\\\\\\\
+			\end{enumerate}
+			\item Observe as tabelas a seguir e dê o que se pede:
+			\begin{table}[H]
+				\begin{tabular}{|p{2.6cm}|p{2.4cm}|p{2.4cm}|}
+					\hline
+					\multicolumn{3}{|p{6.8cm}|}{\textbf{Renda (em milhões de R\$)}} \\
+					\hline
+					\textbf{Equipe} & \textbf{2007} & \textbf{2008} \\ \hline
+					Flamengo & 13.157.515 & 25.830.093 \\ \hline
+					Fluminense & * & 20.762.439 \\ \hline
+					Corinthians & 7.214.211 & 16.776.826 \\ \hline
+					Internacional & 8.347.811 & 11.807.576 \\ \hline
+					Cruzeiro & 6.481.044 & 11.170.594 \\ \hline
+					Grêmio & 13.237.706 & 13.197.601 \\ \hline
+					Botafogo & 7.074.740 & 10.962.300 \\ \hline
+					São Paulo & 13.382.214 & 16.506.080 \\ \hline
+					Vasco & * & 8.552.142 \\ \hline
+					Atlético-MG & 6.813.046 & * \\ \hline
+					Palmeiras & 7.613.607 & 16.213.724 \\ \hline
+					Bahia & 7.171.109 & * \\ \hline
+				\end{tabular}
+			\end{table}
+			\begin{table}[H]
+				\begin{tabular}{|p{2.6cm}|p{2.4cm}|p{2.4cm}|}
+					\hline
+					\multicolumn{3}{|p{6.8cm}|}{\textbf{Maiores públicos)}} \\
+					\hline
+					\textbf{Equipe} & \textbf{2007} & \textbf{2008} \\ \hline
+					Flamengo & 877 826 & 1 453 477 \\ \hline
+					Fluminense & * & 1 054 664 \\ \hline
+					Corinthians & 601 447 & 1 054 664 \\ \hline
+					Internacional & 584 917 & 791 394 \\ \hline
+					Cruzeiro & 617 179 & 788 195 \\ \hline
+					Grêmio & 768 533 & 746 342 \\ \hline
+					Botafogo & 800 278 & 730 211 \\ \hline
+					São Paulo & 837 761 & 720 533 \\ \hline
+					Sport & 699 504 & 686 025 \\ \hline
+					Atlético-MG & 661 013 & 613 019 \\ \hline
+					Palmeiras & * & 567 153 \\ \hline
+					Bahia & 882 147 & * \\ \hline
+				\end{tabular}
+			\end{table}
+			(*) Dados ausentes indicam que o clube não figurou nas listas de 10 maiores públicos ou rendas do ano.
+			$<$http://colunistas.ig.com.br/ \\ sergiopatrick/2008/12/23/campeoes-de-bilheteria/$>$
+			\begin{enumerate}[a)]
+				\item Qual foi a equipe brasileira de maior renda em 2007? E em 2008?
+				\item Qual foi a equipe brasileira de maior público em 2007? E em 2008? \newpage
+			\end{enumerate}
+			\item A tabela a seguir mostra o desempenho dos 6 últimos colocados no campeonato interdistrital de futebol amador antes do último jogo.
+			\begin{table}[H]
+				\begin{tabular}{|p{2.8cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|}
+					\hline
+					\textbf{Equipe} & \textbf{$J$} & \textbf{$P$} & \textbf{$V$} \\ \hline
+					Unidos da Série B   & 18   & 15 & 4  \\ \hline
+					Fanfarrões   & 18   & 14 & 3  \\ \hline
+					Bola Furada   & 18   & 13 & 4 \\ \hline
+					Perdedores   & 18   & 12 & 2   \\ \hline
+					Lanterninha   & 18  & 9 & 2   \\ \hline
+					Rebaixados   & 18  & 8 & 2   \\ \hline
+				\end{tabular}
+			\end{table}
+			Legenda: \\ \textbf{$J$} = jogos disputados; \\ \textbf{$P$} = pontos ganhos; \\ \textbf{$V$} = número de vitórias; 
+			\begin{itemize}
+				\item \textbf{Critério de desempate:} número de vitórias.
+				\item \textbf{Regulamento:} uma vitória vale 3 pontos, um empate vale 1 ponto e uma derrota vale 0 ponto. Sabendo que na última rodada os 6 últimos não vão jogar entre si e que os4 últimos da tabela do campeonato serão rebaixados para a divisão inferior, podemos afirmar que, ao final do campeonato:
+				\begin{enumerate}[a)]
+					\item o Unidos da Série B com certeza estará livre do rebaixamento.
+					\item se o Fanfarrões perder e o Bola Furada empatar, ambos podem ser rebaixados.
+					\item o Lanterninha ainda pode se livrar do rebaixamento.
+					\item se o Perdedores vencer e o Fanfarrões empatar, ambos se livram do rebaixamento.
+					\item o Lanterninha, em hipótese nenhuma, terminará o campeonato no último lugar.
+				\end{enumerate}
+			\end{itemize}
+		\end{enumerate}
+		$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$
+	\end{multicols}
+\end{document}
