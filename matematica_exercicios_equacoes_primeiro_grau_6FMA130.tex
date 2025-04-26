@@ -1,0 +1,152 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+\usepackage{xcolor} % Para cores do fundo de tabelas
+\usepackage{colortbl} % Para cores do fundo de tabelas
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA130 - Matemática} 
+	
+	\begin{center}Exercícios Equações (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+	    \noindent Quando $U = A$ e $ A \subset \mathbb{Q}$, é necessário verificar se a solução encontrada pertence ao conjunto $A$. \\
+		\noindent\textsubscript{--------------------------------------------------------------------------}
+		\begin{enumerate} 
+			\item Resolver as equações.
+			\begin{enumerate}[a)]
+				\item $9 + 3x = 0 (U = \mathbb{N})$ \\\\\\\\\\\\\\
+				\item $4x - 5 = 9x + 7 (U = \mathbb{Q})$ \\\\\\\\\\\\\\
+				\item $-2x - \frac{3x - 16}{6} + 2x = 1 \\ (U = \mathbb{Q_+})$ \\\\\\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\item Resolver as equações $(U = \mathbb{Q_+})$.
+			\begin{enumerate}[a)]
+				\item $7(2x + 3) - 10 = 6x + 11$ \\\\\\\\\\\\\\
+				\item $2(2x + 1) - 3(-2x - 1) = 0$ \\\\\\\\\\\\\\
+				\item $5(-x + 2) - \bigg(x + \frac{1}{3}\bigg) = x$ \newpage
+			\end{enumerate}
+			\textbf{Desafio olímpico} \\\\
+			Considerando $a$ e $b$ reais, podemos afirmar que a expressão $(a - 2 - b)^7 + (b + 2 - a)^7$ é igual a: \\\\
+			a) $2(a - b)^7$ \\
+			b) $(a - 2)(b - 2)$ \\
+			c) $0$ \\
+			d) $ab - 128$ \\
+			e) $128ab$ \columnbreak
+			%15 a 20
+			\item Resolver as equações.
+			\begin{enumerate}[a)]
+				\item $2x - 14 = 0~(U = \mathbb{N})$ \\\\\\\\\\\\\\
+				\item $4x - 1 = -5x - 6~(U = \mathbb{Q_-})$ \\\\\\\\\\\\\\
+				\item $x - \frac{12 - 5x}{3} + 2x = 6 \\ (U = \mathbb{Q_+})$ \\\\\\\\\\\\\\
+				\item $-\frac{x}{3} + \frac{2x - 7}{\frac{1}{-5}} = 9~(U = \mathbb{Q_+})$ \newpage
+				\item $(|3x + 7| - 3)(|9x - 5| - 2)\\(|-x + 6|-6) = 0~(U = \mathbb{Q_+^*})$ \\\\\\\\\\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\item Resolver as equações $(U = \mathbb{Q_-})$
+			\begin{enumerate}[a)]
+				\item $4 \cdot \frac{3 + x}{\frac{3}{4}} - 3 \cdot \frac{-x + 1}{7} + 5 = -x$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item $3 \cdot \frac{1 + 4x}{6} - \frac{x - 5}{2} + \frac{3}{5} = -x$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item $-4 \cdot \frac{9 + 2x}{\frac{4}{5}} + 3 = 5 \cdot \frac{x - 2}{3}$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item $-\bigg(6x + 3 - \frac{-2x - 1}{9}\bigg) + x = 0$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item $-3 + \frac{x - 1}{\frac{3}{8}} - x = \frac{1}{4} \cdot \frac{-x - 7}{\frac{5}{6}}$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\item Para $ax - b = (cx + d) \cdot e$, podemos afirmar que o valor de $x$ é:
+			\begin{enumerate}[a)]
+				\item \small $\frac{b + de}{a + ce}$ se, e somente se, $a \neq ce$.
+				\item $\frac{b - de}{a + ce}$ se, e somente se, $a + ce \neq 0$.
+				\item $\frac{b + de}{a + ce}$ se, e somente se, $a + ce \neq 0$.
+				\item $\frac{b - de}{a - ce}$ se, e somente se, $a \neq ce$.
+				\item $\frac{b - de}{ce - a}$ se, e somente se, $ce \neq a$. \newpage
+			\end{enumerate}
+			\item Quais são as raízes da equação $\bigg(x - \frac{7}{9}\bigg) \cdot (5x - 3) = 0$, para $U = \mathbb{Q}$? \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\item Resolver as equações $U = \mathbb{Q_+}$.
+			\begin{enumerate}[a)]
+				\item $6(2x + 3) - 5x = x - 4$ \\\\\\\\\\\\\\\\\\
+				\item $3(-x - 4) - 4(x - 4) = 0$ \\\\\\\\\\\\\\\\\\
+				\item $5(-x - 2) + 4\bigg(x + \frac{3}{8}\bigg) = -x$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item $-7(-x - 1) + 2x = \frac{4}{7}$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\small\item $3\bigg(\frac{2x - 5}{2}\bigg) + 8\bigg(\frac{-x - 1}{5}\bigg) = x$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item $-\Bigg(-\bigg(\frac{-4x + 7}{2} + \frac{2}{3}\bigg)+ x\Bigg) = \frac{1}{8}$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item $\Bigg(\frac{-x + 2}{\frac{1}{5}} + \frac{1}{4} - 3x \Bigg) \cdot \\  \Bigg(\frac{-2x-4}{\frac{6}{7}} + \frac{x}{4} + \frac{1}{6}\Bigg) = 0$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\item Resolver as equações $U = \mathbb{Q_-}$.
+			\begin{enumerate}[a)]
+				\item $2 \cdot \frac{3 - x}{\frac{3}{4}} - 4 \cdot \frac{-x + 1}{7} + 3 = - x$ \newpage
+				\item $-2 \cdot \frac{6 - 5x}{3} - \frac{x - 4}{6} + \frac{1}{2} = 7x$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item $-5 \cdot \frac{2 + x}{\frac{3}{5}} + 4 = 2 \cdot \frac{4x - 7}{3}$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item $-\bigg(4x + 3 - \frac{-2x - 8}{3}\bigg) + x = 0$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item $1 + \frac{x - 4}{\frac{3}{5}} - x = \frac{2}{9} \cdot \frac{-x + 3}{\frac{3}{2}}$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item $\frac{3}{5} \cdot \bigg(\frac{8 + 3x}{\frac{7}{5}}\bigg) = \frac{8}{9}$  \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+				\item $\Bigg(\frac{-4 - x}{\frac{1}{7}} + \frac{5}{8}\Bigg) \cdot \\ \bigg(\frac{-2x + 5}{6} - \frac{x - 6}{3}\bigg) = 0$
+			\end{enumerate}
+		\end{enumerate}
+		$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$
+	\end{multicols}
+\end{document}

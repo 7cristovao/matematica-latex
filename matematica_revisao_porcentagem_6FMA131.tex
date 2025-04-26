@@ -1,0 +1,196 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+\usepackage{xcolor} % Para cores do fundo de tabelas
+\usepackage{colortbl} % Para cores do fundo de tabelas
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA131 - Matemática} 
+	
+	\begin{center}Revisão: porcentagem (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+	    \noindent 
+	    \begin{itemize}
+	    	\item $x\%$ de $y$ é $\frac{x \cdot y}{100}$.
+	    	\item Se queremos saber quanto $a$ representa de $b$, em porcentagem, fazemos $\frac{a}{b} \cdot 100\%$.
+	    \end{itemize}
+		\noindent\textsubscript{--------------------------------------------------------------------------}
+		\begin{enumerate} 
+			\item Escreva em forma de fração irredutível as porcentagens:
+			\begin{enumerate}[a)] 
+				\item 85\% = \\\\\\
+				\item 17\% = \\\\\\
+				\item 2\% = \\\\\\
+				\item 30\% = \\\\\\
+				\item 260\% = \\\\\\
+				\item 100\% = \\\\\\
+				\item 2.8\% = \\\\\\
+			\end{enumerate}
+			\item Escreva em forma de porcentagem:
+			\begin{enumerate}[a)] 
+				\item $\frac{9}{100} = $ \\\\\\\\
+				\item $0,03 = $ \\\\\\\\
+				\item $\frac{7}{25} = $ \\\\\\\\
+				\item $1,41 = $ \\\\\\\\
+				\item $0,83 = $ \newpage
+			\end{enumerate}
+			\item Responda:
+			\begin{enumerate}[a)] 
+				\item Quanto $a$ representa de $b$ nos casos:
+				\begin{enumerate}[I.] 
+					\item $a = 6$ e $b = 10$. \\\\\\\\\\
+					\item $a = 4$ e $b = 12$. \\\\\\\\\\
+					\item $a = 17$ e $b = 250$. \\\\\\\\\\
+				\end{enumerate}
+				\item Calcule quanto representa $a\%$ de $b$ para:
+				\begin{enumerate}[I.] 
+					\item $a = 44$ e $b = 20$. \\\\\\\\
+					\item $a = 37$ e $b = 243$. \\\\\\\\
+					\item $a = 71$ e $b = 12$. \\\\\\\\
+				\end{enumerate}
+			\end{enumerate}
+			\item Renata ganhou R\$ 260,00 e gastou 30\% deste valor com o seu presente de aniversário. Sabendo que ela guardou 55\% do que ganhou para o próximo mês, quanto sobrou para ela gastar durante este mês? \\\\\\\\\\\\\\\\\\\\\\\\
+			\item Pedro conseguiu economizar R\$ 800,00 ao longo de um ano. No início do ano seguinte, ele gastou 20\% deste valor com o relógio que tanto queria e comprou um presente para seu pai com 30\% do restante. Com quantos reais ele ficou após essas compras? \\\\\\\\\\\\\\\\\\\\\\\\\\
+			%21 a 29
+			\item Escreva na forma de fração irredutível:
+			\begin{enumerate}[a)] 
+				\item $0,4\%$ \\\\\\
+				\item $35\%$ \\\\\\
+				\item $42\%$ \\\\\\
+				\item $75\%$ \\\\\\
+				\item $190\%$ \\\\\\
+				\item $276\%$ \\\\\\
+			\end{enumerate}
+			\item Escreva na forma de decimal:
+			\begin{enumerate}[a)] 
+				\item $0,3\%$ \\\\\\
+				\item $1,2\%$ \\\\\\
+				\item $60\%$ \\
+				\item $85\%$ \\\\\\
+				\item $216\%$ \\\\\\
+				\item $320\%$ \\\\\\
+			\end{enumerate}
+			\item Escreva na forma de porcentagem:
+			\begin{enumerate}[a)] 
+				\item $\frac{40}{100}$ \\\\\\
+				\item $\frac{2}{10}$ \\\\\\
+				\item $\frac{18}{20}$ \\\\\\
+				\item $\frac{180}{600}$ \\\\\\
+				\item $\frac{24}{40}$ \\\\\\
+				\item $\frac{21}{70}$ \newpage
+			\end{enumerate}
+			\item Escreva os decimais em forma de porcentagem:
+			\begin{enumerate}[a)] 
+				\item $0,084$ \\\\\\
+				\item $0,213$ \\\\\\
+				\item $0,572$ \\\\\\
+				\item $0,4$ \\\\\\
+				\item $2,67$ \\\\\\
+				\item $3,8$ \\\\\\
+			\end{enumerate}
+			\item Calcule:
+			\begin{enumerate}[a)] 
+				\item $30\%$ de 73. \\\\\\
+				\item $45\%$ de 865. \\\\\\
+				\item $36\%$ de 56. \\
+				\item $120\%$ de 70. \\\\\\
+				\item $12\%$ de 25\% de 340. \\\\\\
+				\item $7\%$ de 60\% de 3 000. \\\\\\
+			\end{enumerate}
+			\large\item Uma pesquisa recente aponta que 8 em cada 10 homens brasileiros dizem cuidar de sua beleza, não apenas de sua higiene pessoal. \\
+			\footnotesize Adaptado de M. Caetano; R. Soreiro; R. Davino. \\
+			\footnotesize "Cosméticos". \textit{Superinteresssante}, n. 304, maio/2012. \\
+			\normalsize Outra maneira de representar esse resultado é exibindo o valor percentual dos homens brasileiros que dizem cuidar de sua beleza. \\
+			Qual é o valor percentual que faz essa representação?
+			\begin{enumerate}[a)]
+				\item 80\%
+				\item 8\%
+				\item 0,8\%
+				\item 0,08\%
+				\item 0,008\% \newpage
+			\end{enumerate}
+			\item Sandra recebe R\$ 3.200,00 por mês e gasta R\$ 448,00 com impostos. Quantos por cento de seu salário ela gasta com impostos? \\\\\\\\\\\\\\\\
+			\item Leia o seguinte texto e responda às questões. \\\\
+			\large Segundo pesquisas do IBGE no mês de março, a safra de arroz, milho, soja e feijão de 2019 terá uma alta de 1,6 \%. A produção desses grãos para 2019 foi estimada em 230 milhões de toneladas, o que equivale a 1,6\% acima da safra de 2018. O arroz, o milho e a soja representam 93\% da estimativa da produção total. \\
+			Ao analisar uma perspectiva nacional, Mato Grosso é considerado maior produtor de grãos, seguido de Paraná e Rio Grande do Sul. Esses três estados juntos representam 58 \% do total nacional. \\
+			A primeira safra do feijão teve uma produção anual de 1,6 milhão de toneladas em 2018 e a estimativa do IBGE é que haja uma redução de 8 \%. \\
+			Essa redução se deve ao clima e ao fato de os produtores preferirem o plantio de soja na 1ª safra, reduzindo a área cultivada de feijão. \\\\
+			\footnotesize Fonte: $<$https://agenciadenoticias.ibge.gov.br/\\media/com\underline{~}mediaibge/arquivos/3260ca45d84508\\bbdb1e32bec3bd960c.pdf$>$. \normalsize
+			\begin{enumerate}[a)]
+				\item Qual é a estimativa da produção de grãos para 2019? \\\\\\\\\\
+				\item Quantas toneladas de feijão o IBGE estima que serão produzidas em 2019? \\\\\\\\\\
+				\item Qual é a estimativa de produção anual da 1ª safra do feijão para 2019? \\\\\\\\\\
+			\end{enumerate}
+			\item Em uma população com 150 000 pessoas, 72\% são motoristas e, destes, 46\% tem carro preto. Determine o número de motoristas que não tem carro preto. \\\\\\\\\\
+		\end{enumerate}
+	\end{multicols}
+\end{document}
