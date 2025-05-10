@@ -1,0 +1,186 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+\usepackage{xcolor} % Para cores do fundo de tabelas
+\usepackage{colortbl} % Para cores do fundo de tabelas
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA135 - Matemática} 
+	
+	\begin{center}Relação de divisibilidade (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+	    \noindent Sejam $a, b$ e $c$ números inteiros. Temos: \\
+	    $a | b \Leftrightarrow \exists$$c \in \mathbb{Z}$ t.q. $b = a \cdot c$
+		\noindent\textsubscript{--------------------------------------------------------------------------}
+		\begin{enumerate} 
+			\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso).
+			\begin{enumerate}[a)]
+				\item (~~) $4 | 12$
+				\item (~~) $-4 | 12$
+				\item (~~) $4 | -12$
+				\item (~~) $-4 | -12$
+				\item (~~) $8 | 0$
+				\item (~~) $0 | 5$
+				\item (~~) $6 | 4$
+				\item (~~) $4 \nmid 6$
+				\item (~~) $10 | 2$
+				\item (~~) $2 | 6$
+			\end{enumerate}
+			\item Observe a divisão a seguir: \\
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{ll}
+					\multicolumn{1}{l|}{$a$} & $b$ \\ \cline{2-2} 
+					$r$                      & $q$
+				\end{tabular}
+			\end{table}
+			Você já viu que a nomenclatura correta dos termos é: \\
+			$a \rightarrow$ dividendo \\
+			$b \rightarrow$ divisor \\
+			$q \rightarrow$ quociente \\
+			$r \rightarrow$ resto \\
+			Identifique esses termos nas divisões a seguir: \\\\
+				a) \begin{table}[H]
+					\centering
+					\begin{tabular}{ll}
+						\multicolumn{1}{l|}{22} & 4 \\ \cline{2-2} 
+						2                      & 5 
+					\end{tabular}
+				\end{table}
+				b) \begin{table}[H]
+					\centering
+					\begin{tabular}{ll}
+						\multicolumn{1}{l|}{17} & 7 \\ \cline{2-2} 
+						3                      & 2 
+					\end{tabular}
+				\end{table}
+				c) \begin{table}[H]
+					\centering
+					\begin{tabular}{ll}
+						\multicolumn{1}{l|}{25} & 6 \\ \cline{2-2} 
+						1                      & 4 
+					\end{tabular}
+				\end{table}
+			\item Considerando a divisão do exercício anterior, podemos escrevê-la como $a = b \cdot q + r$ sempre que $0 \leq r < |b|$. Escreva as divisões do exercício anterior dessa maneira. \\\\\\\\\\\\\\\\\\\\\\\\\\
+			\item Para todo número inteiro $a$, pode-se afirmar que:
+			\begin{enumerate}[a)]
+				\item $1 | a$? \\\\\\\\\\\\
+				\item $-1 | a$? \\\\\\\\\\\\
+				\item $a | a^2$? \\\\\\\\\\\\
+				\item $a | (a + 1)$? \\\\\\\\\\\\
+			\end{enumerate}
+			%45 a 48
+			\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso).
+			\begin{enumerate}[a)]
+				\item (~~) $3 | 9$
+				\item (~~) $-4 | 16$
+				\item (~~) $12 | 0$
+				\item (~~) $-2 | -26$
+				\item (~~) $12 | 4$
+				\item (~~) $6 | 3$
+				\item (~~) $2 \nmid 5$
+				\item (~~) $5 \nmid 10$
+			\end{enumerate}
+			\item Escreva as seguintes expressões na forma de divisão:
+			\begin{enumerate}[a)]
+				\item $12 = 3 \cdot 4 + 0$ \\\\\\\\\\\\
+				\item $15 = 2 \cdot 7 + 1$ \\\\\\\\\\\\
+				\item $23 = 7 \cdot 3 + 2$ \\\\\\\\\\\\
+				\item $27 = 4 \cdot 6 + 3$ \\\\\\\\\\\\
+				\item $2 = 1 \cdot 2 + 0$ \\\\\\\\
+				\item $5 = 2 \cdot 2 + 1$ \\\\\\\\\\\\
+			\end{enumerate}
+			\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso).
+			\begin{enumerate}[a)]
+				\item (~~) $-2 | -8$
+				\item (~~) $-7 | 0$
+				\item (~~) $-7 | 28$
+				\item (~~) $0 | 5$
+				\item (~~) $13 | 53$
+				\item (~~) $3 \nmid 7$
+				\item (~~) $19 \nmid 115$
+				\item (~~) $17 \nmid 2091$
+				\item (~~) $-4 \nmid 4^0$
+			\end{enumerate}
+			\item A seguinte divisão está correta? Justifique.
+			\\
+			\begin{table}[H]
+				\centering
+				\begin{tabular}{ll}
+					\multicolumn{1}{l|}{169} & 4 \\ \cline{2-2} 
+					5                      & 41 
+				\end{tabular}
+			\end{table}
+		\end{enumerate}
+		$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$
+	\end{multicols}
+\end{document}
