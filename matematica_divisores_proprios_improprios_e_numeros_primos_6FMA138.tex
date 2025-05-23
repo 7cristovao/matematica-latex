@@ -1,0 +1,178 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+\usepackage{xcolor} % Para cores do fundo de tabelas
+\usepackage{colortbl} % Para cores do fundo de tabelas
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA138 - Matemática} 
+	
+	\begin{center}Divisores próprios, impróprios e números primos (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+	    \noindent 
+	    \begin{itemize}
+	    	\item Se $a \in \mathbb{Z}$, então 1, -1, $a$ e $-a$ são divisores impróprios de $a$. O restante dos fatores de $a$ são divisores próprios de $a$.
+	    	\item Um número $p \in \mathbb{Z}$ é dito \textbf{primo} se possui exatamente quatro divisores inteiros distintos.
+	    	\item Seja $a \in \mathbb{Z}$: \\
+	    	\centering $a$ é composto \\
+	    	$\Updownarrow$ \\
+	    	$\begin{cases}
+	    		\text{i.}~a~\neq~0~ \text{e}~a~\neq~1 \text{e}~a~\neq~-1 \\
+	    		\text{ii.}~a~\text{admite pelo menos um divi-} \\
+	    		\text{sor próprio}
+	    	\end{cases}$
+	    \end{itemize}
+		\noindent\textsubscript{--------------------------------------------------------------------------}
+		\begin{enumerate} 
+			\item Determine o que se pede:
+			\begin{enumerate}[a)]
+				\item Os divisores próprios de 8. \\\\\\\\\\\\\\\\
+				\item Os divisores impróprios de 8.  \\\\\\\\\\\\
+				\item Os divisores próprios de 18. \\\\\\\\\\\\\\\\
+				\item Os divisores impróprios de 18. \\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\item Dizer se os números a seguir são primos ou não.
+			\begin{enumerate}[a)]
+				\item 3 \\\\\\\\
+				\item -5 \\\\\\\\
+				\item 1 \newpage
+				\item 9 \\\\\\\\
+				\item 12 \\\\\\\\
+				\item -13 \\\\\\\\
+				\item 21 \\\\\\\\
+				\item 29
+			\end{enumerate}
+			\item Diga quais são os números pares que são primos. Justifique. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\item Faça uma lista de todos os números primos entre 1 e 100. \textbf{Sugestão:} escreva os números de 1 a 100 na tabela a seguir. Se você preferir, copie a tabela em seu caderno. Em seguida, elimine o número 1 e todos os números divisíveis por 2, 3, 5 e 7 (exceto esses números). Os números que restarem serão todos primos. Iremos explicar mais adiante como esse método funciona. \\
+			\begin{table}[H]
+				\centering
+				\resizebox{8cm}{!}{%
+					\begin{tabular}{|>{\rule{0pt}{1.2cm}}c|>{\rule{0pt}{1.2cm}}c|>{\rule{0pt}{1.2cm}}c|>{\rule{0pt}{1.2cm}}c|>{\rule{0pt}{1.2cm}}c|>{\rule{0pt}{1.2cm}}c|>{\rule{0pt}{1.2cm}}c|>{\rule{0pt}{1.2cm}}c|>{\rule{0pt}{1.2cm}}c|>{\rule{0pt}{1.2cm}}c|}
+						\hline
+						~~~~~ & ~~~~~ & ~~~~~ & ~~~~~ & ~~~~~ & ~~~~~ & ~~~~~ & ~~~~~ & ~~~~~ & ~~~~~ \\
+						\hline
+						~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ \\
+						\hline
+						~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ \\
+						\hline
+						~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ \\
+						\hline
+						~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ \\
+						\hline
+						~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ \\
+						\hline
+						~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ \\
+						\hline
+						~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ \\
+						\hline
+						~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ \\
+						\hline
+						~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ \\
+						\hline
+						~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ & ~~ \\
+						\hline
+					\end{tabular}
+				}
+			\end{table}
+		Quantos números primos existem entre os números 1 e 100? \newpage
+		%55 a 61
+		\item Quais são os divisores comuns de 12 e 32? \\\\\\\\\\\\\\\\
+		\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso).
+		\begin{enumerate}[a)]
+			\item (~~) 1 é primo.
+			\item (~~) 2 é primo.
+			\item (~~) 57 não é primo.
+			\item (~~) -87 é primo.
+			\item (~~) -29 não é primo.
+			\item (~~) 3 e 9 são primos entre si.
+			\item (~~) -12, 6, -6 e 5 são relativamente primos.
+		\end{enumerate}
+		\item Quais são os divisores próprios de 23? E os impróprios? Explique o resultado encontrado. \\\\\\\\\\\\\\\\
+		\item Apresentar:
+		\begin{enumerate}[a)]
+			\item $D(30)$
+			\item $D_+(16)$
+			\item $D_-^*(6)$
+			\item $D(14) \cap D_+(56)$
+			\item $D(4) \cup D(8)$
+			\item $\mathbb{Z}_+^*$
+			\item $\mathbb{N}^*$
+			\item $D_-^*(18)$
+			\item $D_+(10) \cap D_+(20)$
+		\end{enumerate}
+		\item Quais são os divisores comuns de 16 e 80? \\\\\\\\\\\\\\\\
+		\item Apresente o menor inteiro positivo $a$ tal que $D(a)$ tenha 8 elementos. \\\\\\\\\\
+		\item Dizemos que um número inteiro positivo é perfeito quando ele é igual à soma de todos os seus divisores positivos, exceto ele mesmo. Entre os números 6, 20, 28, 32 e 36, quais são números perfeitos?
+		\end{enumerate}
+		$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$
+	\end{multicols}
+\end{document}
