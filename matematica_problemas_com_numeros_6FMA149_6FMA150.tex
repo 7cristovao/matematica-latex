@@ -1,0 +1,139 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+\usepackage{xcolor} % Para cores do fundo de tabelas
+\usepackage{colortbl} % Para cores do fundo de tabelas
+\usepackage{upgreek} % Para inserir caracteres gregos
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA149, 6FMA150 - Matemática} 
+	
+	\begin{center}Problemas com números (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+	    \noindent \textbf{Exemplo:} \\
+	    O dobro de um número, mais um terço desse número, é igual a 14. Qual o número? \\
+	    \noindent \textbf{resolução:} \\
+	    Seja $x$ o número. \\
+	    Temos: \\
+	    $2x + \frac{1}{3}x = 14 \Leftrightarrow 6x + x = 42 \\ \Leftrightarrow 7x = 42 \Leftrightarrow x = 6$ \\
+	    O número é 6 \\
+		\noindent\textsubscript{--------------------------------------------------------------------------}
+		\begin{enumerate} 
+			\item A soma de um número com sua quarta parte é 35. Qual é o número? \\\\\\\\\\\\\\\\\\\\
+			\item O dobro de um número, menos 15, é igual a 59. Qual é o número? \\\\\\\\\\\\
+			\item Um quarto de um certo número, mais dois terços de sua terça parte, mais um quinto do número, é igual a 121. Qual é o número? \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\item Os três sétimos de um número somados aos seus dois terços e o resultado acrescido de um fornecem o dobro do número dado. Qual é o número? \\\\\\\\\\\\\\\\\\\\
+			\item Complete o enunciado abaixo com as palavras dos quadros e, em seguida resolva-o. Utilize uma palavra do quadro I para a primeira lacuna e uma palavra do quadro II para a segunda lacuna: \\
+			"Existe algum número tal que o ..... dele seja igual ao seu quíntuplo mais ..... ?" \\\\
+			\begin{tabular}{m{3cm} m{0.5cm} m{3cm}}
+				\begin{tikzpicture}
+					\draw[black, thick] (0,0) rectangle (3,5);
+					\node at (1.5,5.3) {\textbf{I}};
+					\node at (1.5,4.5) {dobro};
+					\node at (1.5,3.6) {quíntuplo};
+					\node at (1.5,2.7) {triplo};
+					\node at (1.5,1.8) {quádruplo};
+				\end{tikzpicture}
+				&&
+				\begin{tikzpicture}
+					\draw[black, thick] (0,0) rectangle (3,5);
+					\node at (1.5,5.3) {\textbf{II}};
+					\node at (1.5,4.5) {dois};
+					\node at (1.5,3.6) {três};
+					\node at (1.5,2.7) {quatro};
+					\node at (1.5,1.8) {cinco};
+					\node at (1.5,0.9) {seis};
+				\end{tikzpicture}
+			\end{tabular}
+			\vspace{14cm}
+			\item Existe algum número tal que sua quinta parte mais sua metade seja igual a três décimos dele, mais dois? \\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\item Existe algum número tal que sua terça parte mais sua sexta parte seja igual à metade dele, menos quatro? \newpage
+			\item Dois amigos compraram juntos um pacote de pirulitos e um deles pagou o dobro do que o outro pagou. Se o pacote tem 30 pirulitos, como os amigos devem dividi-los entre si de forma justa? \\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			% 13 a 19
+			\item Quatro vezes um número, menos sete, é igual a 85. Qual é o número? \\\\\\\\\\\\\\
+			\item Seis vezes um número, menos 2, é igual a 56. Qual é o número? \\\\\\\\\\\\\\
+			\item Um quarto de um número somado aos seus três quintos e o resultado acrescido de 7 fornecem o dobro do número dado. Qual é o número? \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\item Dois números são tais que sua soma é 84 e um é o triplo do outro. Quais são os números? \newpage
+			\item (Enem) Para sua festa de 17 anos, o aniversariante convidará 132 pessoas. Ele convidará 132 pessoas. Ele convidará 26 mulheres a mais do que o número de homens. A empresa contratada para realizar a festa cobrará R\$ 50,00 por convidado do sexo masculino e R\$ 45,00 por convidado do sexo feminino. \\ Quanto esse aniversariante terá que pagar, em real, à empresa contratada, pela quantidade de homens convidados para sua festa?
+			\begin{enumerate}[a)]
+				\item 2 385
+				\item 3 300
+				\item 5 300
+				\item 2 650
+				\item 3 950 \\\\\\\\\\\\\\
+			\end{enumerate}
+			\item Um oitavo de certo número, menos metade de seu terço, mais um sétimo de sua metade, é igual a 15. Qual é o número? \\\\\\\\\\\\\\\\
+			\item Amanda pediu para Rafael pensar em um número. Depois disse: "Divida esse número por 3, some 5 e agora some metade de um quinto do número que você pensou. Qual é o resultado?" Rafael respondeu "18" e Amanda revelou o número pensado por ele. Qual é esse número? \\\\\\\\\\\\\\
+		\end{enumerate}
+		 $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$
+	\end{multicols}
+\end{document}
