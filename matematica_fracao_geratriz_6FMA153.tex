@@ -1,0 +1,155 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+\usepackage{xcolor} % Para cores do fundo de tabelas
+\usepackage{colortbl} % Para cores do fundo de tabelas
+\usepackage{upgreek} % Para inserir caracteres gregos
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA153 - Matemática} 
+	
+	\begin{center}Fração geratriz (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+	    \noindent Transformando dízimas periódicas em frações: \\
+	    \begin{itemize}
+	    	\item $x = 0,\overline{3}$
+	    	\begin{align*}
+	    		10x &= 3{,}333\ldots \\
+	    		-x &= 0{,}333\ldots \\
+	    		\cline{1-2}
+	    		9x &= 3 \\
+	    		x &= \frac{3}{9} = \frac{1}{3}
+	    	\end{align*}
+	    	
+	    	\item $x = 0,1\overline{6}$
+	    	\begin{align*}
+	    		100x &= 16{,}666\ldots \\
+	    		-10x &= \;\;1{,}666\ldots \\
+	    		\cline{1-2}
+	    		90x &= 15 \\
+	    		x &= \frac{15}{90} = \frac{1}{6}
+	    	\end{align*}
+	    \end{itemize}
+		\noindent\textsubscript{--------------------------------------------------------------------------}
+		\begin{enumerate} 
+			\item Diga quais frações a seguir originam dízimas periódicas:
+			\begin{enumerate}[a)]
+				\item $\frac{1}{3}$ \\\\\\\\
+				\item $\frac{1}{8}$ \\\\\\\\
+				\item $\frac{1}{5000}$ \\\\\\\\
+				\item $\frac{1}{18}$ \\\\\\\\
+				\item $\frac{1}{22}$ \\\\\\\\
+			\end{enumerate}
+			\item O número 0,999...9... é maior do que 1, menor do que 1 ou igual a 1? \\\\\\\\\\
+			\item Determine as geratrizes das dízimas periódicas a seguir:
+			\begin{enumerate}[a)]
+				\item 0,444...4... \\\\\\\\
+				\item 2,888...8... \\\\\\\\
+				\item $7,\dot{2}$ \\\\\\\\
+				\item $0,323232...$ \\\\\\\\
+				\item $0,1\overline{26}$ \\\\\\\\
+				\item $4,1\dot{7}$ \\\\\\\\
+			\end{enumerate}
+			%30 a 34
+			\item Obtenha a geratriz de cada uma das dízimas periódicas a seguir:
+			\begin{enumerate}[a)]
+				\item 0,444... \\\\\\\\
+				\item 2,888... \\\\\\\\
+				\item 0,3444... \\\\\\\\
+				\item 1,7333... \\\\\\\\
+				\item $3,\dot{2}$ \\\\\\\\
+				\item $0,\overline{84}$ \\\\\\\\
+				\item $2,0\dot{6}$ \\\\\\\\
+				\item $4,6\overline{93}$ \\\\\\\\
+			\end{enumerate}
+			\item Assinale \textbf{V} (verdadeiro) ou \textbf{F} (falso) e justifique:
+			\begin{enumerate}[a)]
+				\item (~~) $0,999... < 1$
+				\item (~~) $\frac{13}{9} = 1,444...$
+				\item (~~) $2,1\overline{76} = \frac{70}{33}$
+				\item (~~) $\frac{3206}{999} = 3,\overline{209}$
+			\end{enumerate}
+			\item Qual é a geratriz da dízima periódica 0,37222...? \\\\\\\\\\
+			\item A fração geratriz da dízima periódica composta $0,7\dot{1}$ é:
+			\begin{enumerate}[a)]
+				\item $\frac{23}{45}$
+				\item $\frac{32}{45}$
+				\item $\frac{61}{90}$
+				\item $\frac{67}{90}$
+				\item $\frac{71}{99}$
+			\end{enumerate}
+			\item Usando lápis e papel ou sua calculadora, quando possível, transforme em numerais decimais as frações: \\\\
+			$\frac{1}{2}, \frac{1}{3}, \frac{1}{4}, \frac{1}{5}, \frac{1}{6}, \frac{1}{7}, \frac{1}{8}, \frac{1}{9}$ e $\frac{1}{10}$.
+		\end{enumerate}
+		$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\
+	\end{multicols}
+\end{document}

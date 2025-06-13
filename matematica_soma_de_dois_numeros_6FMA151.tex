@@ -1,0 +1,127 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+\usepackage{xcolor} % Para cores do fundo de tabelas
+\usepackage{colortbl} % Para cores do fundo de tabelas
+\usepackage{upgreek} % Para inserir caracteres gregos
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA151 - Matemática} 
+	
+	\begin{center}Soma de dois números (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+	    \noindent \textbf{Exemplo: } \\
+	    A soma de dois números é 21. Cinco vezes um deles é seis mais o quádruplo do outro. Quais são os números? \\
+	    \noindent \textbf{resolução: } \\
+	    \noindent \textbf{Uma maneira: } \\
+	    Sejam $x$ um número e 21 - $x$ o outro número. \\
+	    Podemos ter: \\
+	    $5x = 6 + 4(21 - x)$ \\
+	    Resolvendo essa equação, encontramos $x = 10$. \\
+	    Logo, o outro número é 21 - 10 = 11. \\
+	    Os números são 10 e 11. \\
+	    \noindent \textbf{Outra maneira: } \\
+	    Seja $x$ um número e 21 - $x$ o outro número. \\
+	    Podemos ter: \\
+	    $5(21 - x) = 6 + 4x$ \\
+	    Resolvendo essa equação, encontramos $x = 11$. \\
+	    Logo, o outro número é 21 - 11 = 10. \\
+	    Os números são 10 e 11. \\
+		\noindent\textsubscript{--------------------------------------------------------------------------}
+		\begin{enumerate} 
+			\item A soma de dois números é 36. Sabendo-se que um é o dobro do outro, quais são os números? \\\\\\\\\\\\
+			\item A soma de dois números é 2. Um é o triplo do outro. Quais são os números? \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\item Somando-se dois números, encontramos -63. Sabe-se que um dos números é 8 vezes o outro. Quais são os números? \newpage
+			\item Separar 89 em duas partes, de tal modo que uma parte exceda a outra em 5. \\
+			\textbf{Observação: } "Separar 89 em duas partes" significa que queremos dois números tais que a soma deles seja 89. \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\item A soma de dois números é 52 e a diferença é 6. Quais são os números? \\\\\\\\\\\\\\\\\\\\\\\\
+			\textbf{Desafio olímpico} \\\\
+			(OBMEP) Para ir com Maria ao cinema, João pode escolher dois caminhos. No primeiro, ele passa pela casa de Maria e os dois vão juntos até o cinema; nesse caso, ele anda sozinho $\frac{2}{3}$ do caminho. No segundo, ele vai sozinho e encontra Maria na frente do cinema; nesse caso, ele anda 1 km a menos que no primeiro caminho, mais o dobro do que Maria terá que caminhar. Qual é a distância entre a casa de Maria e o cinema? \\
+			\begin{enumerate}[a)]
+				\item 1 km
+				\item 2 km
+				\item 3 km
+				\item 4 km
+				\item 6 km \newpage
+			\end{enumerate}
+			%20 a 26
+			\item A soma de dois números é 51. Sabendo-se que um é o dobro do outro, quais são os números? \\\\\\\\\\\\\\\\\\\\
+			\item A soma de dois números é 16. Um é o triplo do outro. Quais são os números? \\\\\\\\\\\\\\\\\\\\
+			\item Somando-se dois números encontramos 12. Sabe-se que um dos números é 8 vezes o outro. Quais são os números? \\\\\\\\\\\\\\\\\\\\
+			\item A soma de dois números é 26. Três vezes um deles é oito, mais quatro vezes o outro. Quais são os números? \\\\\\\\\\\\\\\\\\\\
+			\item A soma de dois números é 77. Um deles é menor uma unidade que três vezes o outro. Quais são os números? \\\\\\\\\\\\\\\\\\\\
+			\item A soma de dois números é 27. Um deles é 5 vezes o outro mais 3. Quais são os números? \\\\\\\\\\\\\\\\
+			\item A soma de dois números é 27. Um deles é seis vezes o outro, menos nove. Quais são os números? \\\\\\\\\\\\\\\\\\\\
+		\end{enumerate}
+		 $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$
+	\end{multicols}
+\end{document}
