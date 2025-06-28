@@ -1,0 +1,150 @@
+\documentclass[a4paper,14pt]{article}
+
+\usepackage{comment} % Para comentar várias linhas ao mesmo tempo
+
+%matemática
+\usepackage{amsmath}
+\usepackage{amssymb}
+
+%diagramação
+\usepackage{extsizes}
+\everymath{\displaystyle}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage[brazil]{babel}
+\usepackage[shortlabels]{enumitem}
+\usepackage{cancel}
+\usepackage{textcomp}
+\usepackage{tcolorbox}
+
+%tabelas
+\usepackage{array} % Para melhor formatação de tabelas
+\usepackage{longtable}
+\usepackage{booktabs}  % Para linhas horizontais mais bonitas
+\usepackage{float}   % Para usar o modificador [H]
+\usepackage{caption} % Para usar legendas em tabelas
+\usepackage{wrapfig} % Para usar tabelas e figuras flutuantes
+\usepackage{xcolor} % Para cores do fundo de tabelas
+\usepackage{colortbl} % Para cores do fundo de tabelas
+\usepackage{upgreek} % Para inserir caracteres gregos
+
+%tikzpicture
+\begin{comment}
+	\usepackage{tikz}
+	\usepackage{scalerel}
+	\usepackage{pict2e}
+	\usepackage{tkz-euclide}
+	\usetikzlibrary{calc}
+	\usetikzlibrary{patterns,arrows.meta}
+	\usetikzlibrary{shadows}
+	\usetikzlibrary{external}
+\end{comment}
+
+
+%pgfplots
+\usepackage{pgfplots}
+\pgfplotsset{compat=newest}
+\usepgfplotslibrary{statistics}
+\usepgfplotslibrary{fillbetween}
+
+%colours
+\usepackage{xcolor}
+
+
+
+\columnsep=2cm
+\hoffset=0cm
+\textwidth=8cm
+\setlength{\columnseprule}{.1pt}
+\setlength{\columnsep}{2cm}
+\renewcommand{\headrulewidth}{0pt}
+\geometry{top=1in, bottom=1in, left=0.7in, right=0.5in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+	
+	\noindent\textbf{6FMA155 - Matemática} 
+	
+	\begin{center}As dízimas no contexto (Versão estudante)
+	\end{center}
+	
+	\noindent\textbf{Nome:} \underline{\hspace{10cm}}
+	\noindent\textbf{Data:} \underline{\hspace{4cm}}
+	
+	%\section*{Questões de Matemática}
+	
+	\begin{multicols}{2}
+	    \noindent Para $n \in \mathbb{N}^*$: \\
+	    1 = 0,9999... \\
+	    2 = 1,9999... \\
+	    $\vdots$ \\
+	    $n = (n - 1),9999...$ \\
+		\noindent\textsubscript{--------------------------------------------------------------------------}
+		\begin{enumerate} 
+			\item Escreva na forma de dízima:
+			\begin{enumerate}[a)]
+				\item 1 000 \\\\\\\\\\\\\\\\
+				\item -1 \\\\\\\\\\\\\\\\
+				\item $\frac{1}{4}$ \\\\\\\\\\\\\\\\
+				\item $-\frac{2}{5}$ \\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\item Sabe-se que $a$ e $b$ são inteiros primos entre si e que $\frac{a}{b} = 0,73$. Determine $a$ e $b$. \newpage
+			\item Calcule o valor da expressão: \\
+			$\frac{2,888... + 0,888...}{4,12555... - 2,31222...}$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\item Se $\frac{x - 0,666...}{4} = 0,222...$, qual é o valor de $x$? \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\item Calcule: \\
+			\footnotesize $\bigg(\frac{0,555... - 0,333...}{2 + 0,777...}\bigg)^2 - 0,444... \cdot \bigg(\frac{5}{1 + 0,777...}\bigg)$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			%43 a 50
+			\normalsize\item A dízima 1,999... é representada pelo número real $x$. Podemos afirmar que:
+			\begin{enumerate}[a)]
+				\item $x$ é um número negativo.
+				\item $x$ é maior que 2.
+				\item $x$ é um número ímpar.
+				\item $x$ é um pouco maior que 2.
+				\item $x$ é igual a 2. \newpage
+			\end{enumerate}
+			\item A expressão $(0,\overline{12} + 0,\overline{03}) \cdot 0,24$ equivale a:
+			\begin{enumerate}[a)]
+				\item $0,0\overline{36}$
+				\item $0,0\overline{54}$
+				\item $0,0\overline{72}$
+				\item $0,\overline{09}$
+				\item $0,1\overline{09}$ \\\\\\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\item A fração irredutível $\frac{a}{b}$, com $a, b \in \mathbb{Z}$, é igual a $2,1\overline{35}$. \\
+			Então $a - b$ é igual a:
+			\begin{enumerate}[a)]
+				\item 891
+				\item 704
+				\item 673
+				\item 562
+				\item 437 \\\\\\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\item Mostre que não existe uma fração de denominador 10 equivalente à fração $\frac{1}{3}$. Em seguida, prove que não existe nenhuma fração de denominador 10 que possa originar a dízima 0,333...33... \newpage
+			\item O valor da expressão $\frac{1}{0,8333...} : \bigg(0,2 - \frac{1}{7}\bigg)$ é:
+			\begin{enumerate}[a)]
+				\item 7
+				\item 11
+				\item 13
+				\item 17
+				\item 21 \\\\\\\\\\\\\\\\\\\\
+			\end{enumerate}
+			\item Simplificando a expressão $\dfrac{1 - \dfrac{1}{4}}{\dfrac{3}{2} + \dfrac{3}{8}} - 3,999...$, obtemos: 
+			\begin{enumerate}[a)]
+				\item -3
+				\item $\frac{15}{2}$
+				\item $-\frac{18}{5}$
+				\item $\frac{1}{3}$
+				\item -4 \\\\\\\\\\
+			\end{enumerate}
+			\item Calcule a expressão numérica $\bigg(\frac{1}{3} + \frac{3}{5} : 3\bigg):0,3777...$ \\\\\\\\\\\\\\\\\\\\\\\\\\\\
+			\item Ao calcular a expressão numérica $\dfrac{\dfrac{1}{6} + \dfrac{3}{4} \cdot 0,999...}{\dfrac{8}{5}:1,7\overline{45}}$
+		\end{enumerate}
+		$~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\ $~$ \\
+	\end{multicols}
+\end{document}
